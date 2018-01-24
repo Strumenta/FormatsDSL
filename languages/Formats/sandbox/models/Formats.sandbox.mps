@@ -98,7 +98,7 @@
       </node>
     </node>
     <node concept="1Cg_0y" id="74YVmCpvd3A" role="1Cg_0x">
-      <property role="1Cg_0z" value="examples/A.class" />
+      <property role="1Cg_0z" value="classes/JavaParser.class" />
     </node>
   </node>
 </model>
