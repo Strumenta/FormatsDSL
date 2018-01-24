@@ -32,6 +32,24 @@
       </concept>
     </language>
     <language id="040f4d08-2e19-478e-bafc-1ae65578e650" name="Formats">
+      <concept id="7828601061921860416" name="Formats.structure.Record" flags="ng" index="14JuLK" />
+      <concept id="7828601061921864307" name="Formats.structure.ArrayType" flags="ng" index="14JvP3">
+        <child id="7828601061921864310" name="baseType" index="14JvP6" />
+        <child id="7828601061921864319" name="size" index="14JvPf" />
+      </concept>
+      <concept id="7828601061921864314" name="Formats.structure.IntLiteral" flags="ng" index="14JvPa">
+        <property id="7828601061921864317" name="value" index="14JvPd" />
+      </concept>
+      <concept id="7828601061921864280" name="Formats.structure.RecordType" flags="ng" index="14JvPC">
+        <reference id="7828601061921864283" name="record" index="14JvPF" />
+      </concept>
+      <concept id="7828601061921864369" name="Formats.structure.FieldReferenceExpression" flags="ng" index="14JvQ1">
+        <reference id="7828601061921864372" name="field" index="14JvQ4" />
+      </concept>
+      <concept id="7828601061921864396" name="Formats.structure.SumExpression" flags="ng" index="14JvRW">
+        <child id="7828601061921864397" name="left" index="14JvRX" />
+        <child id="7828601061921864399" name="right" index="14JvRZ" />
+      </concept>
       <concept id="8160220614791834349" name="Formats.structure.IgnoreType" flags="ng" index="1Cg$u7" />
       <concept id="8160220614791821128" name="Formats.structure.UnsignedFieldType" flags="ng" index="1CgDCy">
         <property id="8160220614791821140" name="length" index="1CgDCY" />
@@ -73,6 +91,22 @@
       <property role="TrG5h" value="constant_pool_count" />
       <node concept="1CgDCy" id="74YVmCpvaFu" role="1CgDCM">
         <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="6M$LN0C6jDa" role="1CgBTM">
+      <property role="TrG5h" value="constant_pool" />
+      <node concept="14JvP3" id="6M$LN0C6mcg" role="1CgDCM">
+        <node concept="14JvPC" id="6M$LN0C6mcn" role="14JvP6">
+          <ref role="14JvPF" node="6M$LN0C6jD9" resolve="ConstantPoolElement" />
+        </node>
+        <node concept="14JvRW" id="6M$LN0C6mcv" role="14JvPf">
+          <node concept="14JvQ1" id="6M$LN0C6mcA" role="14JvRX">
+            <ref role="14JvQ4" node="74YVmCpvaFk" resolve="constant_pool_count" />
+          </node>
+          <node concept="14JvPa" id="6M$LN0C6mcD" role="14JvRZ">
+            <property role="14JvPd" value="1" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1CgEr1" id="74YVmCpvbqg" role="1CgBTM">
@@ -131,6 +165,9 @@
     <node concept="1Cg_0y" id="74YVmCpvd3A" role="1Cg_0x">
       <property role="1Cg_0z" value="classes/JavaParser.class" />
     </node>
+  </node>
+  <node concept="14JuLK" id="6M$LN0C6jD9">
+    <property role="TrG5h" value="ConstantPoolElement" />
   </node>
 </model>
 
