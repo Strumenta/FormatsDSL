@@ -138,5 +138,18 @@
     <property role="EcuMT" value="8160220614791899793" />
     <property role="TrG5h" value="Assertion" />
   </node>
+  <node concept="1TIwiD" id="6M$LN0C4wN8">
+    <property role="EcuMT" value="7828601061921393864" />
+    <property role="TrG5h" value="UnsignedDecimalValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6M$LN0C4wNa" role="PzmwI">
+      <ref role="PrY4T" node="74YVmCpvcQs" resolve="Value" />
+    </node>
+    <node concept="1TJgyi" id="6M$LN0C4wNb" role="1TKVEl">
+      <property role="IQ2nx" value="7828601061921393867" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

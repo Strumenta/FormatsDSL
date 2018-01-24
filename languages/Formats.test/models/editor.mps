@@ -590,5 +590,11 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6M$LN0C4wNl">
+    <ref role="1XX52x" to="b9ba:6M$LN0C4wN8" resolve="UnsignedDecimalValue" />
+    <node concept="3F0A7n" id="6M$LN0C4wNn" role="2wV5jI">
+      <ref role="1NtTu8" to="b9ba:6M$LN0C4wNb" resolve="value" />
+    </node>
+  </node>
 </model>
 

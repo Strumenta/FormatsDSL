@@ -9,6 +9,9 @@
   <imports />
   <registry>
     <language id="8b0c1f5d-d826-49bc-8678-d64a5a245799" name="Formats.test">
+      <concept id="7828601061921393864" name="Formats.test.structure.UnsignedDecimalValue" flags="ng" index="14HGJS">
+        <property id="7828601061921393867" name="value" index="14HGJV" />
+      </concept>
       <concept id="8160220614791843229" name="Formats.test.structure.FieldExpectation" flags="ng" index="1Cgy3R">
         <reference id="8160220614791843230" name="field" index="1Cgy3O" />
         <child id="8160220614791843232" name="expectedValue" index="1Cgy3a" />
@@ -95,6 +98,34 @@
         <node concept="1Cg_dY" id="74YVmCpwedg" role="1Cg_dZ">
           <property role="1Cgy3F" value="BE" />
         </node>
+      </node>
+    </node>
+    <node concept="1Cgy3R" id="6M$LN0C2QUN" role="1CgOvQ">
+      <ref role="1Cgy3O" node="74YVmCpvaF9" resolve="major_version" />
+      <node concept="1Cg_dT" id="6M$LN0C2QUY" role="1Cgy3a">
+        <node concept="1Cg_dY" id="6M$LN0C2QUZ" role="1Cg_dZ">
+          <property role="1Cgy3F" value="00" />
+        </node>
+        <node concept="1Cg_dY" id="6M$LN0C2QVJ" role="1Cg_dZ">
+          <property role="1Cgy3F" value="34" />
+        </node>
+      </node>
+    </node>
+    <node concept="1Cgy3R" id="6M$LN0C2QVY" role="1CgOvQ">
+      <ref role="1Cgy3O" node="74YVmCpvaF0" resolve="minor_version" />
+      <node concept="1Cg_dT" id="6M$LN0C2QWd" role="1Cgy3a">
+        <node concept="1Cg_dY" id="6M$LN0C2QWe" role="1Cg_dZ">
+          <property role="1Cgy3F" value="00" />
+        </node>
+        <node concept="1Cg_dY" id="6M$LN0C2QWj" role="1Cg_dZ">
+          <property role="1Cgy3F" value="00" />
+        </node>
+      </node>
+    </node>
+    <node concept="1Cgy3R" id="6M$LN0C4wMK" role="1CgOvQ">
+      <ref role="1Cgy3O" node="74YVmCpvaFk" resolve="constant_pool_count" />
+      <node concept="14HGJS" id="6M$LN0C4_Lg" role="1Cgy3a">
+        <property role="14HGJV" value="510" />
       </node>
     </node>
     <node concept="1Cg_0y" id="74YVmCpvd3A" role="1Cg_0x">
