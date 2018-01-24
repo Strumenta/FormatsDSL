@@ -2,8 +2,10 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/Formats.test/Formats.test.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Formats/Formats.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Formats/sandbox/Formats.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.testExecution/Formats.testExecution.msd" folder="" />
     </projectModules>
   </component>
 </project>

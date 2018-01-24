@@ -8,6 +8,7 @@
   <sourcePath />
   <languageVersions>
     <language slang="l:040f4d08-2e19-478e-bafc-1ae65578e650:Formats" version="0" />
+    <language slang="l:8b0c1f5d-d826-49bc-8678-d64a5a245799:Formats.test" version="-1" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>
