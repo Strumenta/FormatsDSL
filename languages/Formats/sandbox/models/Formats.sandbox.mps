@@ -37,7 +37,7 @@
         <child id="7828601061921864310" name="baseType" index="14JvP6" />
         <child id="7828601061921864319" name="size" index="14JvPf" />
       </concept>
-      <concept id="7828601061921864314" name="Formats.structure.IntLiteral" flags="ng" index="14JvPa">
+      <concept id="7828601061921864314" name="Formats.structure.IntLiteralExpression" flags="ng" index="14JvPa">
         <property id="7828601061921864317" name="value" index="14JvPd" />
       </concept>
       <concept id="7828601061921864280" name="Formats.structure.RecordType" flags="ng" index="14JvPC">
@@ -50,15 +50,15 @@
         <child id="7828601061921864397" name="left" index="14JvRX" />
         <child id="7828601061921864399" name="right" index="14JvRZ" />
       </concept>
-      <concept id="8160220614791834349" name="Formats.structure.IgnoreType" flags="ng" index="1Cg$u7" />
       <concept id="8160220614791821128" name="Formats.structure.UnsignedFieldType" flags="ng" index="1CgDCy">
         <property id="8160220614791821140" name="length" index="1CgDCY" />
       </concept>
-      <concept id="8160220614791809962" name="Formats.structure.BinaryFormat" flags="ng" index="1CgEr0">
-        <child id="8160220614791828248" name="fields" index="1CgBTM" />
-      </concept>
+      <concept id="8160220614791809962" name="Formats.structure.BinaryFormat" flags="ng" index="1CgEr0" />
       <concept id="8160220614791809963" name="Formats.structure.Field" flags="ng" index="1CgEr1">
         <child id="8160220614791821144" name="type" index="1CgDCM" />
+      </concept>
+      <concept id="8634764878680856923" name="Formats.structure.FieldsContainer" flags="ng" index="3R7$6N">
+        <child id="7828601061921860419" name="fields" index="14JuLN" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -69,31 +69,31 @@
   </registry>
   <node concept="1CgEr0" id="74YVmCpv7t5">
     <property role="TrG5h" value="ClassFileFormat" />
-    <node concept="1CgEr1" id="74YVmCpvahU" role="1CgBTM">
+    <node concept="1CgEr1" id="74YVmCpvahU" role="14JuLN">
       <property role="TrG5h" value="magic" />
       <node concept="1CgDCy" id="74YVmCpvahY" role="1CgDCM">
         <property role="1CgDCY" value="4" />
       </node>
     </node>
-    <node concept="1CgEr1" id="74YVmCpvaF0" role="1CgBTM">
+    <node concept="1CgEr1" id="74YVmCpvaF0" role="14JuLN">
       <property role="TrG5h" value="minor_version" />
       <node concept="1CgDCy" id="74YVmCpvaF6" role="1CgDCM">
         <property role="1CgDCY" value="2" />
       </node>
     </node>
-    <node concept="1CgEr1" id="74YVmCpvaF9" role="1CgBTM">
+    <node concept="1CgEr1" id="74YVmCpvaF9" role="14JuLN">
       <property role="TrG5h" value="major_version" />
       <node concept="1CgDCy" id="74YVmCpvaFh" role="1CgDCM">
         <property role="1CgDCY" value="2" />
       </node>
     </node>
-    <node concept="1CgEr1" id="74YVmCpvaFk" role="1CgBTM">
+    <node concept="1CgEr1" id="74YVmCpvaFk" role="14JuLN">
       <property role="TrG5h" value="constant_pool_count" />
       <node concept="1CgDCy" id="74YVmCpvaFu" role="1CgDCM">
         <property role="1CgDCY" value="2" />
       </node>
     </node>
-    <node concept="1CgEr1" id="6M$LN0C6jDa" role="1CgBTM">
+    <node concept="1CgEr1" id="6M$LN0C6jDa" role="14JuLN">
       <property role="TrG5h" value="constant_pool" />
       <node concept="14JvP3" id="6M$LN0C6mcg" role="1CgDCM">
         <node concept="14JvPC" id="6M$LN0C6mcn" role="14JvP6">
@@ -109,9 +109,84 @@
         </node>
       </node>
     </node>
-    <node concept="1CgEr1" id="74YVmCpvbqg" role="1CgBTM">
-      <property role="TrG5h" value="_" />
-      <node concept="1Cg$u7" id="74YVmCpvbqs" role="1CgDCM" />
+    <node concept="1CgEr1" id="7vkQey0MDvq" role="14JuLN">
+      <property role="TrG5h" value="access_flags" />
+      <node concept="1CgDCy" id="7vkQey0MDvI" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MDvL" role="14JuLN">
+      <property role="TrG5h" value="this_class" />
+      <node concept="1CgDCy" id="7vkQey0MDw7" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MDwa" role="14JuLN">
+      <property role="TrG5h" value="super_class" />
+      <node concept="1CgDCy" id="7vkQey0MDwb" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MDwy" role="14JuLN">
+      <property role="TrG5h" value="interfaces_count" />
+      <node concept="1CgDCy" id="7vkQey0MDwz" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MDwW" role="14JuLN">
+      <property role="TrG5h" value="interfaces" />
+      <node concept="1CgDCy" id="7vkQey0MDwX" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MDxo" role="14JuLN">
+      <property role="TrG5h" value="fields_count" />
+      <node concept="1CgDCy" id="7vkQey0MDxp" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MDxQ" role="14JuLN">
+      <property role="TrG5h" value="fields" />
+      <node concept="14JvP3" id="7vkQey0MD$O" role="1CgDCM">
+        <node concept="14JvPC" id="7vkQey0MD$V" role="14JvP6">
+          <ref role="14JvPF" node="7vkQey0MD$G" resolve="FieldInfo" />
+        </node>
+        <node concept="14JvQ1" id="7vkQey0O1yZ" role="14JvPf">
+          <ref role="14JvQ4" node="7vkQey0MDxo" resolve="fields_count" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MDym" role="14JuLN">
+      <property role="TrG5h" value="methods_count" />
+      <node concept="1CgDCy" id="7vkQey0MDyS" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MDyV" role="14JuLN">
+      <property role="TrG5h" value="methods" />
+      <node concept="14JvP3" id="7vkQey0MD_1" role="1CgDCM">
+        <node concept="14JvPC" id="7vkQey0MD_l" role="14JvP6">
+          <ref role="14JvPF" node="7vkQey0MD$H" resolve="MethodInfo" />
+        </node>
+        <node concept="14JvQ1" id="7vkQey0MD_i" role="14JvPf">
+          <ref role="14JvQ4" node="7vkQey0MDym" resolve="methods_count" />
+        </node>
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MDzy" role="14JuLN">
+      <property role="TrG5h" value="attributes_count" />
+      <node concept="1CgDCy" id="7vkQey0MDzz" role="1CgDCM" />
+    </node>
+    <node concept="1CgEr1" id="7vkQey0MD$6" role="14JuLN">
+      <property role="TrG5h" value="attributes" />
+      <node concept="14JvP3" id="7vkQey0MD_7" role="1CgDCM">
+        <node concept="14JvPC" id="7vkQey0MD_8" role="14JvP6">
+          <ref role="14JvPF" node="7vkQey0MD$G" resolve="FieldInfo" />
+        </node>
+        <node concept="14JvQ1" id="7vkQey0MD_d" role="14JvPf">
+          <ref role="14JvQ4" node="7vkQey0MDzy" resolve="attributes_count" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1Cg_0D" id="74YVmCpvd3_">
@@ -168,6 +243,15 @@
   </node>
   <node concept="14JuLK" id="6M$LN0C6jD9">
     <property role="TrG5h" value="ConstantPoolElement" />
+  </node>
+  <node concept="14JuLK" id="7vkQey0MD$G">
+    <property role="TrG5h" value="FieldInfo" />
+  </node>
+  <node concept="14JuLK" id="7vkQey0MD$H">
+    <property role="TrG5h" value="MethodInfo" />
+  </node>
+  <node concept="14JuLK" id="7vkQey0MD$I">
+    <property role="TrG5h" value="AttributeInfo" />
   </node>
 </model>
 
