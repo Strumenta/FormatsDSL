@@ -25,9 +25,13 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
@@ -226,6 +230,79 @@
     <ref role="1XX52x" to="rcc7:6M$LN0C6jDU" resolve="IntLiteralExpression" />
     <node concept="3F0A7n" id="6M$LN0C6mcQ" role="2wV5jI">
       <ref role="1NtTu8" to="rcc7:6M$LN0C6jDX" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7vkQey14WM9">
+    <ref role="1XX52x" to="rcc7:7vkQey14WLU" resolve="PolymorphicAlternative" />
+    <node concept="3EZMnI" id="7vkQey14WMb" role="2wV5jI">
+      <node concept="3F0A7n" id="7vkQey14WMi" role="3EZMnx">
+        <ref role="1NtTu8" to="rcc7:7vkQey14WLZ" resolve="value" />
+      </node>
+      <node concept="2iRfu4" id="7vkQey14WMe" role="2iSdaV" />
+      <node concept="3F0ifn" id="7vkQey14WMo" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F0A7n" id="7vkQey14WME" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="Vb9p2" id="7vkQey14WMO" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7vkQey14WMw" role="3EZMnx">
+        <ref role="1NtTu8" to="rcc7:7vkQey14WLV" resolve="content" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7vkQey14WN1">
+    <ref role="1XX52x" to="rcc7:7vkQey14WLH" resolve="PolymorphicStructure" />
+    <node concept="3EZMnI" id="7vkQey14WNa" role="2wV5jI">
+      <node concept="3EZMnI" id="7vkQey14WNb" role="3EZMnx">
+        <node concept="2iRfu4" id="7vkQey14WNc" role="2iSdaV" />
+        <node concept="3F0ifn" id="7vkQey14WNd" role="3EZMnx">
+          <property role="3F0ifm" value="Polymorphic structure" />
+          <node concept="VSNWy" id="7vkQey14WNe" role="3F10Kt">
+            <property role="1lJzqX" value="24" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="7vkQey14WNf" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="VSNWy" id="7vkQey14WNg" role="3F10Kt">
+            <property role="1lJzqX" value="24" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7vkQey14WNh" role="3EZMnx" />
+      <node concept="3EZMnI" id="7vkQey14WNT" role="3EZMnx">
+        <node concept="VPM3Z" id="7vkQey14WNV" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="7vkQey14WNX" role="3EZMnx">
+          <property role="3F0ifm" value="tag type" />
+        </node>
+        <node concept="2iRfu4" id="7vkQey14WNY" role="2iSdaV" />
+        <node concept="3F1sOY" id="7vkQey14WOg" role="3EZMnx">
+          <ref role="1NtTu8" to="rcc7:7vkQey14WLI" resolve="tagType" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7vkQey14WNH" role="3EZMnx" />
+      <node concept="3F2HdR" id="7vkQey14WNi" role="3EZMnx">
+        <ref role="1NtTu8" to="rcc7:7vkQey14WMQ" resolve="alternatives" />
+        <node concept="2EHx9g" id="7vkQey14WNj" role="2czzBx" />
+      </node>
+      <node concept="2iRkQZ" id="7vkQey14WNk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7vkQey14ZEG">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="rcc7:7vkQey14ZEy" resolve="PolymorphicStructureType" />
+    <node concept="1iCGBv" id="7vkQey14ZEI" role="2wV5jI">
+      <ref role="1NtTu8" to="rcc7:7vkQey14ZEz" resolve="polymorphicStructure" />
+      <node concept="1sVBvm" id="7vkQey14ZEK" role="1sWHZn">
+        <node concept="3F0A7n" id="7vkQey14ZER" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -27,8 +27,20 @@
       <concept id="8160220614791839252" name="Formats.test.structure.HexadecimalByte" flags="ng" index="1Cg_dY">
         <property id="8160220614791843201" name="value" index="1Cgy3F" />
       </concept>
+      <concept id="8634764878685680162" name="Formats.test.structure.PolymorphicStructureLiteralExpression" flags="ng" index="3QKeFa">
+        <property id="8634764878685680165" name="tagValue" index="3QKeFd" />
+        <reference id="8634764878685680164" name="polymorphicStructure" index="3QKeFc" />
+        <child id="8634764878685680163" name="body" index="3QKeFb" />
+      </concept>
+      <concept id="8634764878684457152" name="Formats.test.structure.RecordLiteralExpression" flags="ng" index="3QPl0C">
+        <reference id="8634764878684457153" name="record" index="3QPl0D" />
+      </concept>
       <concept id="8634764878684144634" name="Formats.test.structure.DirectFieldReference" flags="ng" index="3Ra1Gi">
         <reference id="8634764878684144635" name="field" index="3Ra1Gj" />
+      </concept>
+      <concept id="8634764878684297800" name="Formats.test.structure.ArrayElementReference" flags="ng" index="3RaWaw">
+        <property id="8634764878684297801" name="index" index="3RaWax" />
+        <child id="8634764878684297803" name="container" index="3RaWaz" />
       </concept>
     </language>
     <language id="040f4d08-2e19-478e-bafc-1ae65578e650" name="Formats">
@@ -56,6 +68,17 @@
       <concept id="8160220614791809962" name="Formats.structure.BinaryFormat" flags="ng" index="1CgEr0" />
       <concept id="8160220614791809963" name="Formats.structure.Field" flags="ng" index="1CgEr1">
         <child id="8160220614791821144" name="type" index="1CgDCM" />
+      </concept>
+      <concept id="8634764878685654125" name="Formats.structure.PolymorphicStructure" flags="ng" index="3QLLi5">
+        <child id="8634764878685654198" name="alternatives" index="3QLLhu" />
+        <child id="8634764878685654126" name="tagType" index="3QLLi6" />
+      </concept>
+      <concept id="8634764878685654138" name="Formats.structure.PolymorphicAlternative" flags="ng" index="3QLLii">
+        <property id="8634764878685654143" name="value" index="3QLLin" />
+        <child id="8634764878685654139" name="content" index="3QLLij" />
+      </concept>
+      <concept id="8634764878685665954" name="Formats.structure.PolymorphicStructureType" flags="ng" index="3QLM9a">
+        <reference id="8634764878685665955" name="polymorphicStructure" index="3QLM9b" />
       </concept>
       <concept id="8634764878680856923" name="Formats.structure.FieldsContainer" flags="ng" index="3R7$6N">
         <child id="7828601061921860419" name="fields" index="14JuLN" />
@@ -96,8 +119,8 @@
     <node concept="1CgEr1" id="6M$LN0C6jDa" role="14JuLN">
       <property role="TrG5h" value="constant_pool" />
       <node concept="14JvP3" id="6M$LN0C6mcg" role="1CgDCM">
-        <node concept="14JvPC" id="6M$LN0C6mcn" role="14JvP6">
-          <ref role="14JvPF" node="6M$LN0C6jD9" resolve="ConstantPoolElement" />
+        <node concept="3QLM9a" id="7vkQey1535S" role="14JvP6">
+          <ref role="3QLM9b" node="7vkQey14Zkf" resolve="ConstantPoolElement" />
         </node>
         <node concept="14JvRW" id="6M$LN0C6mcv" role="14JvPf">
           <node concept="14JvQ1" id="6M$LN0C6mcA" role="14JvRX">
@@ -245,12 +268,24 @@
         <ref role="3Ra1Gj" node="74YVmCpvaFk" resolve="constant_pool_count" />
       </node>
     </node>
+    <node concept="1Cgy3R" id="7vkQey0ZNKK" role="1CgOvQ">
+      <node concept="3RaWaw" id="7vkQey0ZNLi" role="3Ra1NV">
+        <property role="3RaWax" value="0" />
+        <node concept="3Ra1Gi" id="7vkQey0ZNLo" role="3RaWaz">
+          <ref role="3Ra1Gj" node="6M$LN0C6jDa" resolve="constant_pool" />
+        </node>
+      </node>
+      <node concept="3QKeFa" id="7vkQey156tP" role="1Cgy3a">
+        <property role="3QKeFd" value="7" />
+        <ref role="3QKeFc" node="7vkQey14Zkf" resolve="ConstantPoolElement" />
+        <node concept="3QPl0C" id="7vkQey156up" role="3QKeFb">
+          <ref role="3QPl0D" node="7vkQey174Kr" resolve="ConstantPool_Class" />
+        </node>
+      </node>
+    </node>
     <node concept="1Cg_0y" id="74YVmCpvd3A" role="1Cg_0x">
       <property role="1Cg_0z" value="classes/JavaParser.class" />
     </node>
-  </node>
-  <node concept="14JuLK" id="6M$LN0C6jD9">
-    <property role="TrG5h" value="ConstantPoolElement" />
   </node>
   <node concept="14JuLK" id="7vkQey0MD$G">
     <property role="TrG5h" value="FieldInfo" />
@@ -260,6 +295,323 @@
   </node>
   <node concept="14JuLK" id="7vkQey0MD$I">
     <property role="TrG5h" value="AttributeInfo" />
+  </node>
+  <node concept="3QLLi5" id="7vkQey14Zkf">
+    <property role="TrG5h" value="ConstantPoolElement" />
+    <node concept="3QLLii" id="7vkQey14Zkn" role="3QLLhu">
+      <property role="3QLLin" value="7" />
+      <property role="TrG5h" value="class" />
+      <node concept="14JvPC" id="7vkQey174R8" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174Kr" resolve="ConstantPool_Class" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174Re" role="3QLLhu">
+      <property role="3QLLin" value="9" />
+      <property role="TrG5h" value="fieldRef" />
+      <node concept="14JvPC" id="7vkQey174VU" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey14Zkz" resolve="ConstantPool_FieldRef" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174Rk" role="3QLLhu">
+      <property role="3QLLin" value="10" />
+      <property role="TrG5h" value="methodRef" />
+      <node concept="14JvPC" id="7vkQey174W0" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174KA" resolve="ConstantPool_MethodRef" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174Rs" role="3QLLhu">
+      <property role="3QLLin" value="11" />
+      <property role="TrG5h" value="interfaceMethodRef" />
+      <node concept="14JvPC" id="7vkQey174W6" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174L7" resolve="ConstantPool_InterfaceMethodRef" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174RA" role="3QLLhu">
+      <property role="3QLLin" value="8" />
+      <property role="TrG5h" value="string" />
+      <node concept="14JvPC" id="7vkQey174Wc" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174Lt" resolve="ConstantPool_String" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174RM" role="3QLLhu">
+      <property role="3QLLin" value="3" />
+      <property role="TrG5h" value="integer" />
+      <node concept="14JvPC" id="7vkQey174Wi" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174Li" resolve="ConstantPool_Integer" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174S0" role="3QLLhu">
+      <property role="3QLLin" value="4" />
+      <property role="TrG5h" value="float" />
+      <node concept="14JvPC" id="7vkQey174Wo" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174KW" resolve="ConstantPool_Float" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174Sg" role="3QLLhu">
+      <property role="3QLLin" value="5" />
+      <property role="TrG5h" value="long" />
+      <node concept="14JvPC" id="7vkQey174Wu" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174KL" resolve="ConstantPool_Long" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174Sy" role="3QLLhu">
+      <property role="3QLLin" value="6" />
+      <property role="TrG5h" value="double" />
+      <node concept="14JvPC" id="7vkQey174W$" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174Mo" resolve="ConstantPool_Double" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174SQ" role="3QLLhu">
+      <property role="3QLLin" value="12" />
+      <property role="TrG5h" value="nameAndType" />
+      <node concept="14JvPC" id="7vkQey174WE" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174Mz" resolve="ConstantPool_NameAndType" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174Tc" role="3QLLhu">
+      <property role="3QLLin" value="1" />
+      <property role="TrG5h" value="utf8" />
+      <node concept="14JvPC" id="7vkQey174WK" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174MI" resolve="ConstantPool_Utf8" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174T$" role="3QLLhu">
+      <property role="3QLLin" value="15" />
+      <property role="TrG5h" value="methodHandle" />
+      <node concept="14JvPC" id="7vkQey174WQ" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174MT" resolve="ConstantPool_MethodHandle" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174TY" role="3QLLhu">
+      <property role="3QLLin" value="16" />
+      <property role="TrG5h" value="methodType" />
+      <node concept="14JvPC" id="7vkQey174WW" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174N4" resolve="ConstantPool_MethodType" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174Uq" role="3QLLhu">
+      <property role="3QLLin" value="18" />
+      <property role="TrG5h" value="invokeDynamic" />
+      <node concept="14JvPC" id="7vkQey174X2" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174Nf" resolve="ConstantPool_InvokeDynamic" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174US" role="3QLLhu">
+      <property role="3QLLin" value="19" />
+      <property role="TrG5h" value="module" />
+      <node concept="14JvPC" id="7vkQey174X8" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174Oa" resolve="ConstantPool_Module" />
+      </node>
+    </node>
+    <node concept="3QLLii" id="7vkQey174Vo" role="3QLLhu">
+      <property role="3QLLin" value="20" />
+      <property role="TrG5h" value="package" />
+      <node concept="14JvPC" id="7vkQey174Xe" role="3QLLij">
+        <ref role="14JvPF" node="7vkQey174Ol" resolve="ConstantPool_Package" />
+      </node>
+    </node>
+    <node concept="1CgDCy" id="7vkQey14Zkg" role="3QLLi6" />
+  </node>
+  <node concept="14JuLK" id="7vkQey14Zkz">
+    <property role="TrG5h" value="ConstantPool_FieldRef" />
+    <node concept="1CgEr1" id="7vkQey156ux" role="14JuLN">
+      <property role="TrG5h" value="class_index" />
+      <node concept="1CgDCy" id="7vkQey156uD" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey174Z7" role="14JuLN">
+      <property role="TrG5h" value="name_and_type_index" />
+      <node concept="1CgDCy" id="7vkQey174Z8" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174Kr">
+    <property role="TrG5h" value="ConstantPool_Class" />
+    <node concept="1CgEr1" id="7vkQey174Ks" role="14JuLN">
+      <property role="TrG5h" value="name_index" />
+      <node concept="1CgDCy" id="7vkQey174Kt" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174KA">
+    <property role="TrG5h" value="ConstantPool_MethodRef" />
+    <node concept="1CgEr1" id="7vkQey174ZX" role="14JuLN">
+      <property role="TrG5h" value="class_index" />
+      <node concept="1CgDCy" id="7vkQey174ZY" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey174ZZ" role="14JuLN">
+      <property role="TrG5h" value="name_and_type_index" />
+      <node concept="1CgDCy" id="7vkQey17500" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174KL">
+    <property role="TrG5h" value="ConstantPool_Long" />
+    <node concept="1CgEr1" id="7vkQey1752x" role="14JuLN">
+      <property role="TrG5h" value="high_bytes" />
+      <node concept="1CgDCy" id="7vkQey1752y" role="1CgDCM">
+        <property role="1CgDCY" value="4" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey17535" role="14JuLN">
+      <property role="TrG5h" value="low_bytes" />
+      <node concept="1CgDCy" id="7vkQey17536" role="1CgDCM">
+        <property role="1CgDCY" value="4" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174KW">
+    <property role="TrG5h" value="ConstantPool_Float" />
+    <node concept="1CgEr1" id="7vkQey1752d" role="14JuLN">
+      <property role="TrG5h" value="value" />
+      <node concept="1CgDCy" id="7vkQey1752e" role="1CgDCM">
+        <property role="1CgDCY" value="4" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174L7">
+    <property role="TrG5h" value="ConstantPool_InterfaceMethodRef" />
+    <node concept="1CgEr1" id="7vkQey1750t" role="14JuLN">
+      <property role="TrG5h" value="class_index" />
+      <node concept="1CgDCy" id="7vkQey1750u" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey1750v" role="14JuLN">
+      <property role="TrG5h" value="name_and_type_index" />
+      <node concept="1CgDCy" id="7vkQey1750w" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174Li">
+    <property role="TrG5h" value="ConstantPool_Integer" />
+    <node concept="1CgEr1" id="7vkQey174Lj" role="14JuLN">
+      <property role="TrG5h" value="value" />
+      <node concept="1CgDCy" id="7vkQey174Lk" role="1CgDCM">
+        <property role="1CgDCY" value="4" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174Lt">
+    <property role="TrG5h" value="ConstantPool_String" />
+    <node concept="1CgEr1" id="7vkQey174Lu" role="14JuLN">
+      <property role="TrG5h" value="string_index" />
+      <node concept="1CgDCy" id="7vkQey174Lv" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174Mo">
+    <property role="TrG5h" value="ConstantPool_Double" />
+    <node concept="1CgEr1" id="7vkQey1754b" role="14JuLN">
+      <property role="TrG5h" value="high_bytes" />
+      <node concept="1CgDCy" id="7vkQey1754c" role="1CgDCM">
+        <property role="1CgDCY" value="4" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey1754d" role="14JuLN">
+      <property role="TrG5h" value="low_bytes" />
+      <node concept="1CgDCy" id="7vkQey1754e" role="1CgDCM">
+        <property role="1CgDCY" value="4" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174Mz">
+    <property role="TrG5h" value="ConstantPool_NameAndType" />
+    <node concept="1CgEr1" id="7vkQey174M$" role="14JuLN">
+      <property role="TrG5h" value="name_index" />
+      <node concept="1CgDCy" id="7vkQey174M_" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey1754F" role="14JuLN">
+      <property role="TrG5h" value="descriptor_index" />
+      <node concept="1CgDCy" id="7vkQey1754G" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174MI">
+    <property role="TrG5h" value="ConstantPool_Utf8" />
+    <node concept="1CgEr1" id="7vkQey174MJ" role="14JuLN">
+      <property role="TrG5h" value="length" />
+      <node concept="1CgDCy" id="7vkQey174MK" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey1755x" role="14JuLN">
+      <property role="TrG5h" value="bytes" />
+      <node concept="14JvP3" id="7vkQey17564" role="1CgDCM">
+        <node concept="1CgDCy" id="7vkQey1756j" role="14JvP6" />
+        <node concept="14JvQ1" id="7vkQey1756C" role="14JvPf">
+          <ref role="14JvQ4" node="7vkQey174MJ" resolve="length" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174MT">
+    <property role="TrG5h" value="ConstantPool_MethodHandle" />
+    <node concept="1CgEr1" id="7vkQey174MU" role="14JuLN">
+      <property role="TrG5h" value="reference_kind" />
+      <node concept="1CgDCy" id="7vkQey174MV" role="1CgDCM">
+        <property role="1CgDCY" value="1" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey1757J" role="14JuLN">
+      <property role="TrG5h" value="reference_index" />
+      <node concept="1CgDCy" id="7vkQey1757K" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174N4">
+    <property role="TrG5h" value="ConstantPool_MethodType" />
+    <node concept="1CgEr1" id="7vkQey174N5" role="14JuLN">
+      <property role="TrG5h" value="descriptor_index" />
+      <node concept="1CgDCy" id="7vkQey174N6" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174Nf">
+    <property role="TrG5h" value="ConstantPool_InvokeDynamic" />
+    <node concept="1CgEr1" id="7vkQey174Ng" role="14JuLN">
+      <property role="TrG5h" value="bootstrap_method_attr_index" />
+      <node concept="1CgDCy" id="7vkQey174Nh" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="7vkQey1759H" role="14JuLN">
+      <property role="TrG5h" value="name_and_type_index" />
+      <node concept="1CgDCy" id="7vkQey1759I" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174Oa">
+    <property role="TrG5h" value="ConstantPool_Module" />
+    <node concept="1CgEr1" id="7vkQey174Ob" role="14JuLN">
+      <property role="TrG5h" value="name_index" />
+      <node concept="1CgDCy" id="7vkQey174Oc" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="7vkQey174Ol">
+    <property role="TrG5h" value="ConstantPool_Package" />
+    <node concept="1CgEr1" id="7vkQey174Om" role="14JuLN">
+      <property role="TrG5h" value="name_index" />
+      <node concept="1CgDCy" id="7vkQey174On" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
+    </node>
   </node>
 </model>
 

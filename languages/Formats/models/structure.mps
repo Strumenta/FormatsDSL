@@ -237,5 +237,61 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="7vkQey14WLH">
+    <property role="EcuMT" value="8634764878685654125" />
+    <property role="TrG5h" value="PolymorphicStructure" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7vkQey14WLI" role="1TKVEi">
+      <property role="IQ2ns" value="8634764878685654126" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tagType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="74YVmCpv7t8" resolve="UnsignedFieldType" />
+    </node>
+    <node concept="1TJgyj" id="7vkQey14WMQ" role="1TKVEi">
+      <property role="IQ2ns" value="8634764878685654198" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="alternatives" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7vkQey14WLU" resolve="PolymorphicAlternative" />
+    </node>
+    <node concept="PrWs8" id="7vkQey14WNw" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7vkQey14WLU">
+    <property role="EcuMT" value="8634764878685654138" />
+    <property role="TrG5h" value="PolymorphicAlternative" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7vkQey14WLZ" role="1TKVEl">
+      <property role="IQ2nx" value="8634764878685654143" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="7vkQey14WLV" role="1TKVEi">
+      <property role="IQ2ns" value="8634764878685654139" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0O7xh" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="7vkQey14WLX" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7vkQey14ZEy">
+    <property role="EcuMT" value="8634764878685665954" />
+    <property role="TrG5h" value="PolymorphicStructureType" />
+    <property role="3GE5qa" value="types" />
+    <ref role="1TJDcQ" node="7vkQey0O7xh" resolve="Type" />
+    <node concept="1TJgyj" id="7vkQey14ZEz" role="1TKVEi">
+      <property role="IQ2ns" value="8634764878685665955" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="polymorphicStructure" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey14WLH" resolve="PolymorphicStructure" />
+    </node>
+  </node>
 </model>
 
