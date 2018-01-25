@@ -9,10 +9,7 @@
   <imports />
   <registry>
     <language id="8b0c1f5d-d826-49bc-8678-d64a5a245799" name="Formats.test">
-      <concept id="7828601061921393864" name="Formats.test.structure.UnsignedDecimalValue" flags="ng" index="14HGJS">
-        <property id="7828601061921393867" name="value" index="14HGJV" />
-      </concept>
-      <concept id="8160220614791843229" name="Formats.test.structure.FieldExpectation" flags="ng" index="1Cgy3R">
+      <concept id="8160220614791843229" name="Formats.test.structure.FieldExpectationAssertion" flags="ng" index="1Cgy3R">
         <reference id="8160220614791843230" name="field" index="1Cgy3O" />
         <child id="8160220614791843232" name="expectedValue" index="1Cgy3a" />
       </concept>
@@ -24,10 +21,10 @@
         <child id="8160220614791839051" name="fileToLoad" index="1Cg_0x" />
         <child id="8160220614791899804" name="assertions" index="1CgOvQ" />
       </concept>
-      <concept id="8160220614791839251" name="Formats.test.structure.HexadecimalValue" flags="ng" index="1Cg_dT">
+      <concept id="8160220614791839251" name="Formats.test.structure.HexadecimalValueExpression" flags="ng" index="1Cg_dT">
         <child id="8160220614791839253" name="values" index="1Cg_dZ" />
       </concept>
-      <concept id="8160220614791839252" name="Formats.test.structure.HexadecimalByteValue" flags="ng" index="1Cg_dY">
+      <concept id="8160220614791839252" name="Formats.test.structure.HexadecimalByte" flags="ng" index="1Cg_dY">
         <property id="8160220614791843201" name="value" index="1Cgy3F" />
       </concept>
     </language>
@@ -233,8 +230,8 @@
     </node>
     <node concept="1Cgy3R" id="6M$LN0C4wMK" role="1CgOvQ">
       <ref role="1Cgy3O" node="74YVmCpvaFk" resolve="constant_pool_count" />
-      <node concept="14HGJS" id="6M$LN0C4_Lg" role="1Cgy3a">
-        <property role="14HGJV" value="510" />
+      <node concept="14JvPa" id="7vkQey0PPZj" role="1Cgy3a">
+        <property role="14JvPd" value="510" />
       </node>
     </node>
     <node concept="1Cg_0y" id="74YVmCpvd3A" role="1Cg_0x">
