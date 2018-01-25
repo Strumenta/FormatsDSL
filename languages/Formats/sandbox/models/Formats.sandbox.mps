@@ -10,8 +10,8 @@
   <registry>
     <language id="8b0c1f5d-d826-49bc-8678-d64a5a245799" name="Formats.test">
       <concept id="8160220614791843229" name="Formats.test.structure.FieldExpectationAssertion" flags="ng" index="1Cgy3R">
-        <reference id="8160220614791843230" name="field" index="1Cgy3O" />
         <child id="8160220614791843232" name="expectedValue" index="1Cgy3a" />
+        <child id="8634764878684144659" name="field" index="3Ra1NV" />
       </concept>
       <concept id="8160220614791839048" name="Formats.test.structure.FileReference" flags="ng" index="1Cg_0y">
         <property id="8160220614791839049" name="path" index="1Cg_0z" />
@@ -26,6 +26,9 @@
       </concept>
       <concept id="8160220614791839252" name="Formats.test.structure.HexadecimalByte" flags="ng" index="1Cg_dY">
         <property id="8160220614791843201" name="value" index="1Cgy3F" />
+      </concept>
+      <concept id="8634764878684144634" name="Formats.test.structure.DirectFieldReference" flags="ng" index="3Ra1Gi">
+        <reference id="8634764878684144635" name="field" index="3Ra1Gj" />
       </concept>
     </language>
     <language id="040f4d08-2e19-478e-bafc-1ae65578e650" name="Formats">
@@ -190,7 +193,6 @@
     <property role="TrG5h" value="first test" />
     <ref role="1Cg_0I" node="74YVmCpv7t5" resolve="ClassFileFormat" />
     <node concept="1Cgy3R" id="74YVmCpvsig" role="1CgOvQ">
-      <ref role="1Cgy3O" node="74YVmCpvahU" resolve="magic" />
       <node concept="1Cg_dT" id="74YVmCpwcMN" role="1Cgy3a">
         <node concept="1Cg_dY" id="74YVmCpwcMO" role="1Cg_dZ">
           <property role="1Cgy3F" value="CA" />
@@ -205,9 +207,11 @@
           <property role="1Cgy3F" value="BE" />
         </node>
       </node>
+      <node concept="3Ra1Gi" id="7vkQey0ZeuE" role="3Ra1NV">
+        <ref role="3Ra1Gj" node="74YVmCpvahU" resolve="magic" />
+      </node>
     </node>
     <node concept="1Cgy3R" id="6M$LN0C2QUN" role="1CgOvQ">
-      <ref role="1Cgy3O" node="74YVmCpvaF9" resolve="major_version" />
       <node concept="1Cg_dT" id="6M$LN0C2QUY" role="1Cgy3a">
         <node concept="1Cg_dY" id="6M$LN0C2QUZ" role="1Cg_dZ">
           <property role="1Cgy3F" value="00" />
@@ -216,9 +220,11 @@
           <property role="1Cgy3F" value="34" />
         </node>
       </node>
+      <node concept="3Ra1Gi" id="7vkQey0Zeu$" role="3Ra1NV">
+        <ref role="3Ra1Gj" node="74YVmCpvaF9" resolve="major_version" />
+      </node>
     </node>
     <node concept="1Cgy3R" id="6M$LN0C2QVY" role="1CgOvQ">
-      <ref role="1Cgy3O" node="74YVmCpvaF0" resolve="minor_version" />
       <node concept="1Cg_dT" id="6M$LN0C2QWd" role="1Cgy3a">
         <node concept="1Cg_dY" id="6M$LN0C2QWe" role="1Cg_dZ">
           <property role="1Cgy3F" value="00" />
@@ -227,11 +233,16 @@
           <property role="1Cgy3F" value="00" />
         </node>
       </node>
+      <node concept="3Ra1Gi" id="7vkQey0Zeu_" role="3Ra1NV">
+        <ref role="3Ra1Gj" node="74YVmCpvaF0" resolve="minor_version" />
+      </node>
     </node>
     <node concept="1Cgy3R" id="6M$LN0C4wMK" role="1CgOvQ">
-      <ref role="1Cgy3O" node="74YVmCpvaFk" resolve="constant_pool_count" />
       <node concept="14JvPa" id="7vkQey0PPZj" role="1Cgy3a">
         <property role="14JvPd" value="510" />
+      </node>
+      <node concept="3Ra1Gi" id="7vkQey0ZeuA" role="3Ra1NV">
+        <ref role="3Ra1Gj" node="74YVmCpvaFk" resolve="constant_pool_count" />
       </node>
     </node>
     <node concept="1Cg_0y" id="74YVmCpvd3A" role="1Cg_0x">

@@ -626,14 +626,8 @@
         <property role="3F0ifm" value="expect" />
       </node>
       <node concept="2iRfu4" id="74YVmCpvcQK" role="2iSdaV" />
-      <node concept="1iCGBv" id="74YVmCpvcQU" role="3EZMnx">
-        <ref role="1NtTu8" to="b9ba:74YVmCpvcQu" resolve="field" />
-        <node concept="1sVBvm" id="74YVmCpvcQW" role="1sWHZn">
-          <node concept="3F0A7n" id="74YVmCpvcR4" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
+      <node concept="3F1sOY" id="7vkQey0ZcgB" role="3EZMnx">
+        <ref role="1NtTu8" to="b9ba:7vkQey0Zcgj" resolve="field" />
       </node>
       <node concept="3F0ifn" id="74YVmCpvcRd" role="3EZMnx">
         <property role="3F0ifm" value="=" />
@@ -673,6 +667,19 @@
         </node>
         <node concept="IWg2L" id="74YVmCpvtES" role="IWgqQ">
           <node concept="3clFbS" id="74YVmCpvtET" role="2VODD2" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7vkQey0Zcg5">
+    <property role="3GE5qa" value="assertions" />
+    <ref role="1XX52x" to="b9ba:7vkQey0ZcfU" resolve="DirectFieldReference" />
+    <node concept="1iCGBv" id="7vkQey0Zcg7" role="2wV5jI">
+      <ref role="1NtTu8" to="b9ba:7vkQey0ZcfV" resolve="field" />
+      <node concept="1sVBvm" id="7vkQey0Zcg9" role="1sWHZn">
+        <node concept="3F0A7n" id="7vkQey0Zcgg" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>

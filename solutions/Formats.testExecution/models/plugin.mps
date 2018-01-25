@@ -2066,13 +2066,13 @@
                               <ref role="3cqZAo" node="6M$LN0BV51h" resolve="formatInstance" />
                             </node>
                             <node concept="liA8E" id="6M$LN0BV89R" role="2OqNvi">
-                              <ref role="37wK5l" node="6M$LN0BV2oL" resolve="valueFor" />
+                              <ref role="37wK5l" node="7vkQey0Zsx4" resolve="valueForReference" />
                               <node concept="2OqwBi" id="6M$LN0BV993" role="37wK5m">
                                 <node concept="37vLTw" id="6M$LN0BV8Sb" role="2Oq$k0">
                                   <ref role="3cqZAo" node="6M$LN0BUTfx" resolve="fieldExpectation" />
                                 </node>
                                 <node concept="3TrEf2" id="6M$LN0BVa7D" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="b9ba:74YVmCpvcQu" resolve="field" />
+                                  <ref role="3Tt5mk" to="b9ba:7vkQey0Zcgj" resolve="field" />
                                 </node>
                               </node>
                             </node>
@@ -2916,7 +2916,7 @@
     <node concept="2tJIrI" id="6M$LN0BV26I" role="jymVt" />
     <node concept="3clFb_" id="6M$LN0BV2oL" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="valueFor" />
+      <property role="TrG5h" value="valueForField" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -2971,6 +2971,64 @@
         <property role="TrG5h" value="field" />
         <node concept="3Tqbb2" id="6M$LN0BV2$2" role="1tU5fm">
           <ref role="ehGHo" to="rcc7:74YVmCpv4IF" resolve="Field" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="7vkQey0Zsx4" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="valueForReference" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7vkQey0Zsx5" role="3clF47">
+        <node concept="3clFbJ" id="7vkQey0Z_Ff" role="3cqZAp">
+          <node concept="2OqwBi" id="7vkQey0Z_WV" role="3clFbw">
+            <node concept="37vLTw" id="7vkQey0Z_PX" role="2Oq$k0">
+              <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
+            </node>
+            <node concept="1mIQ4w" id="7vkQey0ZAfu" role="2OqNvi">
+              <node concept="chp4Y" id="7vkQey0ZEl7" role="cj9EA">
+                <ref role="cht4Q" to="b9ba:7vkQey0ZcfU" resolve="DirectFieldReference" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="7vkQey0Z_Fh" role="3clFbx">
+            <node concept="3cpWs6" id="7vkQey0ZBMo" role="3cqZAp">
+              <node concept="1rXfSq" id="7vkQey0ZBXy" role="3cqZAk">
+                <ref role="37wK5l" node="6M$LN0BV2oL" resolve="valueForField" />
+                <node concept="2OqwBi" id="7vkQey0ZCSY" role="37wK5m">
+                  <node concept="1PxgMI" id="7vkQey0ZCxs" role="2Oq$k0">
+                    <node concept="chp4Y" id="7vkQey0ZDEI" role="3oSUPX">
+                      <ref role="cht4Q" to="b9ba:7vkQey0ZcfU" resolve="DirectFieldReference" />
+                    </node>
+                    <node concept="37vLTw" id="7vkQey0ZC91" role="1m5AlR">
+                      <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="7vkQey0ZE9U" role="2OqNvi">
+                    <ref role="3Tt5mk" to="b9ba:7vkQey0ZcfV" resolve="field" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="7vkQey0ZAsT" role="3cqZAp">
+          <node concept="2ShNRf" id="7vkQey0ZAwG" role="YScLw">
+            <node concept="1pGfFk" id="7vkQey0ZBmV" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7vkQey0Zsxn" role="1B3o_S" />
+      <node concept="3uibUv" id="7vkQey0Zsxo" role="3clF45">
+        <ref role="3uigEE" node="6M$LN0BV1p0" resolve="Value" />
+      </node>
+      <node concept="37vLTG" id="7vkQey0Zsxp" role="3clF46">
+        <property role="TrG5h" value="field" />
+        <node concept="3Tqbb2" id="7vkQey0Zsxq" role="1tU5fm">
+          <ref role="ehGHo" to="b9ba:7vkQey0ZcfT" resolve="FieldReference" />
         </node>
       </node>
     </node>
@@ -4895,7 +4953,7 @@
               <ref role="3cqZAo" node="6M$LN0C6PpW" resolve="formatInstance" />
             </node>
             <node concept="liA8E" id="6M$LN0C9alQ" role="2OqNvi">
-              <ref role="37wK5l" node="6M$LN0BV2oL" resolve="valueFor" />
+              <ref role="37wK5l" node="6M$LN0BV2oL" resolve="valueForField" />
               <node concept="37vLTw" id="6M$LN0C9awc" role="37wK5m">
                 <ref role="3cqZAo" node="6M$LN0C99L3" resolve="field" />
               </node>
