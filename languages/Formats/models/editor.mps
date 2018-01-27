@@ -305,5 +305,21 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7N4Y6zzHCv3">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="rcc7:7N4Y6zzHCuI" resolve="MinusExpression" />
+    <node concept="3EZMnI" id="7N4Y6zzHCv5" role="2wV5jI">
+      <node concept="3F1sOY" id="7N4Y6zzHCv6" role="3EZMnx">
+        <ref role="1NtTu8" to="rcc7:7N4Y6zzHCuJ" resolve="left" />
+      </node>
+      <node concept="2iRfu4" id="7N4Y6zzHCv7" role="2iSdaV" />
+      <node concept="3F0ifn" id="7N4Y6zzHCv8" role="3EZMnx">
+        <property role="3F0ifm" value="-" />
+      </node>
+      <node concept="3F1sOY" id="7N4Y6zzHCv9" role="3EZMnx">
+        <ref role="1NtTu8" to="rcc7:7N4Y6zzHCuK" resolve="right" />
+      </node>
+    </node>
+  </node>
 </model>
 

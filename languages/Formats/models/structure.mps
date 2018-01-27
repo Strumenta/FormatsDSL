@@ -293,5 +293,25 @@
       <ref role="20lvS9" node="7vkQey14WLH" resolve="PolymorphicStructure" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7N4Y6zzHCuI">
+    <property role="EcuMT" value="8990583885519030190" />
+    <property role="TrG5h" value="MinusExpression" />
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1TJDcQ" node="7vkQey0O7wC" resolve="Expression" />
+    <node concept="1TJgyj" id="7N4Y6zzHCuJ" role="1TKVEi">
+      <property role="IQ2ns" value="8990583885519030191" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7N4Y6zzHCuK" role="1TKVEi">
+      <property role="IQ2ns" value="8990583885519030192" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
