@@ -3,6 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -318,6 +320,32 @@
     <node concept="1YaCAy" id="7vkQey14ZF3" role="1YuTPh">
       <property role="TrG5h" value="polymorphicStructureType" />
       <ref role="1YaFvo" to="rcc7:7vkQey14ZEy" resolve="PolymorphicStructureType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="7vkQey0ZXNR">
+    <property role="TrG5h" value="typeof_HexadecimalValueExpression" />
+    <property role="3GE5qa" value="expressions" />
+    <node concept="3clFbS" id="7vkQey0ZXNS" role="18ibNy">
+      <node concept="1Z5TYs" id="7vkQey0ZZ5A" role="3cqZAp">
+        <node concept="mw_s8" id="7vkQey0ZZ5U" role="1ZfhKB">
+          <node concept="2pJPEk" id="7vkQey0ZZ5Q" role="mwGJk">
+            <node concept="2pJPED" id="7vkQey0ZZ65" role="2pJPEn">
+              <ref role="2pJxaS" to="rcc7:74YVmCpv7t8" resolve="UnsignedFieldType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7vkQey0ZZ5D" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7vkQey0ZXNY" role="mwGJk">
+            <node concept="1YBJjd" id="7vkQey0ZXOe" role="1Z2MuG">
+              <ref role="1YBMHb" node="7vkQey0ZXNU" resolve="hexadecimalValueExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7vkQey0ZXNU" role="1YuTPh">
+      <property role="TrG5h" value="hexadecimalValueExpression" />
+      <ref role="1YaFvo" to="rcc7:74YVmCpvbSj" resolve="HexadecimalValueExpression" />
     </node>
   </node>
 </model>

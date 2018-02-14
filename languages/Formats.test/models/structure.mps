@@ -87,19 +87,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="74YVmCpvbSj">
-    <property role="EcuMT" value="8160220614791839251" />
-    <property role="TrG5h" value="HexadecimalValueExpression" />
-    <property role="3GE5qa" value="expressions" />
-    <ref role="1TJDcQ" to="rcc7:7vkQey0O7wC" resolve="Expression" />
-    <node concept="1TJgyj" id="74YVmCpvbSl" role="1TKVEi">
-      <property role="IQ2ns" value="8160220614791839253" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="values" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="74YVmCpvbSk" resolve="HexadecimalByte" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="74YVmCpvbSk">
     <property role="EcuMT" value="8160220614791839252" />
     <property role="TrG5h" value="HexadecimalByte" />

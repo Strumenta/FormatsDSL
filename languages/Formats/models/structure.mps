@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="b9ba" ref="r:421f4d82-4467-4684-adae-ab1f2418a2ff(Formats.test.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -80,6 +81,13 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7vkQey0O7xh" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="6D8ZJLf0wUN" role="1TKVEi">
+      <property role="IQ2ns" value="7658651525954277043" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constraints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6D8ZJLf0wUM" resolve="Constraint" />
     </node>
     <node concept="PrWs8" id="74YVmCpv7tm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -269,6 +277,11 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="3HHt0vn0v4Z" role="1TKVEl">
+      <property role="IQ2nx" value="4282206397720031551" />
+      <property role="TrG5h" value="nEntries" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="7vkQey14WLV" role="1TKVEi">
       <property role="IQ2ns" value="8634764878685654139" />
       <property role="20lmBu" value="aggregation" />
@@ -311,6 +324,42 @@
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6D8ZJLf0wUM">
+    <property role="EcuMT" value="7658651525954277042" />
+    <property role="TrG5h" value="Constraint" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="constraints" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6D8ZJLf0Fpu">
+    <property role="EcuMT" value="7658651525954319966" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="EqualTo" />
+    <property role="34LRSv" value="=" />
+    <ref role="1TJDcQ" node="6D8ZJLf0wUM" resolve="Constraint" />
+    <node concept="1TJgyj" id="6D8ZJLf0Fpx" role="1TKVEi">
+      <property role="IQ2ns" value="7658651525954319969" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="74YVmCpvbSj">
+    <property role="EcuMT" value="8160220614791839251" />
+    <property role="TrG5h" value="HexadecimalValueExpression" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="34LRSv" value="0x" />
+    <ref role="1TJDcQ" node="7vkQey0O7wC" resolve="Expression" />
+    <node concept="1TJgyj" id="74YVmCpvbSl" role="1TKVEi">
+      <property role="IQ2ns" value="8160220614791839253" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="b9ba:74YVmCpvbSk" resolve="HexadecimalByte" />
     </node>
   </node>
 </model>

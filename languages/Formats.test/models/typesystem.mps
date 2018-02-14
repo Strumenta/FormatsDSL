@@ -236,32 +236,6 @@
       <ref role="1YaFvo" to="b9ba:7vkQey0ZcfU" resolve="DirectFieldReference" />
     </node>
   </node>
-  <node concept="1YbPZF" id="7vkQey0ZXNR">
-    <property role="TrG5h" value="typeof_HexadecimalValueExpression" />
-    <property role="3GE5qa" value="expressions" />
-    <node concept="3clFbS" id="7vkQey0ZXNS" role="18ibNy">
-      <node concept="1Z5TYs" id="7vkQey0ZZ5A" role="3cqZAp">
-        <node concept="mw_s8" id="7vkQey0ZZ5U" role="1ZfhKB">
-          <node concept="2pJPEk" id="7vkQey0ZZ5Q" role="mwGJk">
-            <node concept="2pJPED" id="7vkQey0ZZ65" role="2pJPEn">
-              <ref role="2pJxaS" to="rcc7:74YVmCpv7t8" resolve="UnsignedFieldType" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="7vkQey0ZZ5D" role="1ZfhK$">
-          <node concept="1Z2H0r" id="7vkQey0ZXNY" role="mwGJk">
-            <node concept="1YBJjd" id="7vkQey0ZXOe" role="1Z2MuG">
-              <ref role="1YBMHb" node="7vkQey0ZXNU" resolve="hexadecimalValueExpression" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="7vkQey0ZXNU" role="1YuTPh">
-      <property role="TrG5h" value="hexadecimalValueExpression" />
-      <ref role="1YaFvo" to="b9ba:74YVmCpvbSj" resolve="HexadecimalValueExpression" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="7vkQey10mxJ">
     <property role="TrG5h" value="typeof_ArrayElementReference" />
     <property role="3GE5qa" value="field_references" />
