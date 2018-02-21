@@ -548,7 +548,9 @@
     <property role="3GE5qa" value="format.structures" />
     <node concept="1CgEr1" id="59MEhNxF_20" role="14JuLN">
       <property role="TrG5h" value="attribute_name_index" />
-      <node concept="1CgDCy" id="59MEhNxF_47" role="1CgDCM" />
+      <node concept="1CgDCy" id="59MEhNxF_47" role="1CgDCM">
+        <property role="1CgDCY" value="2" />
+      </node>
     </node>
     <node concept="1CgEr1" id="59MEhNxF_2c" role="14JuLN">
       <property role="TrG5h" value="attribute_length" />

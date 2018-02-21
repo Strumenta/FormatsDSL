@@ -10,6 +10,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">040f4d08-2e19-478e-bafc-1ae65578e650(Formats)</dependency>
+    <dependency reexport="false">ba8b75ea-8de7-4193-b22b-ea258acd72d3(Formats.testExecution)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
@@ -28,6 +29,7 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="040f4d08-2e19-478e-bafc-1ae65578e650(Formats)" version="0" />
     <module reference="2813ee36-ecca-44a6-afd8-42ef7aeacae1(Formats.ide)" version="0" />
+    <module reference="ba8b75ea-8de7-4193-b22b-ea258acd72d3(Formats.testExecution)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />

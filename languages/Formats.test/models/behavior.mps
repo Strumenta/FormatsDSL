@@ -511,6 +511,11 @@
                 <node concept="37vLTw" id="7N4Y6zzud8e" role="37wK5m">
                   <ref role="3cqZAo" node="6M$LN0BSts2" resolve="file" />
                 </node>
+                <node concept="2ShNRf" id="1jZ20eQ6xTB" role="37wK5m">
+                  <node concept="HV5vD" id="1jZ20eQ6ye4" role="2ShVmc">
+                    <ref role="HV5vE" to="72el:1jZ20eQ6uMs" resolve="SilentLogger" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
