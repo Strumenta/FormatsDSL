@@ -121,6 +121,10 @@
       <property role="1uS6qo" value="4" />
       <property role="1uS6qv" value="4" />
     </node>
+    <node concept="M4N5e" id="7GK$E3TTXXf" role="M5hS2">
+      <property role="1uS6qo" value="8" />
+      <property role="1uS6qv" value="8" />
+    </node>
   </node>
   <node concept="1TIwiD" id="74YVmCpvaFH">
     <property role="EcuMT" value="8160220614791834349" />
@@ -250,12 +254,12 @@
     <property role="TrG5h" value="PolymorphicStructure" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7vkQey14WLI" role="1TKVEi">
-      <property role="IQ2ns" value="8634764878685654126" />
+    <node concept="1TJgyj" id="91iwavXtr9" role="1TKVEi">
+      <property role="IQ2ns" value="162492436696127177" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tagType" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="74YVmCpv7t8" resolve="UnsignedFieldType" />
+      <property role="20kJfa" value="fields" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="91iwavXtr5" resolve="PolymorphicStructureField" />
     </node>
     <node concept="1TJgyj" id="7vkQey14WMQ" role="1TKVEi">
       <property role="IQ2ns" value="8634764878685654198" />
@@ -272,10 +276,12 @@
     <property role="EcuMT" value="8634764878685654138" />
     <property role="TrG5h" value="PolymorphicAlternative" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="7vkQey14WLZ" role="1TKVEl">
-      <property role="IQ2nx" value="8634764878685654143" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="91iwaw0$Kg" role="1TKVEi">
+      <property role="IQ2ns" value="162492436696943632" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
     </node>
     <node concept="1TJgyi" id="3HHt0vn0v4Z" role="1TKVEl">
       <property role="IQ2nx" value="4282206397720031551" />
@@ -385,6 +391,100 @@
       <property role="IQ2nx" value="3094382581166421631" />
       <property role="TrG5h" value="content" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7GK$E3TTXZk">
+    <property role="EcuMT" value="8876756085632393172" />
+    <property role="TrG5h" value="DecimalBytesValueExpression" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="34LRSv" value="bytes" />
+    <ref role="1TJDcQ" node="7vkQey0O7wC" resolve="Expression" />
+    <node concept="1TJgyj" id="7GK$E3TTXZl" role="1TKVEi">
+      <property role="IQ2ns" value="8876756085632393173" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="b9ba:7GK$E3TTY08" resolve="DecimalByte" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7GK$E3TUw_S">
+    <property role="EcuMT" value="8876756085632534904" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="Unlimited" />
+    <property role="34LRSv" value="unlimited" />
+    <ref role="1TJDcQ" node="7vkQey0O7wC" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="91iwavX3N5">
+    <property role="EcuMT" value="162492436696022213" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="BlobType" />
+    <property role="34LRSv" value="blob" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="91iwavX3N6" role="1TKVEi">
+      <property role="IQ2ns" value="162492436696022214" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="91iwavX3NV">
+    <property role="EcuMT" value="162492436696022267" />
+    <property role="TrG5h" value="ASCIIStringType" />
+    <property role="3GE5qa" value="types" />
+    <property role="34LRSv" value="ascii" />
+    <ref role="1TJDcQ" node="7vkQey0O7xh" resolve="Type" />
+    <node concept="1TJgyj" id="91iwavX3NW" role="1TKVEi">
+      <property role="IQ2ns" value="162492436696022268" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="length" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="91iwavXtr5">
+    <property role="EcuMT" value="162492436696127173" />
+    <property role="TrG5h" value="PolymorphicStructureField" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="91iwavXtr6">
+    <property role="EcuMT" value="162492436696127174" />
+    <property role="TrG5h" value="PolymorphicStructureDataField" />
+    <property role="34LRSv" value="field" />
+    <ref role="1TJDcQ" node="91iwavXtr5" resolve="PolymorphicStructureField" />
+    <node concept="1TJgyj" id="91iwavZrRQ" role="1TKVEi">
+      <property role="IQ2ns" value="162492436696645110" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="field" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="74YVmCpv4IF" resolve="Field" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="91iwavXtr7">
+    <property role="EcuMT" value="162492436696127175" />
+    <property role="TrG5h" value="PolymorphicStructureTagField" />
+    <property role="34LRSv" value="tag" />
+    <ref role="1TJDcQ" node="91iwavXtr5" resolve="PolymorphicStructureField" />
+    <node concept="1TJgyj" id="91iwavXtrd" role="1TKVEi">
+      <property role="IQ2ns" value="162492436696127181" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tagType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0O7xh" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="91iwavXtr8">
+    <property role="EcuMT" value="162492436696127176" />
+    <property role="TrG5h" value="PolymorphicStructurePayloadField" />
+    <property role="34LRSv" value="payload" />
+    <ref role="1TJDcQ" node="91iwavXtr5" resolve="PolymorphicStructureField" />
+    <node concept="1TJgyj" id="91iwavZwyC" role="1TKVEi">
+      <property role="IQ2ns" value="162492436696664232" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="length" />
+      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
     </node>
   </node>
 </model>

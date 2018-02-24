@@ -348,5 +348,31 @@
       <ref role="1YaFvo" to="rcc7:74YVmCpvbSj" resolve="HexadecimalValueExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7GK$E3TU0SE">
+    <property role="TrG5h" value="typeof_DecimalBytesValueExpression" />
+    <property role="3GE5qa" value="expressions" />
+    <node concept="3clFbS" id="7GK$E3TU0SF" role="18ibNy">
+      <node concept="1Z5TYs" id="7GK$E3TU0SL" role="3cqZAp">
+        <node concept="mw_s8" id="7GK$E3TU0SM" role="1ZfhKB">
+          <node concept="2pJPEk" id="7GK$E3TU0SN" role="mwGJk">
+            <node concept="2pJPED" id="7GK$E3TU0SO" role="2pJPEn">
+              <ref role="2pJxaS" to="rcc7:74YVmCpv7t8" resolve="UnsignedFieldType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7GK$E3TU0SP" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7GK$E3TU0SQ" role="mwGJk">
+            <node concept="1YBJjd" id="7GK$E3TU0V3" role="1Z2MuG">
+              <ref role="1YBMHb" node="7GK$E3TU0SH" resolve="decimalBytesValueExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7GK$E3TU0SH" role="1YuTPh">
+      <property role="TrG5h" value="decimalBytesValueExpression" />
+      <ref role="1YaFvo" to="rcc7:7GK$E3TTXZk" resolve="DecimalBytesValueExpression" />
+    </node>
+  </node>
 </model>
 

@@ -58,6 +58,10 @@
       </concept>
     </language>
     <language id="040f4d08-2e19-478e-bafc-1ae65578e650" name="Formats">
+      <concept id="162492436696127175" name="Formats.structure.PolymorphicStructureTagField" flags="ng" index="2tH9N5">
+        <child id="162492436696127181" name="tagType" index="2tH9Nf" />
+      </concept>
+      <concept id="162492436696127176" name="Formats.structure.PolymorphicStructurePayloadField" flags="ng" index="2tH9Na" />
       <concept id="8990583885519030190" name="Formats.structure.MinusExpression" flags="ng" index="2vsBZ6">
         <child id="8990583885519030191" name="left" index="2vsBZ7" />
         <child id="8990583885519030192" name="right" index="2vsBZo" />
@@ -97,12 +101,12 @@
         <child id="8160220614791821144" name="type" index="1CgDCM" />
       </concept>
       <concept id="8634764878685654125" name="Formats.structure.PolymorphicStructure" flags="ng" index="3QLLi5">
+        <child id="162492436696127177" name="fields" index="2tH9Nb" />
         <child id="8634764878685654198" name="alternatives" index="3QLLhu" />
-        <child id="8634764878685654126" name="tagType" index="3QLLi6" />
       </concept>
       <concept id="8634764878685654138" name="Formats.structure.PolymorphicAlternative" flags="ng" index="3QLLii">
         <property id="4282206397720031551" name="nEntries" index="3Gr8kS" />
-        <property id="8634764878685654143" name="value" index="3QLLin" />
+        <child id="162492436696943632" name="value" index="2ygKoi" />
         <child id="8634764878685654139" name="content" index="3QLLij" />
       </concept>
       <concept id="8634764878685665954" name="Formats.structure.PolymorphicStructureType" flags="ng" index="3QLM9a">
@@ -115,17 +119,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -257,26 +253,18 @@
         </node>
       </node>
     </node>
-    <node concept="1X3_iC" id="59MEhNxErGP" role="lGtFl">
-      <property role="3V$3am" value="fields" />
-      <property role="3V$3ak" value="040f4d08-2e19-478e-bafc-1ae65578e650/8634764878680856923/7828601061921860419" />
-      <node concept="1CgEr1" id="7vkQey0MDzy" role="8Wnug">
-        <property role="TrG5h" value="attributes_count" />
-        <node concept="1CgDCy" id="7vkQey0MDzz" role="1CgDCM" />
-      </node>
+    <node concept="1CgEr1" id="7vkQey0MDzy" role="14JuLN">
+      <property role="TrG5h" value="attributes_count" />
+      <node concept="1CgDCy" id="7vkQey0MDzz" role="1CgDCM" />
     </node>
-    <node concept="1X3_iC" id="59MEhNxErGQ" role="lGtFl">
-      <property role="3V$3am" value="fields" />
-      <property role="3V$3ak" value="040f4d08-2e19-478e-bafc-1ae65578e650/8634764878680856923/7828601061921860419" />
-      <node concept="1CgEr1" id="7vkQey0MD$6" role="8Wnug">
-        <property role="TrG5h" value="attributes" />
-        <node concept="14JvP3" id="7vkQey0MD_7" role="1CgDCM">
-          <node concept="14JvPC" id="7vkQey0MD_8" role="14JvP6">
-            <ref role="14JvPF" node="7vkQey0MD$G" resolve="FieldInfo" />
-          </node>
-          <node concept="14JvQ1" id="7vkQey0MD_d" role="14JvPf">
-            <ref role="14JvQ4" node="7vkQey0MDzy" resolve="attributes_count" />
-          </node>
+    <node concept="1CgEr1" id="7vkQey0MD$6" role="14JuLN">
+      <property role="TrG5h" value="attributes" />
+      <node concept="14JvP3" id="7vkQey0MD_7" role="1CgDCM">
+        <node concept="14JvPC" id="7vkQey0MD_8" role="14JvP6">
+          <ref role="14JvPF" node="7vkQey0MD$G" resolve="FieldInfo" />
+        </node>
+        <node concept="14JvQ1" id="7vkQey0MD_d" role="14JvPf">
+          <ref role="14JvQ4" node="7vkQey0MDzy" resolve="attributes_count" />
         </node>
       </node>
     </node>
@@ -573,135 +561,170 @@
   <node concept="3QLLi5" id="7vkQey14Zkf">
     <property role="TrG5h" value="ConstantPoolElement" />
     <property role="3GE5qa" value="format.constant_pool" />
+    <node concept="2tH9N5" id="91iwavXxR8" role="2tH9Nb">
+      <node concept="1CgDCy" id="91iwavXxRa" role="2tH9Nf" />
+    </node>
+    <node concept="2tH9Na" id="91iwavXInj" role="2tH9Nb" />
     <node concept="3QLLii" id="7vkQey14Zkn" role="3QLLhu">
-      <property role="3QLLin" value="7" />
       <property role="TrG5h" value="class" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174R8" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174Kr" resolve="ConstantPool_Class" />
       </node>
+      <node concept="14JvPa" id="91iwaw0Ebt" role="2ygKoi">
+        <property role="14JvPd" value="7" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174Re" role="3QLLhu">
-      <property role="3QLLin" value="9" />
       <property role="TrG5h" value="fieldRef" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174VU" role="3QLLij">
         <ref role="14JvPF" node="7vkQey14Zkz" resolve="ConstantPool_FieldRef" />
       </node>
+      <node concept="14JvPa" id="91iwaw0Eb_" role="2ygKoi">
+        <property role="14JvPd" value="9" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174Rk" role="3QLLhu">
-      <property role="3QLLin" value="10" />
       <property role="TrG5h" value="methodRef" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174W0" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174KA" resolve="ConstantPool_MethodRef" />
       </node>
+      <node concept="14JvPa" id="91iwaw0EbK" role="2ygKoi">
+        <property role="14JvPd" value="10" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174Rs" role="3QLLhu">
-      <property role="3QLLin" value="11" />
       <property role="TrG5h" value="interfaceMethodRef" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174W6" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174L7" resolve="ConstantPool_InterfaceMethodRef" />
       </node>
+      <node concept="14JvPa" id="91iwaw0EbS" role="2ygKoi">
+        <property role="14JvPd" value="11" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174RA" role="3QLLhu">
-      <property role="3QLLin" value="8" />
       <property role="TrG5h" value="string" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174Wc" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174Lt" resolve="ConstantPool_String" />
       </node>
+      <node concept="14JvPa" id="91iwaw0EbX" role="2ygKoi">
+        <property role="14JvPd" value="8" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174RM" role="3QLLhu">
-      <property role="3QLLin" value="3" />
       <property role="TrG5h" value="integer" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174Wi" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174Li" resolve="ConstantPool_Integer" />
       </node>
+      <node concept="14JvPa" id="91iwaw0Ec5" role="2ygKoi">
+        <property role="14JvPd" value="3" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174S0" role="3QLLhu">
-      <property role="3QLLin" value="4" />
       <property role="TrG5h" value="float" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174Wo" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174KW" resolve="ConstantPool_Float" />
       </node>
+      <node concept="14JvPa" id="91iwaw0Ecd" role="2ygKoi">
+        <property role="14JvPd" value="4" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174Sg" role="3QLLhu">
-      <property role="3QLLin" value="5" />
       <property role="TrG5h" value="long" />
       <property role="3Gr8kS" value="2" />
       <node concept="14JvPC" id="7vkQey174Wu" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174KL" resolve="ConstantPool_Long" />
       </node>
+      <node concept="14JvPa" id="91iwaw0Ecn" role="2ygKoi">
+        <property role="14JvPd" value="5" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174Sy" role="3QLLhu">
-      <property role="3QLLin" value="6" />
       <property role="TrG5h" value="double" />
       <property role="3Gr8kS" value="2" />
       <node concept="14JvPC" id="7vkQey174W$" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174Mo" resolve="ConstantPool_Double" />
       </node>
+      <node concept="14JvPa" id="91iwaw0Ecw" role="2ygKoi">
+        <property role="14JvPd" value="6" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174SQ" role="3QLLhu">
-      <property role="3QLLin" value="12" />
       <property role="TrG5h" value="nameAndType" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174WE" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174Mz" resolve="ConstantPool_NameAndType" />
       </node>
+      <node concept="14JvPa" id="91iwaw0EcC" role="2ygKoi">
+        <property role="14JvPd" value="12" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174Tc" role="3QLLhu">
-      <property role="3QLLin" value="1" />
       <property role="TrG5h" value="utf8" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174WK" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174MI" resolve="ConstantPool_Utf8" />
       </node>
+      <node concept="14JvPa" id="91iwaw0EcH" role="2ygKoi">
+        <property role="14JvPd" value="1" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174T$" role="3QLLhu">
-      <property role="3QLLin" value="15" />
       <property role="TrG5h" value="methodHandle" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174WQ" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174MT" resolve="ConstantPool_MethodHandle" />
       </node>
+      <node concept="14JvPa" id="91iwaw0EcP" role="2ygKoi">
+        <property role="14JvPd" value="15" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174TY" role="3QLLhu">
-      <property role="3QLLin" value="16" />
       <property role="TrG5h" value="methodType" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174WW" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174N4" resolve="ConstantPool_MethodType" />
       </node>
+      <node concept="14JvPa" id="91iwaw0EcX" role="2ygKoi">
+        <property role="14JvPd" value="16" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174Uq" role="3QLLhu">
-      <property role="3QLLin" value="18" />
       <property role="TrG5h" value="invokeDynamic" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174X2" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174Nf" resolve="ConstantPool_InvokeDynamic" />
       </node>
+      <node concept="14JvPa" id="91iwaw0Ed5" role="2ygKoi">
+        <property role="14JvPd" value="18" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174US" role="3QLLhu">
-      <property role="3QLLin" value="19" />
       <property role="TrG5h" value="module" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174X8" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174Oa" resolve="ConstantPool_Module" />
       </node>
+      <node concept="14JvPa" id="91iwaw0Edg" role="2ygKoi">
+        <property role="14JvPd" value="19" />
+      </node>
     </node>
     <node concept="3QLLii" id="7vkQey174Vo" role="3QLLhu">
-      <property role="3QLLin" value="20" />
       <property role="TrG5h" value="package" />
       <property role="3Gr8kS" value="1" />
       <node concept="14JvPC" id="7vkQey174Xe" role="3QLLij">
         <ref role="14JvPF" node="7vkQey174Ol" resolve="ConstantPool_Package" />
       </node>
+      <node concept="14JvPa" id="91iwaw0Edl" role="2ygKoi">
+        <property role="14JvPd" value="20" />
+      </node>
     </node>
-    <node concept="1CgDCy" id="7vkQey14Zkg" role="3QLLi6" />
   </node>
   <node concept="14JuLK" id="7vkQey14Zkz">
     <property role="TrG5h" value="ConstantPool_FieldRef" />

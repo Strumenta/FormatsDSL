@@ -210,10 +210,12 @@
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="PolymorphicStructureLiteralExpression" />
     <ref role="1TJDcQ" to="rcc7:7vkQey0O7wC" resolve="Expression" />
-    <node concept="1TJgyi" id="7vkQey1538_" role="1TKVEl">
-      <property role="IQ2nx" value="8634764878685680165" />
-      <property role="TrG5h" value="tagValue" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="91iwaw4efR" role="1TKVEi">
+      <property role="IQ2ns" value="162492436697900023" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tagValue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="rcc7:7vkQey0O7wC" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="7vkQey1538z" role="1TKVEi">
       <property role="IQ2ns" value="8634764878685680163" />
@@ -295,6 +297,17 @@
       <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="rcc7:7vkQey0O7wC" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7GK$E3TTY08">
+    <property role="EcuMT" value="8876756085632393224" />
+    <property role="TrG5h" value="DecimalByte" />
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7GK$E3TTY09" role="1TKVEl">
+      <property role="IQ2nx" value="8876756085632393225" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

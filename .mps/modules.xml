@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Formats/Formats.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Formats/sandbox/Formats.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Formats.ide/Formats.ide.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.png/Formats.png.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Formats.testExecution/Formats.testExecution.msd" folder="" />
     </projectModules>
   </component>
