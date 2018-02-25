@@ -419,7 +419,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="BlobType" />
     <property role="34LRSv" value="blob" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="7vkQey0O7xh" resolve="Type" />
     <node concept="1TJgyj" id="91iwavX3N6" role="1TKVEi">
       <property role="IQ2ns" value="162492436696022214" />
       <property role="20lmBu" value="aggregation" />

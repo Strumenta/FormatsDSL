@@ -573,12 +573,6 @@
       <node concept="2iRfu4" id="91iwavX3Nk" role="2iSdaV" />
       <node concept="3F0ifn" id="91iwavX3Nl" role="3EZMnx">
         <property role="3F0ifm" value="of" />
-        <node concept="11L4FC" id="91iwavX3Nm" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="91iwavX3Nn" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="3F1sOY" id="91iwavX3No" role="3EZMnx">
         <ref role="1NtTu8" to="rcc7:91iwavX3N6" resolve="size" />

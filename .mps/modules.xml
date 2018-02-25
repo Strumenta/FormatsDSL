@@ -2,12 +2,12 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/Formats.test/Formats.test.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/Formats/Formats.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/Formats/sandbox/Formats.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.ide/Formats.ide.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.png/Formats.png.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.testExecution/Formats.testExecution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Formats.test/Formats.test.mpl" folder="FormatsDSL" />
+      <modulePath path="$PROJECT_DIR$/languages/Formats/Formats.mpl" folder="FormatsDSL" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.class/Formats.class.msd" folder="Examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.ide/Formats.ide.msd" folder="FormatsDSL" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.png/Formats.png.msd" folder="Examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.testExecution/Formats.testExecution.msd" folder="FormatsDSL" />
     </projectModules>
   </component>
 </project>

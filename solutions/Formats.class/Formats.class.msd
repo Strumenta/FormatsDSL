@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Formats.sandbox" uuid="d69b25e4-172b-4702-9497-a15aa19b1edd" moduleVersion="0" compileInMPS="true">
+<solution name="Formats.class" uuid="d69b25e4-172b-4702-9497-a15aa19b1edd" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
