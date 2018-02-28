@@ -225,8 +225,8 @@
       <node concept="ZpsbI" id="91iwaw0EgC" role="2ygKoi">
         <property role="ZpsbJ" value="iCCP" />
       </node>
-      <node concept="2tHnr7" id="91iwaw5kpL" role="3QLLij">
-        <node concept="22QDJo" id="91iwaw5kpM" role="2tHnr4" />
+      <node concept="14JvPC" id="C8sJ9gq_XJ" role="3QLLij">
+        <ref role="14JvPF" node="C8sJ9gq5eR" resolve="ICCPEmbeddedICCProfile" />
       </node>
     </node>
     <node concept="3QLLii" id="91iwaw0Eh4" role="3QLLhu">
@@ -463,6 +463,25 @@
       <node concept="1fPWmZ" id="NNZx939J7F" role="1CgDCM">
         <property role="1fPWm_" value="UTF8" />
         <node concept="22QDJo" id="NNZx939J7G" role="1fPWmI" />
+      </node>
+    </node>
+  </node>
+  <node concept="14JuLK" id="C8sJ9gq5eR">
+    <property role="TrG5h" value="ICCPEmbeddedICCProfile" />
+    <node concept="1CgEr1" id="C8sJ9gq5eS" role="14JuLN">
+      <property role="TrG5h" value="profileName" />
+      <node concept="1fPWmZ" id="C8sJ9gq5fc" role="1CgDCM">
+        <property role="1fPWm_" value="ISO-8859-1" />
+      </node>
+    </node>
+    <node concept="1CgEr1" id="C8sJ9gq5fn" role="14JuLN">
+      <property role="TrG5h" value="compressionMethod" />
+      <node concept="1CgDCy" id="C8sJ9gq5fD" role="1CgDCM" />
+    </node>
+    <node concept="1CgEr1" id="C8sJ9gq5fO" role="14JuLN">
+      <property role="TrG5h" value="compressedProgile" />
+      <node concept="2tHnr7" id="C8sJ9gq5gs" role="1CgDCM">
+        <node concept="22QDJo" id="C8sJ9gq5gA" role="2tHnr4" />
       </node>
     </node>
   </node>
