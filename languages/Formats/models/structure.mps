@@ -371,20 +371,6 @@
       <ref role="20lvS9" to="b9ba:74YVmCpvbSk" resolve="HexadecimalByte" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2FLt90lu1te">
-    <property role="EcuMT" value="3094382581164545870" />
-    <property role="TrG5h" value="UTF8StringType" />
-    <property role="3GE5qa" value="types" />
-    <property role="34LRSv" value="UTF8" />
-    <ref role="1TJDcQ" node="7vkQey0O7xh" resolve="Type" />
-    <node concept="1TJgyj" id="2FLt90lu5dm" role="1TKVEi">
-      <property role="IQ2ns" value="3094382581164561238" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="length" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2FLt90l_bpY">
     <property role="EcuMT" value="3094382581166421630" />
     <property role="3GE5qa" value="expressions" />
@@ -427,20 +413,6 @@
       <property role="IQ2ns" value="162492436696022214" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="size" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="91iwavX3NV">
-    <property role="EcuMT" value="162492436696022267" />
-    <property role="TrG5h" value="ASCIIStringType" />
-    <property role="3GE5qa" value="types" />
-    <property role="34LRSv" value="ascii" />
-    <ref role="1TJDcQ" node="7vkQey0O7xh" resolve="Type" />
-    <node concept="1TJgyj" id="91iwavX3NW" role="1TKVEi">
-      <property role="IQ2ns" value="162492436696022268" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="length" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
     </node>

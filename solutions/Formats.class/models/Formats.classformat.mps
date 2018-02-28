@@ -72,9 +72,6 @@
       <concept id="3094382581166421630" name="Formats.structure.StringLiteralExpression" flags="ng" index="ZpsbI">
         <property id="3094382581166421631" name="content" index="ZpsbJ" />
       </concept>
-      <concept id="3094382581164545870" name="Formats.structure.UTF8StringType" flags="ng" index="Zymfu">
-        <child id="3094382581164561238" name="length" index="Zyiv6" />
-      </concept>
       <concept id="7828601061921860416" name="Formats.structure.Record" flags="ng" index="14JuLK" />
       <concept id="7828601061921864307" name="Formats.structure.ArrayType" flags="ng" index="14JvP3">
         <child id="7828601061921864310" name="baseType" index="14JvP6" />
@@ -91,6 +88,9 @@
       </concept>
       <concept id="933368902185338225" name="Formats.structure.ConstraintsHolder" flags="ng" index="1fPbHz">
         <child id="933368902185338293" name="constraints" index="1fPbIB" />
+      </concept>
+      <concept id="933368902185139117" name="Formats.structure.StringType" flags="ng" index="1fPWmZ">
+        <child id="933368902185139132" name="length" index="1fPWmI" />
       </concept>
       <concept id="8160220614791839251" name="Formats.structure.HexadecimalValueExpression" flags="ng" index="1Cg_dT">
         <child id="8160220614791839253" name="values" index="1Cg_dZ" />
@@ -878,8 +878,8 @@
     </node>
     <node concept="1CgEr1" id="2FLt90lu8OZ" role="14JuLN">
       <property role="TrG5h" value="content" />
-      <node concept="Zymfu" id="2FLt90lu8Pp" role="1CgDCM">
-        <node concept="14JvQ1" id="2FLt90lu8Pz" role="Zyiv6">
+      <node concept="1fPWmZ" id="C8sJ9goYXc" role="1CgDCM">
+        <node concept="14JvQ1" id="C8sJ9goYXj" role="1fPWmI">
           <ref role="14JvQ4" node="7vkQey174MJ" resolve="length" />
         </node>
       </node>

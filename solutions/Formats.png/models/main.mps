@@ -29,9 +29,6 @@
       <concept id="162492436696022213" name="Formats.structure.BlobType" flags="ng" index="2tHnr7">
         <child id="162492436696022214" name="size" index="2tHnr4" />
       </concept>
-      <concept id="162492436696022267" name="Formats.structure.ASCIIStringType" flags="ng" index="2tHnrT">
-        <child id="162492436696022268" name="length" index="2tHnrY" />
-      </concept>
       <concept id="7658651525954319966" name="Formats.structure.EqualTo" flags="ng" index="_i$yy">
         <child id="7658651525954319969" name="value" index="_i$yt" />
       </concept>
@@ -331,8 +328,9 @@
       </node>
     </node>
     <node concept="2tH9N5" id="91iwavZwxa" role="2tH9Nb">
-      <node concept="2tHnrT" id="91iwaw0$K0" role="2tH9Nf">
-        <node concept="14JvPa" id="91iwaw0$K6" role="2tHnrY">
+      <node concept="1fPWmZ" id="C8sJ9gp6dP" role="2tH9Nf">
+        <property role="1fPWm_" value="ASCII" />
+        <node concept="14JvPa" id="C8sJ9gp6dS" role="1fPWmI">
           <property role="14JvPd" value="4" />
         </node>
       </node>

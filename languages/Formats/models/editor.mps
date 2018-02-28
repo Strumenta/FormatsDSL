@@ -475,22 +475,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="2FLt90lu1to">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="rcc7:2FLt90lu1te" resolve="UTF8StringType" />
-    <node concept="3EZMnI" id="2FLt90lu5do" role="2wV5jI">
-      <node concept="PMmxH" id="2FLt90lu1tq" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      </node>
-      <node concept="3F0ifn" id="2FLt90lu5dw" role="3EZMnx">
-        <property role="3F0ifm" value="of" />
-      </node>
-      <node concept="3F1sOY" id="2FLt90lu5dC" role="3EZMnx">
-        <ref role="1NtTu8" to="rcc7:2FLt90lu5dm" resolve="length" />
-      </node>
-      <node concept="2iRfu4" id="2FLt90lu5dp" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="2FLt90l_bq9">
     <property role="3GE5qa" value="expressions" />
     <ref role="1XX52x" to="rcc7:2FLt90l_bpY" resolve="StringLiteralExpression" />
@@ -575,22 +559,6 @@
       <node concept="3F1sOY" id="91iwavX3No" role="3EZMnx">
         <ref role="1NtTu8" to="rcc7:91iwavX3N6" resolve="size" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="91iwavX3O5">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="rcc7:91iwavX3NV" resolve="ASCIIStringType" />
-    <node concept="3EZMnI" id="91iwavX3O7" role="2wV5jI">
-      <node concept="PMmxH" id="91iwavX3O8" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      </node>
-      <node concept="3F0ifn" id="91iwavX3O9" role="3EZMnx">
-        <property role="3F0ifm" value="of" />
-      </node>
-      <node concept="3F1sOY" id="91iwavX3Oa" role="3EZMnx">
-        <ref role="1NtTu8" to="rcc7:91iwavX3NW" resolve="length" />
-      </node>
-      <node concept="2iRfu4" id="91iwavX3Ob" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="91iwavXxRs">
