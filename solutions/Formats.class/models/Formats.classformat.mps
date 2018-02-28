@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ca5ee08c-e4cb-4fc5-95cc-13db1e232699(Formats.sandbox)">
+<model ref="r:ca5ee08c-e4cb-4fc5-95cc-13db1e232699(Formats.classformat)">
   <persistence version="9" />
   <languages>
     <use id="040f4d08-2e19-478e-bafc-1ae65578e650" name="Formats" version="0" />
@@ -89,6 +89,9 @@
       <concept id="7828601061921864369" name="Formats.structure.FieldReferenceExpression" flags="ng" index="14JvQ1">
         <reference id="7828601061921864372" name="field" index="14JvQ4" />
       </concept>
+      <concept id="933368902185338225" name="Formats.structure.ConstraintsHolder" flags="ng" index="1fPbHz">
+        <child id="933368902185338293" name="constraints" index="1fPbIB" />
+      </concept>
       <concept id="8160220614791839251" name="Formats.structure.HexadecimalValueExpression" flags="ng" index="1Cg_dT">
         <child id="8160220614791839253" name="values" index="1Cg_dZ" />
       </concept>
@@ -97,7 +100,6 @@
       </concept>
       <concept id="8160220614791809962" name="Formats.structure.BinaryFormat" flags="ng" index="1CgEr0" />
       <concept id="8160220614791809963" name="Formats.structure.Field" flags="ng" index="1CgEr1">
-        <child id="7658651525954277043" name="constraints" index="_iJ1f" />
         <child id="8160220614791821144" name="type" index="1CgDCM" />
       </concept>
       <concept id="8634764878685654125" name="Formats.structure.PolymorphicStructure" flags="ng" index="3QLLi5">
@@ -119,6 +121,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -133,19 +136,21 @@
       <node concept="1CgDCy" id="74YVmCpvahY" role="1CgDCM">
         <property role="1CgDCY" value="4" />
       </node>
-      <node concept="_i$yy" id="6D8ZJLf0ICq" role="_iJ1f">
-        <node concept="1Cg_dT" id="3HHt0vn0smF" role="_i$yt">
-          <node concept="1Cg_dY" id="3HHt0vn0smG" role="1Cg_dZ">
-            <property role="1Cgy3F" value="CA" />
-          </node>
-          <node concept="1Cg_dY" id="3HHt0vn0snB" role="1Cg_dZ">
-            <property role="1Cgy3F" value="FE" />
-          </node>
-          <node concept="1Cg_dY" id="3HHt0vn0snH" role="1Cg_dZ">
-            <property role="1Cgy3F" value="BA" />
-          </node>
-          <node concept="1Cg_dY" id="3HHt0vn0snO" role="1Cg_dZ">
-            <property role="1Cgy3F" value="BE" />
+      <node concept="1fPbHz" id="NNZx93a7u0" role="lGtFl">
+        <node concept="_i$yy" id="NNZx93a7u9" role="1fPbIB">
+          <node concept="1Cg_dT" id="NNZx93a7ua" role="_i$yt">
+            <node concept="1Cg_dY" id="NNZx93a7ub" role="1Cg_dZ">
+              <property role="1Cgy3F" value="CA" />
+            </node>
+            <node concept="1Cg_dY" id="NNZx93a7uc" role="1Cg_dZ">
+              <property role="1Cgy3F" value="FE" />
+            </node>
+            <node concept="1Cg_dY" id="NNZx93a7ud" role="1Cg_dZ">
+              <property role="1Cgy3F" value="BA" />
+            </node>
+            <node concept="1Cg_dY" id="NNZx93a7ue" role="1Cg_dZ">
+              <property role="1Cgy3F" value="BE" />
+            </node>
           </node>
         </node>
       </node>

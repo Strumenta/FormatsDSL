@@ -4,7 +4,6 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <engage id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" />
     <engage id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" />
@@ -17,12 +16,11 @@
     <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="eqyk" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.plugins.tool(MPS.Platform/)" />
-    <import index="72el" ref="r:ad6ed4d3-c957-4424-884d-7768a938dc72(Formats.testExecution.plugin)" />
+    <import index="72el" ref="r:ad6ed4d3-c957-4424-884d-7768a938dc72(Formats.evaluation.plugin)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="jtsr" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.project(MPS.OpenAPI/)" />
     <import index="b9ba" ref="r:421f4d82-4467-4684-adae-ab1f2418a2ff(Formats.test.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -829,6 +827,19 @@
             <node concept="2iRfu4" id="7vkQey153ao" role="2iSdaV" />
             <node concept="3F1sOY" id="7vkQey153aQ" role="3EZMnx">
               <ref role="1NtTu8" to="b9ba:7vkQey1538z" resolve="body" />
+            </node>
+          </node>
+          <node concept="3EZMnI" id="NNZx93ff8W" role="3EZMnx">
+            <node concept="VPM3Z" id="NNZx93ff8Y" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="NNZx93ff90" role="3EZMnx">
+              <property role="3F0ifm" value="data:" />
+            </node>
+            <node concept="2iRfu4" id="NNZx93ff91" role="2iSdaV" />
+            <node concept="3F2HdR" id="NNZx93ff9j" role="3EZMnx">
+              <ref role="1NtTu8" to="b9ba:NNZx93ff8F" resolve="fieldsValues" />
+              <node concept="2iRkQZ" id="NNZx93ff9p" role="2czzBx" />
             </node>
           </node>
         </node>

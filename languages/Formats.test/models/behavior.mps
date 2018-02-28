@@ -8,13 +8,9 @@
   <imports>
     <import index="b9ba" ref="r:421f4d82-4467-4684-adae-ab1f2418a2ff(Formats.test.structure)" />
     <import index="3fpj" ref="r:51e22045-b151-4c09-8fa7-992f11322b24(Formats.behavior)" />
-    <import index="72el" ref="r:ad6ed4d3-c957-4424-884d-7768a938dc72(Formats.testExecution.plugin)" />
+    <import index="72el" ref="r:ad6ed4d3-c957-4424-884d-7768a938dc72(Formats.evaluation.plugin)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
-    <import index="sp18" ref="r:8f188900-53f5-4c0a-9032-44ce83c06578(Formats.test.behavior)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="rcc7" ref="r:76136210-b18f-4120-a7ee-b8cb5327eccc(Formats.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -852,19 +848,21 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="2pJxcG" id="7N4Y6zzz4q0" role="2pJxcM">
-                                  <ref role="2pJxcJ" to="b9ba:7vkQey1538_" resolve="tagValue" />
-                                  <node concept="2OqwBi" id="7N4Y6zzz4ZD" role="2pJxcZ">
-                                    <node concept="2OqwBi" id="7N4Y6zzz4BP" role="2Oq$k0">
-                                      <node concept="37vLTw" id="7N4Y6zzz4sm" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="7N4Y6zzyTTD" resolve="polymorphicStructureValue" />
+                                <node concept="2pIpSj" id="NNZx93gpH7" role="2pJxcM">
+                                  <ref role="2pIpSl" to="b9ba:91iwaw4efR" resolve="tagValue" />
+                                  <node concept="36biLy" id="NNZx93gpMr" role="2pJxcZ">
+                                    <node concept="2OqwBi" id="NNZx93gjvU" role="36biLW">
+                                      <node concept="2OqwBi" id="NNZx93gjvV" role="2Oq$k0">
+                                        <node concept="37vLTw" id="NNZx93gjvW" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="7N4Y6zzyTTD" resolve="polymorphicStructureValue" />
+                                        </node>
+                                        <node concept="liA8E" id="NNZx93gjvX" role="2OqNvi">
+                                          <ref role="37wK5l" to="72el:7N4Y6zzz2j1" resolve="getAlternative" />
+                                        </node>
                                       </node>
-                                      <node concept="liA8E" id="7N4Y6zzz4Pk" role="2OqNvi">
-                                        <ref role="37wK5l" to="72el:7N4Y6zzz2j1" resolve="getAlternative" />
+                                      <node concept="3TrEf2" id="NNZx93gjvY" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="rcc7:91iwaw0$Kg" resolve="value" />
                                       </node>
-                                    </node>
-                                    <node concept="3TrcHB" id="7N4Y6zzz5fr" role="2OqNvi">
-                                      <ref role="3TsBF5" to="rcc7:7vkQey14WLZ" resolve="value" />
                                     </node>
                                   </node>
                                 </node>

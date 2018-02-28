@@ -10,7 +10,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">040f4d08-2e19-478e-bafc-1ae65578e650(Formats)</dependency>
-    <dependency reexport="false">ba8b75ea-8de7-4193-b22b-ea258acd72d3(Formats.testExecution)</dependency>
+    <dependency reexport="false">ba8b75ea-8de7-4193-b22b-ea258acd72d3(Formats.evaluation)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />

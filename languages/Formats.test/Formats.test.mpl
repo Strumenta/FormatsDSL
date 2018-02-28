@@ -54,8 +54,7 @@
     <dependency reexport="true">040f4d08-2e19-478e-bafc-1ae65578e650(Formats)</dependency>
     <dependency reexport="true">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
-    <dependency reexport="false">ba8b75ea-8de7-4193-b22b-ea258acd72d3(Formats.testExecution)</dependency>
-    <dependency reexport="false">8b0c1f5d-d826-49bc-8678-d64a5a245799(Formats.test)</dependency>
+    <dependency reexport="false">ba8b75ea-8de7-4193-b22b-ea258acd72d3(Formats.evaluation)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>

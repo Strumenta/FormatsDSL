@@ -224,6 +224,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="rcc7:7vkQey0O7wC" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="NNZx93ff8F" role="1TKVEi">
+      <property role="IQ2ns" value="933368902186758699" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fieldsValues" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7vkQey10pyc" resolve="FieldAssignment" />
+    </node>
     <node concept="1TJgyj" id="7vkQey1538$" role="1TKVEi">
       <property role="IQ2ns" value="8634764878685680164" />
       <property role="20lmBu" value="reference" />
