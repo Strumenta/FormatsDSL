@@ -644,5 +644,21 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5$99G4yC7gW">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="rcc7:5$99G4yC7gx" resolve="Leb128FieldType" />
+    <node concept="3EZMnI" id="5$99G4yC7gY" role="2wV5jI">
+      <node concept="PMmxH" id="5$99G4yC7h5" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="2iRfu4" id="5$99G4yC7h1" role="2iSdaV" />
+      <node concept="3F0A7n" id="5$99G4yC7ha" role="3EZMnx">
+        <ref role="1NtTu8" to="rcc7:5$99G4yC7gz" resolve="signed" />
+      </node>
+      <node concept="3F0A7n" id="5$99G4yC7hi" role="3EZMnx">
+        <ref role="1NtTu8" to="rcc7:5$99G4yC7gy" resolve="length" />
+      </node>
+    </node>
+  </node>
 </model>
 

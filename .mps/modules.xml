@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/Formats.ide/Formats.ide.msd" folder="FormatsDSL" />
       <modulePath path="$PROJECT_DIR$/solutions/Formats.png/Formats.png.msd" folder="Examples" />
       <modulePath path="$PROJECT_DIR$/solutions/Formats.tests/Formats.tests.msd" folder="FormatsDSL" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.wasm/Formats.wasm.msd" folder="Examples" />
     </projectModules>
   </component>
 </project>

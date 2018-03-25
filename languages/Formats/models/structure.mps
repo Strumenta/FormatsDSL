@@ -526,5 +526,35 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="5$99G4yC7gx">
+    <property role="EcuMT" value="6415701755117466657" />
+    <property role="TrG5h" value="Leb128FieldType" />
+    <property role="34LRSv" value="LEB128" />
+    <property role="3GE5qa" value="types" />
+    <ref role="1TJDcQ" node="7vkQey0O7xh" resolve="Type" />
+    <node concept="1TJgyi" id="5$99G4yC7gz" role="1TKVEl">
+      <property role="IQ2nx" value="6415701755117466659" />
+      <property role="TrG5h" value="signed" />
+      <ref role="AX2Wp" node="5$99G4yC7hn" resolve="Signedness" />
+    </node>
+    <node concept="1TJgyi" id="5$99G4yC7gy" role="1TKVEl">
+      <property role="IQ2nx" value="6415701755117466658" />
+      <property role="TrG5h" value="length" />
+      <ref role="AX2Wp" node="74YVmCpv7t9" resolve="UnsignedFieldTypeLength" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="5$99G4yC7hn">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="Signedness" />
+    <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
+    <node concept="M4N5e" id="5$99G4yC7ho" role="M5hS2">
+      <property role="1uS6qv" value="false" />
+      <property role="1uS6qo" value="unsigned" />
+    </node>
+    <node concept="M4N5e" id="5$99G4yC7hp" role="M5hS2">
+      <property role="1uS6qo" value="signed" />
+      <property role="1uS6qv" value="true" />
+    </node>
+  </node>
 </model>
 

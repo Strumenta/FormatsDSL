@@ -21,8 +21,20 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -88,6 +100,9 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -372,6 +387,49 @@
     <node concept="1YaCAy" id="7GK$E3TU0SH" role="1YuTPh">
       <property role="TrG5h" value="decimalBytesValueExpression" />
       <ref role="1YaFvo" to="rcc7:7GK$E3TTXZk" resolve="DecimalBytesValueExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5$99G4yClSA">
+    <property role="TrG5h" value="typeof_Leb128FieldType" />
+    <property role="3GE5qa" value="types" />
+    <node concept="3clFbS" id="5$99G4yClSB" role="18ibNy">
+      <node concept="3clFbJ" id="5$99G4yClVg" role="3cqZAp">
+        <node concept="3clFbS" id="5$99G4yClVi" role="3clFbx">
+          <node concept="1ZobV4" id="5$99G4yClSH" role="3cqZAp">
+            <node concept="mw_s8" id="5$99G4yClSI" role="1ZfhKB">
+              <node concept="2pJPEk" id="5$99G4yClSJ" role="mwGJk">
+                <node concept="2pJPED" id="5$99G4yClSK" role="2pJPEn">
+                  <ref role="2pJxaS" to="rcc7:74YVmCpv7t8" resolve="UnsignedFieldType" />
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="5$99G4yClSL" role="1ZfhK$">
+              <node concept="1Z2H0r" id="5$99G4yClSM" role="mwGJk">
+                <node concept="1YBJjd" id="5$99G4yClTH" role="1Z2MuG">
+                  <ref role="1YBMHb" node="5$99G4yClSD" resolve="leb128FieldType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="5$99G4yCmU7" role="3clFbw">
+          <node concept="3clFbT" id="5$99G4yCn3F" role="3uHU7w">
+            <property role="3clFbU" value="false" />
+          </node>
+          <node concept="2OqwBi" id="5$99G4yCm4X" role="3uHU7B">
+            <node concept="1YBJjd" id="5$99G4yClVA" role="2Oq$k0">
+              <ref role="1YBMHb" node="5$99G4yClSD" resolve="leb128FieldType" />
+            </node>
+            <node concept="3TrcHB" id="5$99G4yCmcZ" role="2OqNvi">
+              <ref role="3TsBF5" to="rcc7:5$99G4yC7gz" resolve="signed" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5$99G4yClSD" role="1YuTPh">
+      <property role="TrG5h" value="leb128FieldType" />
+      <ref role="1YaFvo" to="rcc7:5$99G4yC7gx" resolve="Leb128FieldType" />
     </node>
   </node>
 </model>
