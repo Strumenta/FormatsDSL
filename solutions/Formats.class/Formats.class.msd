@@ -12,7 +12,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="d69b25e4-172b-4702-9497-a15aa19b1edd(Formats.sandbox)" version="0" />
+    <module reference="d69b25e4-172b-4702-9497-a15aa19b1edd(Formats.class)" version="0" />
   </dependencyVersions>
 </solution>
 
