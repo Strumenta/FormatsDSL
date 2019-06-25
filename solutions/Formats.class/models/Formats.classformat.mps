@@ -233,8 +233,8 @@
     <node concept="1CgEr1" id="7vkQey0MD$6" role="14JuLN">
       <property role="TrG5h" value="attributes" />
       <node concept="14JvP3" id="7vkQey0MD_7" role="1CgDCM">
-        <node concept="14JvPC" id="7vkQey0MD_8" role="14JvP6">
-          <ref role="14JvPF" node="7vkQey0MD$G" resolve="FieldInfo" />
+        <node concept="14JvPC" id="7aGUtaJvn2Q" role="14JvP6">
+          <ref role="14JvPF" node="7vkQey0MD$I" resolve="AttributeInfo" />
         </node>
         <node concept="14JvQ1" id="7vkQey0MD_d" role="14JvPf">
           <ref role="14JvQ4" node="7vkQey0MDzy" resolve="attributes_count" />
