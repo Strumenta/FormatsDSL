@@ -1,0 +1,77 @@
+import de.itemis.mps.gradle.BuildLanguages
+import de.itemis.mps.gradle.TestLanguages
+import de.itemis.mps.gradle.GenerateLibrariesXml
+import de.itemis.mps.gradle.RunAntScript
+
+group "com.strumenta.formatsdsl"
+description = "Formats DSL"
+
+ext.mpsVersion = '2019.1.3'
+ext.mpsExtensionsVersion = '2019.1.988.25746fd'
+ext.artifactsDir = new File(rootDir, 'artifacts')
+
+buildscript {
+    repositories {
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.85.03fbeda'
+    }
+}
+
+repositories {
+    maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+}
+
+configurations {
+    mpsExtensions
+}
+
+dependencies {
+    mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
+}
+
+configurations {
+	mps
+	mpsArtifacts
+	jdk
+	ant_lib
+	libs
+	distribution
+}
+
+task resolveMpsArtifacts(type: Copy) {
+	from {
+		configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+	}
+	into artifactsDir
+}
+
+task resolveMpsExtensions(type: Copy) {
+        dependsOn configurations.mpsExtensions
+        from {
+            configurations.mpsExtensions.resolve().collect { zipTree(it) }
+        }
+        into artifactsDir
+    }
+
+task setuplocal {
+	dependsOn resolveMpsArtifacts
+	dependsOn resolveMpsExtensions
+}
+
+// ext.mbeddrPlatformVersion = '1.2.21553.14a910d'
+// ext.iets3opensourceVersion = '0.2.3754.7f76cf6'
+
+// dependencies {
+// 	// ant_lib "org.apache.ant:ant-junit:1.10.1"
+// 	// mps "com.jetbrains:mps:$mpsVersion"
+// 	// mpsArtifacts "org.iets3:opensource:$iets3opensourceVersion"
+
+// 	// distribution "com.jetbrains.jdk:jdk:8u152b1343.26:windows_x64@tgz"   
+//  //    distribution "com.jetbrains.jdk:jdk:8u152b1343.26:osx_x64@tgz" 
+// }
+
+

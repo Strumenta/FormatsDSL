@@ -556,5 +556,25 @@
       <property role="1uS6qv" value="true" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2w7hH5yiOyV">
+    <property role="EcuMT" value="2884351951465302203" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="FieldAccessExpression" />
+    <ref role="1TJDcQ" node="7vkQey0O7wC" resolve="Expression" />
+    <node concept="1TJgyj" id="1oPiCxkhDb4" role="1TKVEi">
+      <property role="IQ2ns" value="1600267191989998276" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="field" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="74YVmCpv4IF" resolve="Field" />
+    </node>
+    <node concept="1TJgyj" id="1oPiCxkhAQN" role="1TKVEi">
+      <property role="IQ2ns" value="1600267191989988787" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="container" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0O7wC" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

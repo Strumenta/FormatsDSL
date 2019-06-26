@@ -4,7 +4,7 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -224,7 +224,9 @@
                   </node>
                   <node concept="2pIpSj" id="7vkQey0ZV7G" role="2pJxcM">
                     <ref role="2pIpSl" to="rcc7:6M$LN0C6jDZ" resolve="size" />
-                    <node concept="10Nm6u" id="7vkQey0ZV92" role="2pJxcZ" />
+                    <node concept="36biLy" id="5Dkfd5fjNqm" role="2pJxcZ">
+                      <node concept="10Nm6u" id="5Dkfd5fjNqn" role="36biLW" />
+                    </node>
                   </node>
                 </node>
               </node>

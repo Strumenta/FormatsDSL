@@ -6,3 +6,5 @@ test_gen
 test_gen.caches
 test_gen
 .mps/workspace.xml
+.gradle
+artifacts

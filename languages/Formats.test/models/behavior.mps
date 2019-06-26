@@ -436,7 +436,7 @@
                     <ref role="3cqZAo" node="7N4Y6zzuTYF" resolve="project" />
                   </node>
                   <node concept="liA8E" id="6M$LN0BUkXl" role="2OqNvi">
-                    <ref role="37wK5l" to="4nm9:~Project.getBasePath():java.lang.String" resolve="getBasePath" />
+                    <ref role="37wK5l" to="4nm9:~Project.getBasePath()" resolve="getBasePath" />
                   </node>
                 </node>
               </node>
@@ -460,7 +460,7 @@
                         <ref role="3cqZAo" node="6M$LN0BTMBu" resolve="projectRoot" />
                       </node>
                       <node concept="liA8E" id="6M$LN0BTQFa" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                       </node>
                     </node>
                     <node concept="10M0yZ" id="6M$LN0BTSyd" role="3uHU7w">
@@ -669,11 +669,11 @@
                           <ref role="3cqZAo" node="7N4Y6zzw61v" resolve="value" />
                         </node>
                         <node concept="liA8E" id="7N4Y6zzwuOm" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                          <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                         </node>
                       </node>
                       <node concept="liA8E" id="7N4Y6zzwxOD" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName()" resolve="getSimpleName" />
                       </node>
                     </node>
                   </node>
@@ -1067,11 +1067,11 @@
                           <ref role="3cqZAo" node="7N4Y6zzz5w7" resolve="value" />
                         </node>
                         <node concept="liA8E" id="7N4Y6zzz5uR" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                          <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                         </node>
                       </node>
                       <node concept="liA8E" id="7N4Y6zzz5uS" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName()" resolve="getSimpleName" />
                       </node>
                     </node>
                   </node>
@@ -1502,13 +1502,13 @@
                 <node concept="2OqwBi" id="7N4Y6zzx50w" role="33vP2m">
                   <node concept="2YIFZM" id="7N4Y6zzx50x" role="2Oq$k0">
                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                    <ref role="37wK5l" to="wyt6:~Integer.toHexString(int):java.lang.String" resolve="toHexString" />
+                    <ref role="37wK5l" to="wyt6:~Integer.toHexString(int)" resolve="toHexString" />
                     <node concept="37vLTw" id="7N4Y6zzx50y" role="37wK5m">
                       <ref role="3cqZAo" node="7N4Y6zzx50n" resolve="s" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7N4Y6zzx50z" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                    <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                   </node>
                 </node>
               </node>
@@ -1540,7 +1540,7 @@
                     <ref role="3cqZAo" node="7N4Y6zzx50u" resolve="str" />
                   </node>
                   <node concept="liA8E" id="7N4Y6zzx50K" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                   </node>
                 </node>
               </node>
@@ -1554,7 +1554,7 @@
                         <ref role="3cqZAo" node="7N4Y6zzx50u" resolve="str" />
                       </node>
                       <node concept="liA8E" id="7N4Y6zzxOI3" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                         <node concept="3cpWsd" id="7N4Y6zzxSYs" role="37wK5m">
                           <node concept="3cmrfG" id="7N4Y6zzxSYv" role="3uHU7w">
                             <property role="3cmrfH" value="2" />
@@ -1564,7 +1564,7 @@
                               <ref role="3cqZAo" node="7N4Y6zzx50u" resolve="str" />
                             </node>
                             <node concept="liA8E" id="7N4Y6zzxRFZ" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                              <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                             </node>
                           </node>
                         </node>
@@ -1585,7 +1585,7 @@
                     <ref role="3cqZAo" node="7N4Y6zzx50u" resolve="str" />
                   </node>
                   <node concept="liA8E" id="7N4Y6zzxAyP" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                   </node>
                 </node>
               </node>

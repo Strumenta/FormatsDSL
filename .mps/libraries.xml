@@ -1,0 +1,16 @@
+<project version='4'>
+  <component name='ProjectLibraryManager'>
+    <option name='libraries'>
+      <map>
+        <entry key='mpsExtensions'>
+          <value>
+            <Library>
+              <option name='name' value='mpsExtensions' />
+              <option name='path' value='$PROJECT_DIR$/artifacts/de.itemis.mps.extensions' />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

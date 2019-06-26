@@ -188,7 +188,7 @@
       <node concept="3clFbS" id="7vkQey0O7wR" role="3clF47">
         <node concept="3cpWs6" id="7vkQey0O7wS" role="3cqZAp">
           <node concept="2YIFZM" id="7vkQey0U$de" role="3cqZAk">
-            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
             <node concept="Xl_RD" id="7vkQey0O7wT" role="37wK5m">
               <property role="Xl_RC" value="&lt;%s&gt;" />
@@ -199,7 +199,7 @@
                 <node concept="2yIwOk" id="7vkQey0U$ZF" role="2OqNvi" />
               </node>
               <node concept="liA8E" id="7vkQey0UAC4" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
           </node>
@@ -256,7 +256,7 @@
         <node concept="3clFbF" id="7vkQey0Omdj" role="3cqZAp">
           <node concept="2YIFZM" id="7vkQey0OmdD" role="3clFbG">
             <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-            <ref role="37wK5l" to="wyt6:~Long.toString(long):java.lang.String" resolve="toString" />
+            <ref role="37wK5l" to="wyt6:~Long.toString(long)" resolve="toString" />
             <node concept="2OqwBi" id="7vkQey0OmoV" role="37wK5m">
               <node concept="13iPFW" id="7vkQey0OmeH" role="2Oq$k0" />
               <node concept="3TrcHB" id="7vkQey0On0D" role="2OqNvi">

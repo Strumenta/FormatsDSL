@@ -217,21 +217,21 @@
                 <node concept="2OqwBi" id="QNGuLN0BUQ" role="2Oq$k0">
                   <node concept="2YIFZM" id="QNGuLN0BUR" role="2Oq$k0">
                     <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
-                    <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance():jetbrains.mps.project.ProjectManager" resolve="getInstance" />
+                    <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance()" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="QNGuLN0BUS" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects():java.util.List" resolve="getOpenedProjects" />
+                    <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects()" resolve="getOpenedProjects" />
                   </node>
                 </node>
                 <node concept="liA8E" id="QNGuLN0BUT" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                   <node concept="3cmrfG" id="QNGuLN0BUU" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="QNGuLN0BUV" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getProjectFile():java.io.File" resolve="getProjectFile" />
+                <ref role="37wK5l" to="z1c3:~Project.getProjectFile()" resolve="getProjectFile" />
               </node>
             </node>
           </node>
@@ -256,7 +256,7 @@
                         <ref role="3cqZAo" node="QNGuLN0BUM" resolve="projectFile" />
                       </node>
                       <node concept="liA8E" id="QNGuLN0BV8" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                       </node>
                     </node>
                   </node>
@@ -284,7 +284,7 @@
                 <ref role="3cqZAo" node="QNGuLN0BFS" resolve="file" />
               </node>
               <node concept="liA8E" id="QNGuLN0Hv1" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
               </node>
             </node>
           </node>
@@ -548,21 +548,21 @@
                 <node concept="2OqwBi" id="QNGuLN4JTM" role="2Oq$k0">
                   <node concept="2YIFZM" id="QNGuLN4JTN" role="2Oq$k0">
                     <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
-                    <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance():jetbrains.mps.project.ProjectManager" resolve="getInstance" />
+                    <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance()" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="QNGuLN4JTO" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects():java.util.List" resolve="getOpenedProjects" />
+                    <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects()" resolve="getOpenedProjects" />
                   </node>
                 </node>
                 <node concept="liA8E" id="QNGuLN4JTP" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                   <node concept="3cmrfG" id="QNGuLN4JTQ" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="QNGuLN4JTR" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getProjectFile():java.io.File" resolve="getProjectFile" />
+                <ref role="37wK5l" to="z1c3:~Project.getProjectFile()" resolve="getProjectFile" />
               </node>
             </node>
           </node>
@@ -587,7 +587,7 @@
                         <ref role="3cqZAo" node="QNGuLN4JTI" resolve="projectFile" />
                       </node>
                       <node concept="liA8E" id="QNGuLN4JU2" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                       </node>
                     </node>
                   </node>
@@ -615,7 +615,7 @@
                 <ref role="3cqZAo" node="QNGuLN4JTT" resolve="file" />
               </node>
               <node concept="liA8E" id="QNGuLN4JUc" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
               </node>
             </node>
           </node>
