@@ -115,7 +115,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="field" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7vkQey0ZcfT" resolve="FieldReference" />
+      <ref role="20lvS9" node="7vkQey0ZcfT" resolve="ValuePath" />
     </node>
   </node>
   <node concept="1TIwiD" id="7vkQey0O7xt">
@@ -129,7 +129,7 @@
   <node concept="1TIwiD" id="7vkQey0ZcfT">
     <property role="EcuMT" value="8634764878684144633" />
     <property role="3GE5qa" value="field_references" />
-    <property role="TrG5h" value="FieldReference" />
+    <property role="TrG5h" value="ValuePath" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -137,8 +137,8 @@
   <node concept="1TIwiD" id="7vkQey0ZcfU">
     <property role="EcuMT" value="8634764878684144634" />
     <property role="3GE5qa" value="field_references" />
-    <property role="TrG5h" value="DirectFieldReference" />
-    <ref role="1TJDcQ" node="7vkQey0ZcfT" resolve="FieldReference" />
+    <property role="TrG5h" value="TopFieldPath" />
+    <ref role="1TJDcQ" node="7vkQey0ZcfT" resolve="ValuePath" />
     <node concept="1TJgyj" id="7vkQey0ZcfV" role="1TKVEi">
       <property role="IQ2ns" value="8634764878684144635" />
       <property role="20lmBu" value="reference" />
@@ -150,14 +150,14 @@
   <node concept="1TIwiD" id="7vkQey0ZLD8">
     <property role="EcuMT" value="8634764878684297800" />
     <property role="3GE5qa" value="field_references" />
-    <property role="TrG5h" value="ArrayElementReference" />
-    <ref role="1TJDcQ" node="7vkQey0ZcfT" resolve="FieldReference" />
+    <property role="TrG5h" value="ArrayValuePath" />
+    <ref role="1TJDcQ" node="7vkQey0ZcfT" resolve="ValuePath" />
     <node concept="1TJgyj" id="7vkQey0ZLDb" role="1TKVEi">
       <property role="IQ2ns" value="8634764878684297803" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="container" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7vkQey0ZcfT" resolve="FieldReference" />
+      <ref role="20lvS9" node="7vkQey0ZcfT" resolve="ValuePath" />
     </node>
     <node concept="1TJgyi" id="7vkQey0ZLD9" role="1TKVEl">
       <property role="IQ2nx" value="8634764878684297801" />
@@ -283,7 +283,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="field" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7vkQey0ZcfT" resolve="FieldReference" />
+      <ref role="20lvS9" node="7vkQey0ZcfT" resolve="ValuePath" />
     </node>
   </node>
   <node concept="1TIwiD" id="7N4Y6zz$oZE">
@@ -315,6 +315,26 @@
       <property role="IQ2nx" value="8876756085632393225" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5WmJoY$OWtU">
+    <property role="EcuMT" value="6851872307734103930" />
+    <property role="3GE5qa" value="field_references" />
+    <property role="TrG5h" value="ChildPath" />
+    <ref role="1TJDcQ" node="7vkQey0ZcfT" resolve="ValuePath" />
+    <node concept="1TJgyj" id="5WmJoY$OWyg" role="1TKVEi">
+      <property role="IQ2ns" value="6851872307734104208" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="field" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="rcc7:74YVmCpv4IF" resolve="Field" />
+    </node>
+    <node concept="1TJgyj" id="5WmJoY$OWwE" role="1TKVEi">
+      <property role="IQ2ns" value="6851872307734104106" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="container" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0ZcfT" resolve="ValuePath" />
     </node>
   </node>
 </model>

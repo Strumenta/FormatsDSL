@@ -5,6 +5,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <engage id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" />
     <engage id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -241,6 +242,11 @@
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -680,7 +686,7 @@
   </node>
   <node concept="24kQdi" id="7vkQey0Zcg5">
     <property role="3GE5qa" value="field_references" />
-    <ref role="1XX52x" to="b9ba:7vkQey0ZcfU" resolve="DirectFieldReference" />
+    <ref role="1XX52x" to="b9ba:7vkQey0ZcfU" resolve="TopFieldPath" />
     <node concept="1iCGBv" id="7vkQey0Zcg7" role="2wV5jI">
       <ref role="1NtTu8" to="b9ba:7vkQey0ZcfV" resolve="field" />
       <node concept="1sVBvm" id="7vkQey0Zcg9" role="1sWHZn">
@@ -693,7 +699,7 @@
   </node>
   <node concept="24kQdi" id="7vkQey0ZLDl">
     <property role="3GE5qa" value="field_references" />
-    <ref role="1XX52x" to="b9ba:7vkQey0ZLD8" resolve="ArrayElementReference" />
+    <ref role="1XX52x" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
     <node concept="3EZMnI" id="7vkQey0ZLDn" role="2wV5jI">
       <node concept="3F1sOY" id="7vkQey0ZLDu" role="3EZMnx">
         <ref role="1NtTu8" to="b9ba:7vkQey0ZLDb" resolve="container" />
@@ -859,7 +865,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="7N4Y6zzsYVW">
-    <ref role="aqKnT" to="b9ba:7vkQey0ZcfT" resolve="FieldReference" />
+    <ref role="aqKnT" to="b9ba:7vkQey0ZcfT" resolve="ValuePath" />
     <node concept="1Qtc8_" id="7N4Y6zzsYVX" role="IW6Ez">
       <node concept="3cWJ9i" id="7N4Y6zzsYVY" role="1Qtc8$">
         <node concept="CtIbL" id="7N4Y6zzsYVZ" role="CtIbM">
@@ -882,7 +888,7 @@
               <node concept="3cpWsn" id="7N4Y6zzsYW8" role="3cpWs9">
                 <property role="TrG5h" value="original" />
                 <node concept="3Tqbb2" id="7N4Y6zzsYW9" role="1tU5fm">
-                  <ref role="ehGHo" to="b9ba:7vkQey0ZcfT" resolve="FieldReference" />
+                  <ref role="ehGHo" to="b9ba:7vkQey0ZcfT" resolve="ValuePath" />
                 </node>
                 <node concept="7Obwk" id="7N4Y6zzsYWa" role="33vP2m" />
               </node>
@@ -891,12 +897,12 @@
               <node concept="3cpWsn" id="7N4Y6zzsYWc" role="3cpWs9">
                 <property role="TrG5h" value="arrayElementReferenc" />
                 <node concept="3Tqbb2" id="7N4Y6zzsYWd" role="1tU5fm">
-                  <ref role="ehGHo" to="b9ba:7vkQey0ZLD8" resolve="ArrayElementReference" />
+                  <ref role="ehGHo" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
                 </node>
                 <node concept="2OqwBi" id="7N4Y6zzsYWe" role="33vP2m">
                   <node concept="7Obwk" id="7N4Y6zzsYWf" role="2Oq$k0" />
                   <node concept="2DeJnW" id="7N4Y6zzsYWg" role="2OqNvi">
-                    <ref role="1_rbq0" to="b9ba:7vkQey0ZLD8" resolve="ArrayElementReference" />
+                    <ref role="1_rbq0" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
                   </node>
                 </node>
               </node>
@@ -1209,6 +1215,36 @@
     <ref role="1XX52x" to="b9ba:7GK$E3TTY08" resolve="DecimalByte" />
     <node concept="3F0A7n" id="7GK$E3TTY0k" role="2wV5jI">
       <ref role="1NtTu8" to="b9ba:7GK$E3TTY09" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5WmJoY$OW$o">
+    <property role="3GE5qa" value="field_references" />
+    <ref role="1XX52x" to="b9ba:5WmJoY$OWtU" resolve="ChildPath" />
+    <node concept="3EZMnI" id="5WmJoY$OWAP" role="2wV5jI">
+      <node concept="1kIj98" id="5WmJoY$OWC7" role="3EZMnx">
+        <node concept="3F1sOY" id="5WmJoY$OWCA" role="1kIj9b">
+          <ref role="1NtTu8" to="b9ba:5WmJoY$OWwE" resolve="container" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5WmJoY$OWAS" role="2iSdaV" />
+      <node concept="3F0ifn" id="5WmJoY$OWCH" role="3EZMnx">
+        <property role="3F0ifm" value="/" />
+        <node concept="11L4FC" id="5WmJoY$P7BB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5WmJoY$P7Cu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="5WmJoY$OWE2" role="3EZMnx">
+        <ref role="1NtTu8" to="b9ba:5WmJoY$OWyg" resolve="field" />
+        <node concept="1sVBvm" id="5WmJoY$OWE4" role="1sWHZn">
+          <node concept="3F0A7n" id="5WmJoY$OWEB" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -354,7 +354,7 @@
   </node>
   <node concept="13h7C7" id="7vkQey104l$">
     <property role="3GE5qa" value="field_references" />
-    <ref role="13h7C2" to="b9ba:7vkQey0ZcfT" resolve="FieldReference" />
+    <ref role="13h7C2" to="b9ba:7vkQey0ZcfT" resolve="ValuePath" />
     <node concept="13hLZK" id="7vkQey104l_" role="13h7CW">
       <node concept="3clFbS" id="7vkQey104lA" role="2VODD2" />
     </node>
@@ -549,7 +549,7 @@
                       <ref role="37wK5l" node="7N4Y6zzvZs1" resolve="show" />
                       <node concept="2pJPEk" id="7N4Y6zzwkcH" role="37wK5m">
                         <node concept="2pJPED" id="7N4Y6zzwkku" role="2pJPEn">
-                          <ref role="2pJxaS" to="b9ba:7vkQey0ZcfU" resolve="DirectFieldReference" />
+                          <ref role="2pJxaS" to="b9ba:7vkQey0ZcfU" resolve="TopFieldPath" />
                           <node concept="2pIpSj" id="7N4Y6zzwkyL" role="2pJxcM">
                             <ref role="2pIpSl" to="b9ba:7vkQey0ZcfV" resolve="field" />
                             <node concept="36biLy" id="7N4Y6zzwkE2" role="2pJxcZ">
@@ -716,7 +716,7 @@
                       <ref role="37wK5l" node="7N4Y6zzvZs1" resolve="show" />
                       <node concept="2pJPEk" id="7N4Y6zzyAJD" role="37wK5m">
                         <node concept="2pJPED" id="7N4Y6zzyAMK" role="2pJPEn">
-                          <ref role="2pJxaS" to="b9ba:7vkQey0ZLD8" resolve="ArrayElementReference" />
+                          <ref role="2pJxaS" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
                           <node concept="2pIpSj" id="7N4Y6zzyAQs" role="2pJxcM">
                             <ref role="2pIpSl" to="b9ba:7vkQey0ZLDb" resolve="container" />
                             <node concept="36biLy" id="7N4Y6zzyARK" role="2pJxcZ">
@@ -987,7 +987,7 @@
       <node concept="37vLTG" id="7N4Y6zzw60f" role="3clF46">
         <property role="TrG5h" value="fieldReference" />
         <node concept="3Tqbb2" id="7N4Y6zzw60e" role="1tU5fm">
-          <ref role="ehGHo" to="b9ba:7vkQey0ZcfT" resolve="FieldReference" />
+          <ref role="ehGHo" to="b9ba:7vkQey0ZcfT" resolve="ValuePath" />
         </node>
       </node>
       <node concept="37vLTG" id="7N4Y6zzw61v" role="3clF46">
@@ -1636,7 +1636,7 @@
   </node>
   <node concept="13h7C7" id="6D8ZJLeWVS8">
     <property role="3GE5qa" value="field_references" />
-    <ref role="13h7C2" to="b9ba:7vkQey0ZLD8" resolve="ArrayElementReference" />
+    <ref role="13h7C2" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
     <node concept="13hLZK" id="6D8ZJLeWVS9" role="13h7CW">
       <node concept="3clFbS" id="6D8ZJLeWVSa" role="2VODD2" />
     </node>
@@ -1684,7 +1684,7 @@
   </node>
   <node concept="13h7C7" id="6D8ZJLeXbCh">
     <property role="3GE5qa" value="field_references" />
-    <ref role="13h7C2" to="b9ba:7vkQey0ZcfU" resolve="DirectFieldReference" />
+    <ref role="13h7C2" to="b9ba:7vkQey0ZcfU" resolve="TopFieldPath" />
     <node concept="13hLZK" id="6D8ZJLeXbCi" role="13h7CW">
       <node concept="3clFbS" id="6D8ZJLeXbCj" role="2VODD2" />
     </node>

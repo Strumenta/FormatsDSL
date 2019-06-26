@@ -233,7 +233,7 @@
     </node>
     <node concept="1YaCAy" id="7vkQey0ZPPm" role="1YuTPh">
       <property role="TrG5h" value="directFieldReference" />
-      <ref role="1YaFvo" to="b9ba:7vkQey0ZcfU" resolve="DirectFieldReference" />
+      <ref role="1YaFvo" to="b9ba:7vkQey0ZcfU" resolve="TopFieldPath" />
     </node>
   </node>
   <node concept="1YbPZF" id="7vkQey10mxJ">
@@ -287,7 +287,7 @@
     </node>
     <node concept="1YaCAy" id="7vkQey10mxM" role="1YuTPh">
       <property role="TrG5h" value="arrayElementReference" />
-      <ref role="1YaFvo" to="b9ba:7vkQey0ZLD8" resolve="ArrayElementReference" />
+      <ref role="1YaFvo" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
     </node>
   </node>
   <node concept="1YbPZF" id="7vkQey10oz9">
