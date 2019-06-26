@@ -76,6 +76,9 @@
     <node concept="PrWs8" id="74YVmCpvbQO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3HeUQQHFmg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="74YVmCpvbP8">
     <property role="EcuMT" value="8160220614791839048" />
@@ -326,7 +329,7 @@
       <property role="IQ2ns" value="6851872307734104208" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="field" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="rcc7:74YVmCpv4IF" resolve="Field" />
     </node>
     <node concept="1TJgyj" id="5WmJoY$OWwE" role="1TKVEi">

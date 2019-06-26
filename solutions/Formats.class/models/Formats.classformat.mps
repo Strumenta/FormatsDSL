@@ -24,12 +24,16 @@
       <concept id="8160220614791839252" name="Formats.test.structure.HexadecimalByte" flags="ng" index="1Cg_dY">
         <property id="8160220614791843201" name="value" index="1Cgy3F" />
       </concept>
-      <concept id="8634764878684144634" name="Formats.test.structure.DirectFieldReference" flags="ng" index="3Ra1Gi">
+      <concept id="8634764878684144634" name="Formats.test.structure.TopFieldPath" flags="ng" index="3Ra1Gi">
         <reference id="8634764878684144635" name="field" index="3Ra1Gj" />
       </concept>
-      <concept id="8634764878684297800" name="Formats.test.structure.ArrayElementReference" flags="ng" index="3RaWaw">
+      <concept id="8634764878684297800" name="Formats.test.structure.ArrayValuePath" flags="ng" index="3RaWaw">
         <property id="8634764878684297801" name="index" index="3RaWax" />
         <child id="8634764878684297803" name="container" index="3RaWaz" />
+      </concept>
+      <concept id="6851872307734103930" name="Formats.test.structure.ChildPath" flags="ng" index="3VLnFP">
+        <reference id="6851872307734104208" name="field" index="3VLnkv" />
+        <child id="6851872307734104106" name="container" index="3VLnm_" />
       </concept>
     </language>
     <language id="040f4d08-2e19-478e-bafc-1ae65578e650" name="Formats">
@@ -310,6 +314,21 @@
         <property role="3RaWax" value="0" />
         <node concept="3Ra1Gi" id="1oPiCxkjyWH" role="3RaWaz">
           <ref role="3Ra1Gj" node="7vkQey0MD$6" resolve="attributes" />
+        </node>
+      </node>
+    </node>
+    <node concept="1Cgy3R" id="3HeUQQMGFu" role="1CgOvQ">
+      <node concept="3R1a30" id="3HeUQQMGFw" role="1Cgy3a" />
+      <node concept="3RaWaw" id="3HeUQQPK1l" role="3Ra1NV">
+        <property role="3RaWax" value="0" />
+        <node concept="3VLnFP" id="3HeUQQMGG6" role="3RaWaz">
+          <ref role="3VLnkv" node="59MEhNxF_2q" resolve="info" />
+          <node concept="3RaWaw" id="3HeUQQNC$K" role="3VLnm_">
+            <property role="3RaWax" value="0" />
+            <node concept="3Ra1Gi" id="3HeUQQMGH2" role="3RaWaz">
+              <ref role="3Ra1Gj" node="7vkQey0MD$6" resolve="attributes" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
