@@ -1752,7 +1752,7 @@
   </node>
   <node concept="13h7C7" id="3HeUQQHVFf">
     <property role="3GE5qa" value="field_references" />
-    <ref role="13h7C2" to="b9ba:5WmJoY$OWtU" resolve="ChildPath" />
+    <ref role="13h7C2" to="b9ba:5WmJoY$OWtU" resolve="ChildValuePath" />
     <node concept="13hLZK" id="3HeUQQHVFg" role="13h7CW">
       <node concept="3clFbS" id="3HeUQQHVFh" role="2VODD2" />
     </node>

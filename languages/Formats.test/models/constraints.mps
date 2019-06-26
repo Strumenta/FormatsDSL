@@ -556,7 +556,7 @@
   </node>
   <node concept="1M2fIO" id="3HeUQQHTEO">
     <property role="3GE5qa" value="field_references" />
-    <ref role="1M2myG" to="b9ba:5WmJoY$OWtU" resolve="ChildPath" />
+    <ref role="1M2myG" to="b9ba:5WmJoY$OWtU" resolve="ChildValuePath" />
     <node concept="1N5Pfh" id="3HeUQQHTFe" role="1Mr941">
       <ref role="1N5Vy1" to="b9ba:5WmJoY$OWyg" resolve="field" />
       <node concept="3dgokm" id="3HeUQQHW1$" role="1N6uqs">

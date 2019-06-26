@@ -323,13 +323,13 @@
   <node concept="1TIwiD" id="5WmJoY$OWtU">
     <property role="EcuMT" value="6851872307734103930" />
     <property role="3GE5qa" value="field_references" />
-    <property role="TrG5h" value="ChildPath" />
+    <property role="TrG5h" value="ChildValuePath" />
     <ref role="1TJDcQ" node="7vkQey0ZcfT" resolve="ValuePath" />
     <node concept="1TJgyj" id="5WmJoY$OWyg" role="1TKVEi">
       <property role="IQ2ns" value="6851872307734104208" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="field" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="rcc7:74YVmCpv4IF" resolve="Field" />
     </node>
     <node concept="1TJgyj" id="5WmJoY$OWwE" role="1TKVEi">

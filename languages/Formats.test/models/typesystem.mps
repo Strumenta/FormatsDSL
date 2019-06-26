@@ -678,7 +678,7 @@
     </node>
     <node concept="1YaCAy" id="3HeUQQNCH5" role="1YuTPh">
       <property role="TrG5h" value="childPath" />
-      <ref role="1YaFvo" to="b9ba:5WmJoY$OWtU" resolve="ChildPath" />
+      <ref role="1YaFvo" to="b9ba:5WmJoY$OWtU" resolve="ChildValuePath" />
     </node>
   </node>
 </model>
