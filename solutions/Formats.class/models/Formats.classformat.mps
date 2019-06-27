@@ -24,12 +24,16 @@
       <concept id="8160220614791839252" name="Formats.test.structure.HexadecimalByte" flags="ng" index="1Cg_dY">
         <property id="8160220614791843201" name="value" index="1Cgy3F" />
       </concept>
-      <concept id="8634764878684144634" name="Formats.test.structure.DirectFieldReference" flags="ng" index="3Ra1Gi">
+      <concept id="8634764878684144634" name="Formats.test.structure.TopFieldPath" flags="ng" index="3Ra1Gi">
         <reference id="8634764878684144635" name="field" index="3Ra1Gj" />
       </concept>
-      <concept id="8634764878684297800" name="Formats.test.structure.ArrayElementReference" flags="ng" index="3RaWaw">
+      <concept id="8634764878684297800" name="Formats.test.structure.ArrayValuePath" flags="ng" index="3RaWaw">
         <property id="8634764878684297801" name="index" index="3RaWax" />
         <child id="8634764878684297803" name="container" index="3RaWaz" />
+      </concept>
+      <concept id="6851872307734103930" name="Formats.test.structure.ChildValuePath" flags="ng" index="3VLnFP">
+        <reference id="6851872307734104208" name="field" index="3VLnkv" />
+        <child id="6851872307734104106" name="container" index="3VLnm_" />
       </concept>
     </language>
     <language id="040f4d08-2e19-478e-bafc-1ae65578e650" name="Formats">
@@ -86,7 +90,6 @@
       <concept id="8634764878685665954" name="Formats.structure.PolymorphicStructureType" flags="ng" index="3QLM9a">
         <reference id="8634764878685665955" name="polymorphicStructure" index="3QLM9b" />
       </concept>
-      <concept id="8634764878681241640" name="Formats.structure.Expression" flags="ng" index="3R1a30" />
       <concept id="8634764878680856923" name="Formats.structure.FieldsContainer" flags="ng" index="3R7$6N">
         <child id="7828601061921860419" name="fields" index="14JuLN" />
       </concept>
@@ -305,12 +308,17 @@
       </node>
     </node>
     <node concept="1Cgy3R" id="1oPiCxkjyVq" role="1CgOvQ">
-      <node concept="3R1a30" id="1oPiCxkjyVs" role="1Cgy3a" />
-      <node concept="3RaWaw" id="1oPiCxkjyXw" role="3Ra1NV">
-        <property role="3RaWax" value="0" />
-        <node concept="3Ra1Gi" id="1oPiCxkjyWH" role="3RaWaz">
-          <ref role="3Ra1Gj" node="7vkQey0MD$6" resolve="attributes" />
+      <node concept="3VLnFP" id="3HeUQQY8OF" role="3Ra1NV">
+        <ref role="3VLnkv" node="7N4Y6zzJ9CI" resolve="access_flags" />
+        <node concept="3RaWaw" id="3HeUQQY8N8" role="3VLnm_">
+          <property role="3RaWax" value="0" />
+          <node concept="3Ra1Gi" id="3HeUQQY8MI" role="3RaWaz">
+            <ref role="3Ra1Gj" node="7vkQey0MDxQ" resolve="fields" />
+          </node>
         </node>
+      </node>
+      <node concept="14JvPa" id="3HeUQR1VMK" role="1Cgy3a">
+        <property role="14JvPd" value="18" />
       </node>
     </node>
     <node concept="1Cg_0y" id="74YVmCpvd3A" role="1Cg_0x">
