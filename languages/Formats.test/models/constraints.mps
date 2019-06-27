@@ -626,5 +626,84 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="8nADPlPeFb">
+    <property role="3GE5qa" value="field_references" />
+    <ref role="1M2myG" to="b9ba:8nADPlPecY" resolve="CastValuePath" />
+    <node concept="1N5Pfh" id="8nADPlPeFT" role="1Mr941">
+      <ref role="1N5Vy1" to="b9ba:8nADPlPeCK" resolve="alternative" />
+      <node concept="3dgokm" id="8nADPlPeHw" role="1N6uqs">
+        <node concept="3clFbS" id="8nADPlPeHx" role="2VODD2">
+          <node concept="3clFbJ" id="8nADPlPf6N" role="3cqZAp">
+            <node concept="3clFbS" id="8nADPlPf6P" role="3clFbx">
+              <node concept="3cpWs8" id="8nADPlPiHc" role="3cqZAp">
+                <node concept="3cpWsn" id="8nADPlPiHf" role="3cpWs9">
+                  <property role="TrG5h" value="pst" />
+                  <node concept="3Tqbb2" id="8nADPlPiHa" role="1tU5fm">
+                    <ref role="ehGHo" to="rcc7:7vkQey14ZEy" resolve="PolymorphicStructureType" />
+                  </node>
+                  <node concept="1PxgMI" id="8nADPlPkqY" role="33vP2m">
+                    <node concept="chp4Y" id="8nADPlPkBr" role="3oSUPX">
+                      <ref role="cht4Q" to="rcc7:7vkQey14ZEy" resolve="PolymorphicStructureType" />
+                    </node>
+                    <node concept="2OqwBi" id="8nADPlPj_9" role="1m5AlR">
+                      <node concept="2OqwBi" id="8nADPlPj_a" role="2Oq$k0">
+                        <node concept="3kakTB" id="8nADPlPj_b" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="8nADPlPj_c" role="2OqNvi">
+                          <ref role="3Tt5mk" to="b9ba:8nADPlPeiL" resolve="uncasted" />
+                        </node>
+                      </node>
+                      <node concept="3JvlWi" id="8nADPlPj_d" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="8nADPlPkY6" role="3cqZAp">
+                <node concept="2YIFZM" id="8nADPlPln8" role="3cqZAk">
+                  <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                  <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                  <node concept="2OqwBi" id="8nADPlPooY" role="37wK5m">
+                    <node concept="2OqwBi" id="8nADPlPlQF" role="2Oq$k0">
+                      <node concept="37vLTw" id="8nADPlPl$q" role="2Oq$k0">
+                        <ref role="3cqZAo" node="8nADPlPiHf" resolve="pst" />
+                      </node>
+                      <node concept="3TrEf2" id="8nADPlPmgU" role="2OqNvi">
+                        <ref role="3Tt5mk" to="rcc7:7vkQey14ZEz" resolve="polymorphicStructure" />
+                      </node>
+                    </node>
+                    <node concept="3Tsc0h" id="8nADPlPoPj" role="2OqNvi">
+                      <ref role="3TtcxE" to="rcc7:7vkQey14WMQ" resolve="alternatives" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="8nADPlPh$b" role="3clFbw">
+              <node concept="2OqwBi" id="8nADPlPghA" role="2Oq$k0">
+                <node concept="2OqwBi" id="8nADPlPfpY" role="2Oq$k0">
+                  <node concept="3kakTB" id="8nADPlPfbm" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="8nADPlPfDD" role="2OqNvi">
+                    <ref role="3Tt5mk" to="b9ba:8nADPlPeiL" resolve="uncasted" />
+                  </node>
+                </node>
+                <node concept="3JvlWi" id="8nADPlPh4x" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="8nADPlPioO" role="2OqNvi">
+                <node concept="chp4Y" id="8nADPlPixL" role="cj9EA">
+                  <ref role="cht4Q" to="rcc7:7vkQey14ZEy" resolve="PolymorphicStructureType" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="8nADPlPeLh" role="3cqZAp">
+            <node concept="2ShNRf" id="8nADPlPeOl" role="3cqZAk">
+              <node concept="1pGfFk" id="8nADPlPeYE" role="2ShVmc">
+                <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

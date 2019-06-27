@@ -15,6 +15,7 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -336,6 +337,27 @@
       <property role="IQ2ns" value="6851872307734104106" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="container" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7vkQey0ZcfT" resolve="ValuePath" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="8nADPlPecY">
+    <property role="EcuMT" value="150759113080759102" />
+    <property role="3GE5qa" value="field_references" />
+    <property role="TrG5h" value="CastValuePath" />
+    <property role="34LRSv" value="is" />
+    <ref role="1TJDcQ" node="7vkQey0ZcfT" resolve="ValuePath" />
+    <node concept="1TJgyj" id="8nADPlPeCK" role="1TKVEi">
+      <property role="IQ2ns" value="150759113080760880" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="alternative" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="rcc7:7vkQey14WLU" resolve="PolymorphicAlternative" />
+    </node>
+    <node concept="1TJgyj" id="8nADPlPeiL" role="1TKVEi">
+      <property role="IQ2ns" value="150759113080759473" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uncasted" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7vkQey0ZcfT" resolve="ValuePath" />
     </node>

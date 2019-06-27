@@ -11,6 +11,33 @@
       <concept id="8876756085632393224" name="Formats.test.structure.DecimalByte" flags="ng" index="22PRaC">
         <property id="8876756085632393225" name="value" index="22PRaD" />
       </concept>
+      <concept id="150759113080759102" name="Formats.test.structure.CastValuePath" flags="ng" index="1nKRAz">
+        <reference id="150759113080760880" name="alternative" index="1nKR2H" />
+        <child id="150759113080759473" name="uncasted" index="1nKRSG" />
+      </concept>
+      <concept id="8160220614791843229" name="Formats.test.structure.FieldExpectationAssertion" flags="ng" index="1Cgy3R">
+        <child id="8160220614791843232" name="expectedValue" index="1Cgy3a" />
+        <child id="8634764878684144659" name="field" index="3Ra1NV" />
+      </concept>
+      <concept id="8160220614791839048" name="Formats.test.structure.FileReference" flags="ng" index="1Cg_0y">
+        <property id="8160220614791839049" name="path" index="1Cg_0z" />
+      </concept>
+      <concept id="8160220614791839043" name="Formats.test.structure.BinaryFormatTest" flags="ng" index="1Cg_0D">
+        <reference id="8160220614791839044" name="format" index="1Cg_0I" />
+        <child id="8160220614791839051" name="fileToLoad" index="1Cg_0x" />
+        <child id="8160220614791899804" name="assertions" index="1CgOvQ" />
+      </concept>
+      <concept id="8634764878684144634" name="Formats.test.structure.TopFieldPath" flags="ng" index="3Ra1Gi">
+        <reference id="8634764878684144635" name="field" index="3Ra1Gj" />
+      </concept>
+      <concept id="8634764878684297800" name="Formats.test.structure.ArrayValuePath" flags="ng" index="3RaWaw">
+        <property id="8634764878684297801" name="index" index="3RaWax" />
+        <child id="8634764878684297803" name="container" index="3RaWaz" />
+      </concept>
+      <concept id="6851872307734103930" name="Formats.test.structure.ChildValuePath" flags="ng" index="3VLnFP">
+        <reference id="6851872307734104208" name="field" index="3VLnkv" />
+        <child id="6851872307734104106" name="container" index="3VLnm_" />
+      </concept>
     </language>
     <language id="040f4d08-2e19-478e-bafc-1ae65578e650" name="Formats">
       <concept id="8876756085632393172" name="Formats.structure.DecimalBytesValueExpression" flags="ng" index="22POPO">
@@ -82,6 +109,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -91,6 +119,7 @@
   </registry>
   <node concept="1CgEr0" id="7GK$E3TTXWn">
     <property role="TrG5h" value="PNG" />
+    <property role="3GE5qa" value="format" />
     <node concept="1CgEr1" id="7GK$E3TTXWo" role="14JuLN">
       <property role="TrG5h" value="signature" />
       <node concept="1CgDCy" id="7GK$E3TTXW$" role="1CgDCM">
@@ -139,6 +168,7 @@
   </node>
   <node concept="3QLLi5" id="91iwavZrRN">
     <property role="TrG5h" value="Chunk" />
+    <property role="3GE5qa" value="format" />
     <node concept="3QLLii" id="91iwaw0$Kc" role="3QLLhu">
       <property role="3Gr8kS" value="1" />
       <property role="TrG5h" value="ihdr" />
@@ -351,6 +381,7 @@
   </node>
   <node concept="14JuLK" id="NNZx9393_z">
     <property role="TrG5h" value="IHDRImageHeader" />
+    <property role="3GE5qa" value="format" />
     <node concept="1CgEr1" id="NNZx9393_$" role="14JuLN">
       <property role="TrG5h" value="width" />
       <node concept="1CgDCy" id="NNZx9393A4" role="1CgDCM">
@@ -386,6 +417,7 @@
   </node>
   <node concept="14JuLK" id="NNZx9393Fv">
     <property role="TrG5h" value="PLTEPalette" />
+    <property role="3GE5qa" value="format" />
     <node concept="1CgEr1" id="NNZx9393GS" role="14JuLN">
       <property role="TrG5h" value="entries" />
       <node concept="14JvP3" id="NNZx9393H8" role="1CgDCM">
@@ -398,6 +430,7 @@
   </node>
   <node concept="14JuLK" id="NNZx9393Fw">
     <property role="TrG5h" value="PaletteEntry" />
+    <property role="3GE5qa" value="format" />
     <node concept="1CgEr1" id="NNZx9393Fx" role="14JuLN">
       <property role="TrG5h" value="red" />
       <node concept="1CgDCy" id="NNZx9393FL" role="1CgDCM" />
@@ -413,9 +446,11 @@
   </node>
   <node concept="14JuLK" id="NNZx9393Ik">
     <property role="TrG5h" value="IENDImageTrailer" />
+    <property role="3GE5qa" value="format" />
   </node>
   <node concept="14JuLK" id="NNZx939FkY">
     <property role="TrG5h" value="tEXt Textual data" />
+    <property role="3GE5qa" value="format" />
     <node concept="1CgEr1" id="NNZx939FkZ" role="14JuLN">
       <property role="TrG5h" value="keyword" />
       <node concept="1fPWmZ" id="NNZx939GHM" role="1CgDCM">
@@ -432,6 +467,7 @@
   </node>
   <node concept="14JuLK" id="NNZx939J7B">
     <property role="TrG5h" value="iTXt International textual data" />
+    <property role="3GE5qa" value="format" />
     <node concept="1CgEr1" id="NNZx939J7C" role="14JuLN">
       <property role="TrG5h" value="keyword" />
       <node concept="1fPWmZ" id="NNZx939J7D" role="1CgDCM">
@@ -468,6 +504,7 @@
   </node>
   <node concept="14JuLK" id="C8sJ9gq5eR">
     <property role="TrG5h" value="ICCPEmbeddedICCProfile" />
+    <property role="3GE5qa" value="format" />
     <node concept="1CgEr1" id="C8sJ9gq5eS" role="14JuLN">
       <property role="TrG5h" value="profileName" />
       <node concept="1fPWmZ" id="C8sJ9gq5fc" role="1CgDCM">
@@ -482,6 +519,48 @@
       <property role="TrG5h" value="compressedProgile" />
       <node concept="2tHnr7" id="C8sJ9gq5gs" role="1CgDCM">
         <node concept="22QDJo" id="C8sJ9gq5gA" role="2tHnr4" />
+      </node>
+    </node>
+  </node>
+  <node concept="1Cg_0D" id="8nADPlOPZl">
+    <property role="3GE5qa" value="testing" />
+    <property role="TrG5h" value="pngHeader" />
+    <ref role="1Cg_0I" node="7GK$E3TTXWn" resolve="PNG" />
+    <node concept="1Cg_0y" id="8nADPlOQ2u" role="1Cg_0x">
+      <property role="1Cg_0z" value="pngs/low-resolution.png" />
+    </node>
+    <node concept="1Cgy3R" id="8nADPlPdT8" role="1CgOvQ">
+      <node concept="14JvPa" id="8nADPlQ7It" role="1Cgy3a">
+        <property role="14JvPd" value="300" />
+      </node>
+      <node concept="3VLnFP" id="8nADPlQ7FF" role="3Ra1NV">
+        <ref role="3VLnkv" node="NNZx9393_$" resolve="width" />
+        <node concept="1nKRAz" id="8nADPlQ7AB" role="3VLnm_">
+          <ref role="1nKR2H" node="91iwaw0$Kc" resolve="ihdr" />
+          <node concept="3RaWaw" id="8nADPlPe2N" role="1nKRSG">
+            <property role="3RaWax" value="0" />
+            <node concept="3Ra1Gi" id="8nADPlPe2o" role="3RaWaz">
+              <ref role="3Ra1Gj" node="7GK$E3TUw$b" resolve="chunks" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1Cgy3R" id="8nADPlQ7N7" role="1CgOvQ">
+      <node concept="14JvPa" id="8nADPlQ7N8" role="1Cgy3a">
+        <property role="14JvPd" value="392" />
+      </node>
+      <node concept="3VLnFP" id="8nADPlQ7N9" role="3Ra1NV">
+        <ref role="3VLnkv" node="NNZx9393An" resolve="height" />
+        <node concept="1nKRAz" id="8nADPlQ7Na" role="3VLnm_">
+          <ref role="1nKR2H" node="91iwaw0$Kc" resolve="ihdr" />
+          <node concept="3RaWaw" id="8nADPlQ7Nb" role="1nKRSG">
+            <property role="3RaWax" value="0" />
+            <node concept="3Ra1Gi" id="8nADPlQ7Nc" role="3RaWaz">
+              <ref role="3Ra1Gj" node="7GK$E3TUw$b" resolve="chunks" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

@@ -681,5 +681,42 @@
       <ref role="1YaFvo" to="b9ba:5WmJoY$OWtU" resolve="ChildValuePath" />
     </node>
   </node>
+  <node concept="1YbPZF" id="8nADPlPpeO">
+    <property role="TrG5h" value="typeof_CastValuePath" />
+    <property role="3GE5qa" value="field_references" />
+    <node concept="3clFbS" id="8nADPlPpeP" role="18ibNy">
+      <node concept="1Z5TYs" id="8nADPlPpGH" role="3cqZAp">
+        <node concept="mw_s8" id="8nADPlPpJ6" role="1ZfhKB">
+          <node concept="2OqwBi" id="8nADPlPtLJ" role="mwGJk">
+            <node concept="2OqwBi" id="8nADPlPqFP" role="2Oq$k0">
+              <node concept="2OqwBi" id="8nADPlPpZW" role="2Oq$k0">
+                <node concept="1YBJjd" id="8nADPlPpQS" role="2Oq$k0">
+                  <ref role="1YBMHb" node="8nADPlPpeR" resolve="castValuePath" />
+                </node>
+                <node concept="3TrEf2" id="8nADPlPqbs" role="2OqNvi">
+                  <ref role="3Tt5mk" to="b9ba:8nADPlPeCK" resolve="alternative" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="8nADPlPqVR" role="2OqNvi">
+                <ref role="3Tt5mk" to="rcc7:7vkQey14WLV" resolve="content" />
+              </node>
+            </node>
+            <node concept="1$rogu" id="8nADPlPv94" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="8nADPlPpGK" role="1ZfhK$">
+          <node concept="1Z2H0r" id="8nADPlPpgq" role="mwGJk">
+            <node concept="1YBJjd" id="8nADPlPpij" role="1Z2MuG">
+              <ref role="1YBMHb" node="8nADPlPpeR" resolve="castValuePath" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="8nADPlPpeR" role="1YuTPh">
+      <property role="TrG5h" value="castValuePath" />
+      <ref role="1YaFvo" to="b9ba:8nADPlPecY" resolve="CastValuePath" />
+    </node>
+  </node>
 </model>
 
