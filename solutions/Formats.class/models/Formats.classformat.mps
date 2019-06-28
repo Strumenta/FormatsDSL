@@ -9,6 +9,10 @@
   <imports />
   <registry>
     <language id="8b0c1f5d-d826-49bc-8678-d64a5a245799" name="Formats.test">
+      <concept id="150759113080759102" name="Formats.test.structure.CastValuePath" flags="ng" index="1nKRAz">
+        <reference id="150759113080760880" name="alternative" index="1nKR2H" />
+        <child id="150759113080759473" name="uncasted" index="1nKRSG" />
+      </concept>
       <concept id="8160220614791843229" name="Formats.test.structure.FieldExpectationAssertion" flags="ng" index="1Cgy3R">
         <child id="8160220614791843232" name="expectedValue" index="1Cgy3a" />
         <child id="8634764878684144659" name="field" index="3Ra1NV" />
@@ -47,6 +51,9 @@
       </concept>
       <concept id="7658651525954319966" name="Formats.structure.EqualTo" flags="ng" index="_i$yy">
         <child id="7658651525954319969" name="value" index="_i$yt" />
+      </concept>
+      <concept id="3094382581166421630" name="Formats.structure.StringLiteralExpression" flags="ng" index="ZpsbI">
+        <property id="3094382581166421631" name="content" index="ZpsbJ" />
       </concept>
       <concept id="7828601061921860416" name="Formats.structure.Record" flags="ng" index="14JuLK" />
       <concept id="7828601061921864307" name="Formats.structure.ArrayType" flags="ng" index="14JvP3">
@@ -319,6 +326,23 @@
       </node>
       <node concept="14JvPa" id="3HeUQR1VMK" role="1Cgy3a">
         <property role="14JvPd" value="18" />
+      </node>
+    </node>
+    <node concept="1Cgy3R" id="2rrrsUMVs1V" role="1CgOvQ">
+      <node concept="ZpsbI" id="2rrrsUMW2av" role="1Cgy3a">
+        <property role="ZpsbJ" value="commentsInserter" />
+      </node>
+      <node concept="3VLnFP" id="2rrrsUMVsfH" role="3Ra1NV">
+        <ref role="3VLnkv" node="2FLt90lu8OZ" resolve="content" />
+        <node concept="1nKRAz" id="2rrrsUMVs9z" role="3VLnm_">
+          <ref role="1nKR2H" node="7vkQey174Tc" resolve="utf8" />
+          <node concept="3RaWaw" id="2rrrsUMVs4d" role="1nKRSG">
+            <property role="3RaWax" value="110" />
+            <node concept="3Ra1Gi" id="2rrrsUMVs3J" role="3RaWaz">
+              <ref role="3Ra1Gj" node="6M$LN0C6jDa" resolve="constant_pool" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1Cg_0y" id="74YVmCpvd3A" role="1Cg_0x">

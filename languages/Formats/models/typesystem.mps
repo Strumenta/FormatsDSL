@@ -434,5 +434,31 @@
       <ref role="1YaFvo" to="rcc7:5$99G4yC7gx" resolve="Leb128FieldType" />
     </node>
   </node>
+  <node concept="1YbPZF" id="2rrrsUMW2d6">
+    <property role="TrG5h" value="typeof_StringLiteralExpression" />
+    <property role="3GE5qa" value="expressions" />
+    <node concept="3clFbS" id="2rrrsUMW2d7" role="18ibNy">
+      <node concept="1Z5TYs" id="2rrrsUMW2Sz" role="3cqZAp">
+        <node concept="mw_s8" id="2rrrsUMW2TL" role="1ZfhKB">
+          <node concept="2pJPEk" id="2rrrsUMW2TH" role="mwGJk">
+            <node concept="2pJPED" id="2rrrsUMW2Uo" role="2pJPEn">
+              <ref role="2pJxaS" to="rcc7:NNZx9393IH" resolve="StringType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2rrrsUMW2SA" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2rrrsUMW2eo" role="mwGJk">
+            <node concept="1YBJjd" id="2rrrsUMW2gE" role="1Z2MuG">
+              <ref role="1YBMHb" node="2rrrsUMW2d9" resolve="stringLiteralExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2rrrsUMW2d9" role="1YuTPh">
+      <property role="TrG5h" value="stringLiteralExpression" />
+      <ref role="1YaFvo" to="rcc7:2FLt90l_bpY" resolve="StringLiteralExpression" />
+    </node>
+  </node>
 </model>
 

@@ -375,6 +375,7 @@
     <property role="EcuMT" value="3094382581166421630" />
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="StringLiteralExpression" />
+    <property role="34LRSv" value="&quot;" />
     <ref role="1TJDcQ" node="7vkQey0O7wC" resolve="Expression" />
     <node concept="1TJgyi" id="2FLt90l_bpZ" role="1TKVEl">
       <property role="IQ2nx" value="3094382581166421631" />
