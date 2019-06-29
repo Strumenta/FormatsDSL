@@ -93,7 +93,7 @@ task setuplocal {
 	dependsOn resolveMpsExtensions
 }
 
-task generateBuildAntScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
+task generateBuildAntScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts, resolveMpsExtensions]) {
     scriptArgs = antScriptArgs
     scriptClasspath = buildScriptClasspath
     script new File('build-meta.xml')
