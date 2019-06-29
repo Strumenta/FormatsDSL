@@ -20,11 +20,11 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="rcc7" ref="r:76136210-b18f-4120-a7ee-b8cb5327eccc(Formats.structure)" />
     <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
+    <import index="3fpj" ref="r:51e22045-b151-4c09-8fa7-992f11322b24(Formats.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="sp18" ref="r:8f188900-53f5-4c0a-9032-44ce83c06578(Formats.test.behavior)" implicit="true" />
-    <import index="3fpj" ref="r:51e22045-b151-4c09-8fa7-992f11322b24(Formats.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -3153,7 +3153,7 @@
             </node>
             <node concept="1mIQ4w" id="7vkQey0ZAfu" role="2OqNvi">
               <node concept="chp4Y" id="7vkQey0ZEl7" role="cj9EA">
-                <ref role="cht4Q" to="b9ba:7vkQey0ZcfU" resolve="TopFieldPath" />
+                <ref role="cht4Q" to="rcc7:7vkQey0ZcfU" resolve="TopFieldPath" />
               </node>
             </node>
           </node>
@@ -3164,14 +3164,14 @@
                 <node concept="2OqwBi" id="7vkQey0ZCSY" role="37wK5m">
                   <node concept="1PxgMI" id="7vkQey0ZCxs" role="2Oq$k0">
                     <node concept="chp4Y" id="7vkQey0ZDEI" role="3oSUPX">
-                      <ref role="cht4Q" to="b9ba:7vkQey0ZcfU" resolve="TopFieldPath" />
+                      <ref role="cht4Q" to="rcc7:7vkQey0ZcfU" resolve="TopFieldPath" />
                     </node>
                     <node concept="37vLTw" id="7vkQey0ZC91" role="1m5AlR">
                       <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="7vkQey0ZE9U" role="2OqNvi">
-                    <ref role="3Tt5mk" to="b9ba:7vkQey0ZcfV" resolve="field" />
+                    <ref role="3Tt5mk" to="rcc7:7vkQey0ZcfV" resolve="field" />
                   </node>
                 </node>
               </node>
@@ -3191,14 +3191,14 @@
                   <node concept="2OqwBi" id="7vkQey118bo" role="37wK5m">
                     <node concept="1PxgMI" id="7vkQey1181w" role="2Oq$k0">
                       <node concept="chp4Y" id="7vkQey1182f" role="3oSUPX">
-                        <ref role="cht4Q" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
+                        <ref role="cht4Q" to="rcc7:7vkQey0ZLD8" resolve="ArrayValuePath" />
                       </node>
                       <node concept="37vLTw" id="7vkQey117On" role="1m5AlR">
                         <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="7vkQey118om" role="2OqNvi">
-                      <ref role="3Tt5mk" to="b9ba:7vkQey0ZLDb" resolve="container" />
+                      <ref role="3Tt5mk" to="rcc7:7vkQey0ZLDb" resolve="container" />
                     </node>
                   </node>
                 </node>
@@ -3236,14 +3236,14 @@
                           <node concept="2OqwBi" id="7vkQey1385G" role="37wK5m">
                             <node concept="1PxgMI" id="7vkQey137_G" role="2Oq$k0">
                               <node concept="chp4Y" id="7vkQey137_H" role="3oSUPX">
-                                <ref role="cht4Q" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
+                                <ref role="cht4Q" to="rcc7:7vkQey0ZLD8" resolve="ArrayValuePath" />
                               </node>
                               <node concept="37vLTw" id="7vkQey137_I" role="1m5AlR">
                                 <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                               </node>
                             </node>
                             <node concept="3TrcHB" id="7vkQey138H9" role="2OqNvi">
-                              <ref role="3TsBF5" to="b9ba:7vkQey0ZLD9" resolve="index" />
+                              <ref role="3TsBF5" to="rcc7:7vkQey0ZLD9" resolve="index" />
                             </node>
                           </node>
                         </node>
@@ -3268,7 +3268,7 @@
                                   <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                                 </node>
                                 <node concept="2qgKlT" id="6D8ZJLeWIqf" role="2OqNvi">
-                                  <ref role="37wK5l" to="sp18:7vkQey104lJ" resolve="presentation" />
+                                  <ref role="37wK5l" to="3fpj:7vkQey104lJ" resolve="presentation" />
                                 </node>
                               </node>
                               <node concept="3cpWs3" id="6D8ZJLeWGlx" role="3uHU7B">
@@ -3279,14 +3279,14 @@
                                   <node concept="2OqwBi" id="6D8ZJLeWEG7" role="3uHU7w">
                                     <node concept="1PxgMI" id="6D8ZJLeWEG8" role="2Oq$k0">
                                       <node concept="chp4Y" id="6D8ZJLeWEG9" role="3oSUPX">
-                                        <ref role="cht4Q" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
+                                        <ref role="cht4Q" to="rcc7:7vkQey0ZLD8" resolve="ArrayValuePath" />
                                       </node>
                                       <node concept="37vLTw" id="6D8ZJLeWEGa" role="1m5AlR">
                                         <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                                       </node>
                                     </node>
                                     <node concept="3TrcHB" id="6D8ZJLeWEGb" role="2OqNvi">
-                                      <ref role="3TsBF5" to="b9ba:7vkQey0ZLD9" resolve="index" />
+                                      <ref role="3TsBF5" to="rcc7:7vkQey0ZLD9" resolve="index" />
                                     </node>
                                   </node>
                                 </node>
@@ -3350,7 +3350,7 @@
             </node>
             <node concept="1mIQ4w" id="7vkQey117dS" role="2OqNvi">
               <node concept="chp4Y" id="7vkQey117g6" role="cj9EA">
-                <ref role="cht4Q" to="b9ba:7vkQey0ZLD8" resolve="ArrayValuePath" />
+                <ref role="cht4Q" to="rcc7:7vkQey0ZLD8" resolve="ArrayValuePath" />
               </node>
             </node>
           </node>
@@ -3368,14 +3368,14 @@
                   <node concept="2OqwBi" id="3HeUQQYtn8" role="37wK5m">
                     <node concept="1PxgMI" id="3HeUQQYtn9" role="2Oq$k0">
                       <node concept="chp4Y" id="3HeUQQYu5S" role="3oSUPX">
-                        <ref role="cht4Q" to="b9ba:5WmJoY$OWtU" resolve="ChildValuePath" />
+                        <ref role="cht4Q" to="rcc7:5WmJoY$OWtU" resolve="ChildValuePath" />
                       </node>
                       <node concept="37vLTw" id="3HeUQQYtnb" role="1m5AlR">
                         <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="3HeUQQYLeM" role="2OqNvi">
-                      <ref role="3Tt5mk" to="b9ba:5WmJoY$OWwE" resolve="container" />
+                      <ref role="3Tt5mk" to="rcc7:5WmJoY$OWwE" resolve="container" />
                     </node>
                   </node>
                 </node>
@@ -3413,14 +3413,14 @@
                           <node concept="2OqwBi" id="3HeUQQYtns" role="37wK5m">
                             <node concept="1PxgMI" id="3HeUQQYtnt" role="2Oq$k0">
                               <node concept="chp4Y" id="3HeUQQYIT_" role="3oSUPX">
-                                <ref role="cht4Q" to="b9ba:5WmJoY$OWtU" resolve="ChildValuePath" />
+                                <ref role="cht4Q" to="rcc7:5WmJoY$OWtU" resolve="ChildValuePath" />
                               </node>
                               <node concept="37vLTw" id="3HeUQQYtnv" role="1m5AlR">
                                 <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                               </node>
                             </node>
                             <node concept="3TrEf2" id="3HeUQQYK8s" role="2OqNvi">
-                              <ref role="3Tt5mk" to="b9ba:5WmJoY$OWyg" resolve="field" />
+                              <ref role="3Tt5mk" to="rcc7:5WmJoY$OWyg" resolve="field" />
                             </node>
                           </node>
                         </node>
@@ -3445,7 +3445,7 @@
                                   <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                                 </node>
                                 <node concept="2qgKlT" id="3HeUQQYtnF" role="2OqNvi">
-                                  <ref role="37wK5l" to="sp18:7vkQey104lJ" resolve="presentation" />
+                                  <ref role="37wK5l" to="3fpj:7vkQey104lJ" resolve="presentation" />
                                 </node>
                               </node>
                               <node concept="3cpWs3" id="3HeUQQYtnG" role="3uHU7B">
@@ -3457,14 +3457,14 @@
                                     <node concept="2OqwBi" id="3HeUQQYtnJ" role="2Oq$k0">
                                       <node concept="1PxgMI" id="3HeUQQYtnK" role="2Oq$k0">
                                         <node concept="chp4Y" id="3HeUQQY_S2" role="3oSUPX">
-                                          <ref role="cht4Q" to="b9ba:5WmJoY$OWtU" resolve="ChildValuePath" />
+                                          <ref role="cht4Q" to="rcc7:5WmJoY$OWtU" resolve="ChildValuePath" />
                                         </node>
                                         <node concept="37vLTw" id="3HeUQQYtnM" role="1m5AlR">
                                           <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                                         </node>
                                       </node>
                                       <node concept="3TrEf2" id="3HeUQQYBSo" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="b9ba:5WmJoY$OWyg" resolve="field" />
+                                        <ref role="3Tt5mk" to="rcc7:5WmJoY$OWyg" resolve="field" />
                                       </node>
                                     </node>
                                     <node concept="3TrcHB" id="3HeUQQYFQX" role="2OqNvi">
@@ -3533,7 +3533,7 @@
             </node>
             <node concept="1mIQ4w" id="3HeUQQYt5$" role="2OqNvi">
               <node concept="chp4Y" id="3HeUQQYt8S" role="cj9EA">
-                <ref role="cht4Q" to="b9ba:5WmJoY$OWtU" resolve="ChildValuePath" />
+                <ref role="cht4Q" to="rcc7:5WmJoY$OWtU" resolve="ChildValuePath" />
               </node>
             </node>
           </node>
@@ -3551,14 +3551,14 @@
                   <node concept="2OqwBi" id="8nADPlQFC3" role="37wK5m">
                     <node concept="1PxgMI" id="8nADPlQFC4" role="2Oq$k0">
                       <node concept="chp4Y" id="8nADPlQG2r" role="3oSUPX">
-                        <ref role="cht4Q" to="b9ba:8nADPlPecY" resolve="CastValuePath" />
+                        <ref role="cht4Q" to="rcc7:8nADPlPecY" resolve="CastValuePath" />
                       </node>
                       <node concept="37vLTw" id="8nADPlQFC6" role="1m5AlR">
                         <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="8nADPlQKjN" role="2OqNvi">
-                      <ref role="3Tt5mk" to="b9ba:8nADPlPeiL" resolve="uncasted" />
+                      <ref role="3Tt5mk" to="rcc7:8nADPlPeiL" resolve="uncasted" />
                     </node>
                   </node>
                 </node>
@@ -3609,14 +3609,14 @@
                     <node concept="2OqwBi" id="8nADPlR2k8" role="3uHU7w">
                       <node concept="1PxgMI" id="8nADPlR1Yn" role="2Oq$k0">
                         <node concept="chp4Y" id="8nADPlR26T" role="3oSUPX">
-                          <ref role="cht4Q" to="b9ba:8nADPlPecY" resolve="CastValuePath" />
+                          <ref role="cht4Q" to="rcc7:8nADPlPecY" resolve="CastValuePath" />
                         </node>
                         <node concept="37vLTw" id="8nADPlR1_5" role="1m5AlR">
                           <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="8nADPlR2Hp" role="2OqNvi">
-                        <ref role="3Tt5mk" to="b9ba:8nADPlPeCK" resolve="alternative" />
+                        <ref role="3Tt5mk" to="rcc7:8nADPlPeCK" resolve="alternative" />
                       </node>
                     </node>
                   </node>
@@ -3636,14 +3636,14 @@
                                     <node concept="2OqwBi" id="8nADPlR4py" role="2Oq$k0">
                                       <node concept="1PxgMI" id="8nADPlR4pz" role="2Oq$k0">
                                         <node concept="chp4Y" id="8nADPlR4p$" role="3oSUPX">
-                                          <ref role="cht4Q" to="b9ba:8nADPlPecY" resolve="CastValuePath" />
+                                          <ref role="cht4Q" to="rcc7:8nADPlPecY" resolve="CastValuePath" />
                                         </node>
                                         <node concept="37vLTw" id="8nADPlR4p_" role="1m5AlR">
                                           <ref role="3cqZAo" node="7vkQey0Zsxp" resolve="field" />
                                         </node>
                                       </node>
                                       <node concept="3TrEf2" id="8nADPlR4pA" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="b9ba:8nADPlPeCK" resolve="alternative" />
+                                        <ref role="3Tt5mk" to="rcc7:8nADPlPeCK" resolve="alternative" />
                                       </node>
                                     </node>
                                     <node concept="3TrcHB" id="8nADPlSM1j" role="2OqNvi">
@@ -3722,7 +3722,7 @@
             </node>
             <node concept="1mIQ4w" id="8nADPlQFvv" role="2OqNvi">
               <node concept="chp4Y" id="8nADPlQFwF" role="cj9EA">
-                <ref role="cht4Q" to="b9ba:8nADPlPecY" resolve="CastValuePath" />
+                <ref role="cht4Q" to="rcc7:8nADPlPecY" resolve="CastValuePath" />
               </node>
             </node>
           </node>
@@ -3750,7 +3750,7 @@
       <node concept="37vLTG" id="7vkQey0Zsxp" role="3clF46">
         <property role="TrG5h" value="field" />
         <node concept="3Tqbb2" id="7vkQey0Zsxq" role="1tU5fm">
-          <ref role="ehGHo" to="b9ba:7vkQey0ZcfT" resolve="ValuePath" />
+          <ref role="ehGHo" to="rcc7:7vkQey0ZcfT" resolve="ValuePath" />
         </node>
       </node>
     </node>

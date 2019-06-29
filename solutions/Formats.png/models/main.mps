@@ -11,10 +11,6 @@
       <concept id="8876756085632393224" name="Formats.test.structure.DecimalByte" flags="ng" index="22PRaC">
         <property id="8876756085632393225" name="value" index="22PRaD" />
       </concept>
-      <concept id="150759113080759102" name="Formats.test.structure.CastValuePath" flags="ng" index="1nKRAz">
-        <reference id="150759113080760880" name="alternative" index="1nKR2H" />
-        <child id="150759113080759473" name="uncasted" index="1nKRSG" />
-      </concept>
       <concept id="8160220614791843229" name="Formats.test.structure.FieldExpectationAssertion" flags="ng" index="1Cgy3R">
         <child id="8160220614791843232" name="expectedValue" index="1Cgy3a" />
         <child id="8634764878684144659" name="field" index="3Ra1NV" />
@@ -26,17 +22,6 @@
         <reference id="8160220614791839044" name="format" index="1Cg_0I" />
         <child id="8160220614791839051" name="fileToLoad" index="1Cg_0x" />
         <child id="8160220614791899804" name="assertions" index="1CgOvQ" />
-      </concept>
-      <concept id="8634764878684144634" name="Formats.test.structure.TopFieldPath" flags="ng" index="3Ra1Gi">
-        <reference id="8634764878684144635" name="field" index="3Ra1Gj" />
-      </concept>
-      <concept id="8634764878684297800" name="Formats.test.structure.ArrayValuePath" flags="ng" index="3RaWaw">
-        <property id="8634764878684297801" name="index" index="3RaWax" />
-        <child id="8634764878684297803" name="container" index="3RaWaz" />
-      </concept>
-      <concept id="6851872307734103930" name="Formats.test.structure.ChildValuePath" flags="ng" index="3VLnFP">
-        <reference id="6851872307734104208" name="field" index="3VLnkv" />
-        <child id="6851872307734104106" name="container" index="3VLnm_" />
       </concept>
     </language>
     <language id="040f4d08-2e19-478e-bafc-1ae65578e650" name="Formats">
@@ -84,6 +69,10 @@
         <property id="933368902185139127" name="encoding" index="1fPWm_" />
         <child id="933368902185139132" name="length" index="1fPWmI" />
       </concept>
+      <concept id="150759113080759102" name="" flags="ng" index="1nKRAz">
+        <reference id="150759113080760880" name="" index="1nKR2H" />
+        <child id="150759113080759473" name="" index="1nKRSG" />
+      </concept>
       <concept id="8160220614791821128" name="Formats.structure.UnsignedFieldType" flags="ng" index="1CgDCy">
         <property id="8160220614791821140" name="length" index="1CgDCY" />
       </concept>
@@ -105,6 +94,17 @@
       </concept>
       <concept id="8634764878680856923" name="Formats.structure.FieldsContainer" flags="ng" index="3R7$6N">
         <child id="7828601061921860419" name="fields" index="14JuLN" />
+      </concept>
+      <concept id="8634764878684144634" name="" flags="ng" index="3Ra1Gi">
+        <reference id="8634764878684144635" name="" index="3Ra1Gj" />
+      </concept>
+      <concept id="8634764878684297800" name="" flags="ng" index="3RaWaw">
+        <property id="8634764878684297801" name="" index="3RaWax" />
+        <child id="8634764878684297803" name="" index="3RaWaz" />
+      </concept>
+      <concept id="6851872307734103930" name="" flags="ng" index="3VLnFP">
+        <reference id="6851872307734104208" name="" index="3VLnkv" />
+        <child id="6851872307734104106" name="" index="3VLnm_" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">

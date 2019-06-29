@@ -171,5 +171,97 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="4KdAO9viT0V">
+    <property role="TrG5h" value="ToggleAttributesHolder" />
+    <ref role="2ZfgGC" to="rcc7:74YVmCpv4IF" resolve="Field" />
+    <node concept="2S6ZIM" id="4KdAO9viT0W" role="2ZfVej">
+      <node concept="3clFbS" id="4KdAO9viT0X" role="2VODD2">
+        <node concept="3clFbJ" id="4KdAO9viT0Y" role="3cqZAp">
+          <node concept="3clFbS" id="4KdAO9viT0Z" role="3clFbx">
+            <node concept="3cpWs6" id="4KdAO9viT10" role="3cqZAp">
+              <node concept="Xl_RD" id="4KdAO9viT11" role="3cqZAk">
+                <property role="Xl_RC" value="Add Attributes" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4KdAO9viT12" role="3clFbw">
+            <node concept="2OqwBi" id="4KdAO9viT13" role="2Oq$k0">
+              <node concept="2Sf5sV" id="4KdAO9viT14" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="4KdAO9viT15" role="2OqNvi">
+                <node concept="3CFYIy" id="4KdAO9viV6I" role="3CFYIz">
+                  <ref role="3CFYIx" to="rcc7:4KdAO9viSVo" resolve="AttributesHolder" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="4KdAO9viT17" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="4KdAO9viT18" role="9aQIa">
+            <node concept="3clFbS" id="4KdAO9viT19" role="9aQI4">
+              <node concept="3cpWs6" id="4KdAO9viT1a" role="3cqZAp">
+                <node concept="Xl_RD" id="4KdAO9viT1b" role="3cqZAk">
+                  <property role="Xl_RC" value="Remove Attributes" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4KdAO9viT1c" role="2ZfgGD">
+      <node concept="3clFbS" id="4KdAO9viT1d" role="2VODD2">
+        <node concept="3clFbJ" id="4KdAO9viT1e" role="3cqZAp">
+          <node concept="3clFbS" id="4KdAO9viT1f" role="3clFbx">
+            <node concept="3clFbF" id="4KdAO9viT1g" role="3cqZAp">
+              <node concept="37vLTI" id="4KdAO9viT1h" role="3clFbG">
+                <node concept="2ShNRf" id="4KdAO9viT1i" role="37vLTx">
+                  <node concept="3zrR0B" id="4KdAO9viT1j" role="2ShVmc">
+                    <node concept="3Tqbb2" id="4KdAO9viT1k" role="3zrR0E">
+                      <ref role="ehGHo" to="rcc7:4KdAO9viSVo" resolve="AttributesHolder" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4KdAO9viT1l" role="37vLTJ">
+                  <node concept="2Sf5sV" id="4KdAO9viT1m" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="4KdAO9viVKF" role="2OqNvi">
+                    <node concept="3CFYIy" id="4KdAO9viVKG" role="3CFYIz">
+                      <ref role="3CFYIx" to="rcc7:4KdAO9viSVo" resolve="AttributesHolder" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4KdAO9viT1p" role="3clFbw">
+            <node concept="2OqwBi" id="4KdAO9viT1q" role="2Oq$k0">
+              <node concept="2Sf5sV" id="4KdAO9viT1r" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="4KdAO9viT1s" role="2OqNvi">
+                <node concept="3CFYIy" id="4KdAO9viVEV" role="3CFYIz">
+                  <ref role="3CFYIx" to="rcc7:4KdAO9viSVo" resolve="AttributesHolder" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="4KdAO9viT1u" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="4KdAO9viT1v" role="9aQIa">
+            <node concept="3clFbS" id="4KdAO9viT1w" role="9aQI4">
+              <node concept="3clFbF" id="4KdAO9viT1x" role="3cqZAp">
+                <node concept="37vLTI" id="4KdAO9viT1y" role="3clFbG">
+                  <node concept="10Nm6u" id="4KdAO9viT1z" role="37vLTx" />
+                  <node concept="2OqwBi" id="4KdAO9viT1$" role="37vLTJ">
+                    <node concept="2Sf5sV" id="4KdAO9viT1_" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="4KdAO9viVSd" role="2OqNvi">
+                      <node concept="3CFYIy" id="4KdAO9viVSe" role="3CFYIz">
+                        <ref role="3CFYIx" to="rcc7:4KdAO9viSVo" resolve="AttributesHolder" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
