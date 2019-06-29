@@ -3,13 +3,6 @@ import de.itemis.mps.gradle.TestLanguages
 import de.itemis.mps.gradle.GenerateLibrariesXml
 import de.itemis.mps.gradle.RunAntScript
 
-group "com.strumenta.formatsdsl"
-description = "Formats DSL"
-
-ext.mpsVersion = '2019.1.3'
-ext.mpsExtensionsVersion = '2019.1.988.25746fd'
-ext.artifactsDir = new File(rootDir, 'artifacts')
-
 buildscript {
     repositories {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
@@ -21,25 +14,63 @@ buildscript {
     }
 }
 
-repositories {
-    maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
-}
+group "com.strumenta.formatsdsl"
+description = "Formats DSL"
 
 configurations {
+    mps
+    mpsArtifacts
     mpsExtensions
+    jdk
+    ant_lib
+    libs
+    distribution
+}
+
+ext.mpsVersion = '2019.1.3'
+ext.mpsExtensionsVersion = '2019.1.988.25746fd'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://projects.itemis.de/nexus/content/groups/OS/'
+    }
 }
 
 dependencies {
+    ant_lib "org.apache.ant:ant-junit:1.10.1"
+    mps "com.jetbrains:mps:$mpsVersion"
     mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
 }
 
-configurations {
-	mps
-	mpsArtifacts
-	jdk
-	ant_lib
-	libs
-	distribution
+
+if (!hasProperty("jdk_home")) {
+    def java_home = System.properties['java.home']
+    def jdk_home = java_home
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        jdk_home = jdk_home + "/.."
+    }
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        throw new GradleException("Not finding the JDK...")
+    }
+    ext.jdk_home = jdk_home
+}
+
+ext.artifactsDir = new File(rootDir, 'artifacts')
+ext.mpsDir = new File(artifactsDir, 'mps')
+ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({
+    true
+}) + project.files("$project.jdk_home/lib/tools.jar")
+ext.antScriptArgs =  [
+    "-Dmps.home=${mpsDir.getAbsolutePath()}",
+    "-Dartifacts.root=${artifactsDir.getAbsolutePath()}"
+]
+
+task resolveMps(type: Copy) {
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into mpsDir
 }
 
 task resolveMpsArtifacts(type: Copy) {
@@ -60,6 +91,18 @@ task resolveMpsExtensions(type: Copy) {
 task setuplocal {
 	dependsOn resolveMpsArtifacts
 	dependsOn resolveMpsExtensions
+}
+
+task generateBuildAntScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
+    scriptArgs = antScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script new File('build-meta.xml')
+}
+
+task buildLanguages(type: BuildLanguages, dependsOn: [generateBuildAntScripts]) {
+    scriptArgs = antScriptArgs
+    scriptClasspath = buildScriptClasspath
+    script new File('build-languages.xml')
 }
 
 // ext.mbeddrPlatformVersion = '1.2.21553.14a910d'
