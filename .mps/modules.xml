@@ -2,15 +2,17 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/Formats.test/Formats.test.mpl" folder="FormatsDSL" />
-      <modulePath path="$PROJECT_DIR$/languages/Formats/Formats.mpl" folder="FormatsDSL" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.class/Formats.class.msd" folder="Examples" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.evaluation.tests/Formats.evaluation.tests.msd" folder="FormatsDSL" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.evaluation/Formats.evaluation.msd" folder="FormatsDSL" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.ide/Formats.ide.msd" folder="FormatsDSL" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.png/Formats.png.msd" folder="Examples" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.tests/Formats.tests.msd" folder="FormatsDSL" />
-      <modulePath path="$PROJECT_DIR$/solutions/Formats.wasm/Formats.wasm.msd" folder="Examples" />
+      <modulePath path="$PROJECT_DIR$/languages/Formats.test/Formats.test.mpl" folder="dsl" />
+      <modulePath path="$PROJECT_DIR$/languages/Formats/Formats.mpl" folder="dsl" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.build.meta/Formats.build.meta.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.build/Formats.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.class/Formats.class.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.evaluation.tests/Formats.evaluation.tests.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.evaluation/Formats.evaluation.msd" folder="dsl" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.ide/Formats.ide.msd" folder="dsl" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.png/Formats.png.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.tests/Formats.tests.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/solutions/Formats.wasm/Formats.wasm.msd" folder="examples" />
     </projectModules>
   </component>
 </project>
