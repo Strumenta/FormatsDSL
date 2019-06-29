@@ -718,5 +718,18 @@
       <ref role="PrY4T" node="7vkQey0MD_r" resolve="FieldsContainer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4KdAO9vlLIw">
+    <property role="EcuMT" value="5480207030949452704" />
+    <property role="3GE5qa" value="value_paths" />
+    <property role="TrG5h" value="PointedValuePath" />
+    <property role="34LRSv" value="-&gt;" />
+    <ref role="1TJDcQ" node="7vkQey0ZcfT" resolve="ValuePath" />
+    <node concept="1TJgyj" id="4KdAO9vlLPk" role="1TKVEi">
+      <property role="IQ2ns" value="5480207030949453140" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="base" />
+      <ref role="20lvS9" node="7vkQey0ZcfT" resolve="ValuePath" />
+    </node>
+  </node>
 </model>
 

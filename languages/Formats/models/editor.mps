@@ -1020,5 +1020,20 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4KdAO9vlLMW">
+    <property role="3GE5qa" value="value_paths" />
+    <ref role="1XX52x" to="rcc7:4KdAO9vlLIw" resolve="PointedValuePath" />
+    <node concept="3EZMnI" id="4KdAO9vlLQU" role="2wV5jI">
+      <node concept="1kIj98" id="4KdAO9vlLRN" role="3EZMnx">
+        <node concept="3F1sOY" id="4KdAO9vlLRT" role="1kIj9b">
+          <ref role="1NtTu8" to="rcc7:4KdAO9vlLPk" resolve="base" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="4KdAO9vlLQX" role="2iSdaV" />
+      <node concept="3F0ifn" id="4KdAO9vlLSp" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+    </node>
+  </node>
 </model>
 
