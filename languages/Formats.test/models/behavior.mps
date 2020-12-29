@@ -187,12 +187,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -314,7 +313,7 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="7vkQey105x5" role="2OqNvi">
-                    <ref role="37wK5l" to="3fpj:7vkQey104lJ" resolve="presentation" />
+                    <ref role="37wK5l" to="3fpj:7vkQey104lJ" resolve="description" />
                   </node>
                 </node>
               </node>
@@ -570,7 +569,7 @@
                           <ref role="2pJxaS" to="rcc7:7vkQey0ZcfU" resolve="TopFieldPath" />
                           <node concept="2pIpSj" id="7N4Y6zzwkyL" role="2pJxcM">
                             <ref role="2pIpSl" to="rcc7:7vkQey0ZcfV" resolve="field" />
-                            <node concept="36biLy" id="7N4Y6zzwkE2" role="2pJxcZ">
+                            <node concept="36biLy" id="7N4Y6zzwkE2" role="28nt2d">
                               <node concept="37vLTw" id="7N4Y6zzwkMB" role="36biLW">
                                 <ref role="3cqZAo" node="7N4Y6zzwjFc" resolve="field" />
                               </node>
@@ -629,7 +628,7 @@
                       <ref role="2pJxaS" to="b9ba:7N4Y6zztPJT" resolve="FieldActualValue" />
                       <node concept="2pIpSj" id="7N4Y6zzwHPS" role="2pJxcM">
                         <ref role="2pIpSl" to="b9ba:7N4Y6zztPJV" resolve="field" />
-                        <node concept="36biLy" id="7N4Y6zzwIdz" role="2pJxcZ">
+                        <node concept="36biLy" id="7N4Y6zzwIdz" role="28nt2d">
                           <node concept="2OqwBi" id="7N4Y6zzDpaw" role="36biLW">
                             <node concept="37vLTw" id="7N4Y6zzwIfu" role="2Oq$k0">
                               <ref role="3cqZAo" node="7N4Y6zzw60f" resolve="fieldReference" />
@@ -640,7 +639,7 @@
                       </node>
                       <node concept="2pIpSj" id="7N4Y6zzwIr7" role="2pJxcM">
                         <ref role="2pIpSl" to="b9ba:7N4Y6zztPJU" resolve="value" />
-                        <node concept="36biLy" id="7N4Y6zzxioL" role="2pJxcZ">
+                        <node concept="36biLy" id="7N4Y6zzxioL" role="28nt2d">
                           <node concept="BsUDl" id="7N4Y6zzxoVj" role="36biLW">
                             <ref role="37wK5l" node="7N4Y6zzwIEo" resolve="fromBytes" />
                             <node concept="2OqwBi" id="7N4Y6zzxpeA" role="37wK5m">
@@ -737,7 +736,7 @@
                           <ref role="2pJxaS" to="rcc7:7vkQey0ZLD8" resolve="ArrayValuePath" />
                           <node concept="2pIpSj" id="7N4Y6zzyAQs" role="2pJxcM">
                             <ref role="2pIpSl" to="rcc7:7vkQey0ZLDb" resolve="container" />
-                            <node concept="36biLy" id="7N4Y6zzyARK" role="2pJxcZ">
+                            <node concept="36biLy" id="7N4Y6zzyARK" role="28nt2d">
                               <node concept="2OqwBi" id="7N4Y6zzDnS$" role="36biLW">
                                 <node concept="37vLTw" id="7N4Y6zzyATm" role="2Oq$k0">
                                   <ref role="3cqZAo" node="7N4Y6zzw60f" resolve="fieldReference" />
@@ -748,7 +747,7 @@
                           </node>
                           <node concept="2pJxcG" id="7N4Y6zzyAWb" role="2pJxcM">
                             <ref role="2pJxcJ" to="rcc7:7vkQey0ZLD9" resolve="index" />
-                            <node concept="37vLTw" id="7N4Y6zzyAYP" role="2pJxcZ">
+                            <node concept="37vLTw" id="7N4Y6zzyAYP" role="28ntcv">
                               <ref role="3cqZAo" node="7N4Y6zzyyQy" resolve="i" />
                             </node>
                           </node>
@@ -840,7 +839,7 @@
                             <ref role="2pJxaS" to="b9ba:7N4Y6zztPJT" resolve="FieldActualValue" />
                             <node concept="2pIpSj" id="7N4Y6zzyTVt" role="2pJxcM">
                               <ref role="2pIpSl" to="b9ba:7N4Y6zztPJV" resolve="field" />
-                              <node concept="36biLy" id="7N4Y6zzyTVu" role="2pJxcZ">
+                              <node concept="36biLy" id="7N4Y6zzyTVu" role="28nt2d">
                                 <node concept="2OqwBi" id="7N4Y6zzDpwf" role="36biLW">
                                   <node concept="37vLTw" id="7N4Y6zzyTVv" role="2Oq$k0">
                                     <ref role="3cqZAo" node="7N4Y6zzw60f" resolve="fieldReference" />
@@ -851,11 +850,11 @@
                             </node>
                             <node concept="2pIpSj" id="7N4Y6zzyTVw" role="2pJxcM">
                               <ref role="2pIpSl" to="b9ba:7N4Y6zztPJU" resolve="value" />
-                              <node concept="2pJPED" id="7N4Y6zzyUoX" role="2pJxcZ">
+                              <node concept="2pJPED" id="7N4Y6zzyUoX" role="28nt2d">
                                 <ref role="2pJxaS" to="b9ba:7vkQey1538y" resolve="PolymorphicStructureLiteralExpression" />
                                 <node concept="2pIpSj" id="7N4Y6zzyUr2" role="2pJxcM">
                                   <ref role="2pIpSl" to="b9ba:7vkQey1538$" resolve="polymorphicStructure" />
-                                  <node concept="36biLy" id="7N4Y6zzyUro" role="2pJxcZ">
+                                  <node concept="36biLy" id="7N4Y6zzyUro" role="28nt2d">
                                     <node concept="2OqwBi" id="7N4Y6zzyUBA" role="36biLW">
                                       <node concept="37vLTw" id="7N4Y6zzyUtj" role="2Oq$k0">
                                         <ref role="3cqZAo" node="7N4Y6zzyTTD" resolve="polymorphicStructureValue" />
@@ -868,7 +867,7 @@
                                 </node>
                                 <node concept="2pIpSj" id="NNZx93gpH7" role="2pJxcM">
                                   <ref role="2pIpSl" to="b9ba:91iwaw4efR" resolve="tagValue" />
-                                  <node concept="36biLy" id="NNZx93gpMr" role="2pJxcZ">
+                                  <node concept="36biLy" id="NNZx93gpMr" role="28nt2d">
                                     <node concept="2OqwBi" id="NNZx93gjvU" role="36biLW">
                                       <node concept="2OqwBi" id="NNZx93gjvV" role="2Oq$k0">
                                         <node concept="37vLTw" id="NNZx93gjvW" role="2Oq$k0">
@@ -886,7 +885,7 @@
                                 </node>
                                 <node concept="2pIpSj" id="7N4Y6zzz5nO" role="2pJxcM">
                                   <ref role="2pIpSl" to="b9ba:7vkQey1538z" resolve="body" />
-                                  <node concept="36biLy" id="7N4Y6zzz5sn" role="2pJxcZ">
+                                  <node concept="36biLy" id="7N4Y6zzz5sn" role="28nt2d">
                                     <node concept="BsUDl" id="7N4Y6zzzc7U" role="36biLW">
                                       <ref role="37wK5l" node="7N4Y6zzz5ui" resolve="toExpression" />
                                       <node concept="2OqwBi" id="7N4Y6zzzcid" role="37wK5m">
@@ -973,7 +972,7 @@
                         <ref role="2pJxaS" to="b9ba:7N4Y6zztPJT" resolve="FieldActualValue" />
                         <node concept="2pIpSj" id="7N4Y6zzIyCz" role="2pJxcM">
                           <ref role="2pIpSl" to="b9ba:7N4Y6zztPJV" resolve="field" />
-                          <node concept="36biLy" id="7N4Y6zzIyC$" role="2pJxcZ">
+                          <node concept="36biLy" id="7N4Y6zzIyC$" role="28nt2d">
                             <node concept="2OqwBi" id="7N4Y6zzIyC_" role="36biLW">
                               <node concept="37vLTw" id="7N4Y6zzIyCA" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7N4Y6zzw60f" resolve="fieldReference" />
@@ -984,7 +983,7 @@
                         </node>
                         <node concept="2pIpSj" id="7N4Y6zzIyCC" role="2pJxcM">
                           <ref role="2pIpSl" to="b9ba:7N4Y6zztPJU" resolve="value" />
-                          <node concept="36biLy" id="7N4Y6zzIyCD" role="2pJxcZ">
+                          <node concept="36biLy" id="7N4Y6zzIyCD" role="28nt2d">
                             <node concept="BsUDl" id="7N4Y6zzIyT7" role="36biLW">
                               <ref role="37wK5l" node="7N4Y6zzz5ui" resolve="toExpression" />
                               <node concept="37vLTw" id="7N4Y6zzIyU8" role="37wK5m">
@@ -1343,7 +1342,7 @@
                                   <ref role="2pJxaS" to="b9ba:7vkQey10pyc" resolve="FieldAssignment" />
                                   <node concept="2pIpSj" id="7N4Y6zzzUFp" role="2pJxcM">
                                     <ref role="2pIpSl" to="b9ba:7vkQey10pyd" resolve="field" />
-                                    <node concept="36biLy" id="7N4Y6zzzUUf" role="2pJxcZ">
+                                    <node concept="36biLy" id="7N4Y6zzzUUf" role="28nt2d">
                                       <node concept="37vLTw" id="7N4Y6zzzVaQ" role="36biLW">
                                         <ref role="3cqZAo" node="7N4Y6zzzPvs" resolve="field" />
                                       </node>
@@ -1351,7 +1350,7 @@
                                   </node>
                                   <node concept="2pIpSj" id="7N4Y6zzzVFy" role="2pJxcM">
                                     <ref role="2pIpSl" to="b9ba:7vkQey10uGz" resolve="value" />
-                                    <node concept="36biLy" id="7N4Y6zzzVUy" role="2pJxcZ">
+                                    <node concept="36biLy" id="7N4Y6zzzVUy" role="28nt2d">
                                       <node concept="BsUDl" id="7N4Y6zzzWbg" role="36biLW">
                                         <ref role="37wK5l" node="7N4Y6zzz5ui" resolve="toExpression" />
                                         <node concept="2OqwBi" id="7N4Y6zzzWNq" role="37wK5m">
@@ -1624,7 +1623,7 @@
                       <ref role="2pJxaS" to="b9ba:74YVmCpvbSk" resolve="HexadecimalByte" />
                       <node concept="2pJxcG" id="7N4Y6zzx50O" role="2pJxcM">
                         <ref role="2pJxcJ" to="b9ba:74YVmCpvcQ1" resolve="value" />
-                        <node concept="37vLTw" id="7N4Y6zzx50P" role="2pJxcZ">
+                        <node concept="37vLTw" id="7N4Y6zzx50P" role="28ntcv">
                           <ref role="3cqZAo" node="7N4Y6zzx50u" resolve="str" />
                         </node>
                       </node>

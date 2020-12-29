@@ -2,7 +2,7 @@
 <model ref="r:ee43b4c6-5598-4f02-9ca9-4a32fd89e892(Formats.test.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -60,9 +60,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -82,13 +80,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -207,7 +205,7 @@
               <ref role="2pJxaS" to="rcc7:6M$LN0C6jDo" resolve="RecordType" />
               <node concept="2pIpSj" id="7vkQey10p9t" role="2pJxcM">
                 <ref role="2pIpSl" to="rcc7:6M$LN0C6jDr" resolve="record" />
-                <node concept="36biLy" id="7vkQey10paI" role="2pJxcZ">
+                <node concept="36biLy" id="7vkQey10paI" role="28nt2d">
                   <node concept="2OqwBi" id="7vkQey10pki" role="36biLW">
                     <node concept="1YBJjd" id="7vkQey10paT" role="2Oq$k0">
                       <ref role="1YBMHb" node="7vkQey10ozc" resolve="recordLiteral" />
@@ -352,7 +350,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2GrUjf" id="7vkQey113m2" role="2OEOjV">
+                <node concept="2GrUjf" id="7vkQey113m2" role="1urrMF">
                   <ref role="2Gs0qQ" node="7vkQey10L7t" resolve="field" />
                 </node>
               </node>
@@ -387,7 +385,7 @@
                 <node concept="Xl_RD" id="7vkQey10L5H" role="2MkJ7o">
                   <property role="Xl_RC" value="Field already specified" />
                 </node>
-                <node concept="1YBJjd" id="7vkQey10L6k" role="2OEOjV">
+                <node concept="1YBJjd" id="7vkQey10L6k" role="1urrMF">
                   <ref role="1YBMHb" node="7vkQey10EBk" resolve="fieldAssignment" />
                 </node>
               </node>
@@ -447,7 +445,7 @@
               <ref role="2pJxaS" to="rcc7:6M$LN0C6jDN" resolve="ArrayType" />
               <node concept="2pIpSj" id="7N4Y6zz$pup" role="2pJxcM">
                 <ref role="2pIpSl" to="rcc7:6M$LN0C6jDQ" resolve="baseType" />
-                <node concept="36biLy" id="7N4Y6zz$puM" role="2pJxcZ">
+                <node concept="36biLy" id="7N4Y6zz$puM" role="28nt2d">
                   <node concept="2OqwBi" id="7N4Y6zzCk48" role="36biLW">
                     <node concept="2OqwBi" id="7N4Y6zz$pCm" role="2Oq$k0">
                       <node concept="1YBJjd" id="7N4Y6zz$puX" role="2Oq$k0">
@@ -463,7 +461,7 @@
               </node>
               <node concept="2pIpSj" id="7N4Y6zz$pUS" role="2pJxcM">
                 <ref role="2pIpSl" to="rcc7:6M$LN0C6jDZ" resolve="size" />
-                <node concept="36biLy" id="5Dkfd5fjNqi" role="2pJxcZ">
+                <node concept="36biLy" id="5Dkfd5fjNqi" role="28nt2d">
                   <node concept="10Nm6u" id="5Dkfd5fjNqj" role="36biLW" />
                 </node>
               </node>

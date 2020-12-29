@@ -2,10 +2,10 @@
 <model ref="r:236c26fd-d61c-421e-87d7-ff5fcfdbccf8(Formats.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -37,9 +37,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -51,9 +48,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -78,9 +73,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
@@ -89,6 +81,9 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -117,6 +112,9 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
+        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -127,6 +125,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
+        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -233,7 +234,7 @@
                   <ref role="2pJxaS" to="rcc7:6M$LN0C6jDN" resolve="ArrayType" />
                   <node concept="2pIpSj" id="7vkQey0ZUK4" role="2pJxcM">
                     <ref role="2pIpSl" to="rcc7:6M$LN0C6jDQ" resolve="baseType" />
-                    <node concept="36biLy" id="7vkQey10lCd" role="2pJxcZ">
+                    <node concept="36biLy" id="7vkQey10lCd" role="28nt2d">
                       <node concept="1PxgMI" id="7vkQey10m8a" role="36biLW">
                         <node concept="chp4Y" id="7vkQey10m8_" role="3oSUPX">
                           <ref role="cht4Q" to="rcc7:7vkQey0O7xh" resolve="Type" />
@@ -246,7 +247,7 @@
                   </node>
                   <node concept="2pIpSj" id="7vkQey0ZV7G" role="2pJxcM">
                     <ref role="2pIpSl" to="rcc7:6M$LN0C6jDZ" resolve="size" />
-                    <node concept="36biLy" id="5Dkfd5fjNqm" role="2pJxcZ">
+                    <node concept="36biLy" id="5Dkfd5fjNqm" role="28nt2d">
                       <node concept="10Nm6u" id="5Dkfd5fjNqn" role="36biLW" />
                     </node>
                   </node>
@@ -294,7 +295,7 @@
               <ref role="2pJxaS" to="rcc7:6M$LN0C6jDo" resolve="RecordType" />
               <node concept="2pIpSj" id="7vkQey0ZWtD" role="2pJxcM">
                 <ref role="2pIpSl" to="rcc7:6M$LN0C6jDr" resolve="record" />
-                <node concept="36biLy" id="7vkQey0ZWuU" role="2pJxcZ">
+                <node concept="36biLy" id="7vkQey0ZWuU" role="28nt2d">
                   <node concept="2OqwBi" id="7vkQey0ZWCu" role="36biLW">
                     <node concept="1YBJjd" id="7vkQey0ZWv5" role="2Oq$k0">
                       <ref role="1YBMHb" node="7vkQey0ZVqT" resolve="recordType" />
@@ -333,7 +334,7 @@
               <ref role="2pJxaS" to="rcc7:7vkQey14ZEy" resolve="PolymorphicStructureType" />
               <node concept="2pIpSj" id="7vkQey14ZFb" role="2pJxcM">
                 <ref role="2pIpSl" to="rcc7:7vkQey14ZEz" resolve="polymorphicStructure" />
-                <node concept="36biLy" id="7vkQey14ZFc" role="2pJxcZ">
+                <node concept="36biLy" id="7vkQey14ZFc" role="28nt2d">
                   <node concept="2OqwBi" id="7vkQey14ZFd" role="36biLW">
                     <node concept="1YBJjd" id="7vkQey14ZMV" role="2Oq$k0">
                       <ref role="1YBMHb" node="7vkQey14ZF3" resolve="polymorphicStructureType" />
@@ -437,15 +438,20 @@
           </node>
         </node>
         <node concept="3clFbC" id="5$99G4yCmU7" role="3clFbw">
-          <node concept="3clFbT" id="5$99G4yCn3F" role="3uHU7w">
-            <property role="3clFbU" value="false" />
+          <node concept="2OqwBi" id="2ig$0l9$78e" role="3uHU7w">
+            <node concept="1XH99k" id="2ig$0l9$78f" role="2Oq$k0">
+              <ref role="1XH99l" to="rcc7:2ig$0l9$5IL" resolve="Signedness" />
+            </node>
+            <node concept="2ViDtV" id="2ig$0l9$78g" role="2OqNvi">
+              <ref role="2ViDtZ" to="rcc7:2ig$0l9$5IN" resolve="unsigned" />
+            </node>
           </node>
           <node concept="2OqwBi" id="5$99G4yCm4X" role="3uHU7B">
             <node concept="1YBJjd" id="5$99G4yClVA" role="2Oq$k0">
               <ref role="1YBMHb" node="5$99G4yClSD" resolve="leb128FieldType" />
             </node>
             <node concept="3TrcHB" id="5$99G4yCmcZ" role="2OqNvi">
-              <ref role="3TsBF5" to="rcc7:5$99G4yC7gz" resolve="signed" />
+              <ref role="3TsBF5" to="rcc7:2ig$0l9$5UB" resolve="signed" />
             </node>
           </node>
         </node>
@@ -564,7 +570,7 @@
                   <node concept="Xl_RD" id="3HeUQQKg02" role="2MkJ7o">
                     <property role="Xl_RC" value="The container should be an array" />
                   </node>
-                  <node concept="1YBJjd" id="3HeUQQKg3A" role="2OEOjV">
+                  <node concept="1YBJjd" id="3HeUQQKg3A" role="1urrMF">
                     <ref role="1YBMHb" node="7vkQey10mxM" resolve="arrayElementReference" />
                   </node>
                 </node>
@@ -672,7 +678,7 @@
               <ref role="2pJxaS" to="rcc7:6M$LN0C6jDo" resolve="RecordType" />
               <node concept="2pIpSj" id="4KdAO9vjZx6" role="2pJxcM">
                 <ref role="2pIpSl" to="rcc7:6M$LN0C6jDr" resolve="record" />
-                <node concept="36biLy" id="4KdAO9vjZyH" role="2pJxcZ">
+                <node concept="36biLy" id="4KdAO9vjZyH" role="28nt2d">
                   <node concept="2OqwBi" id="4KdAO9vjZGG" role="36biLW">
                     <node concept="1YBJjd" id="4KdAO9vjZzh" role="2Oq$k0">
                       <ref role="1YBMHb" node="4KdAO9vjZ9m" resolve="rootValuePath" />
@@ -733,7 +739,7 @@
                 <node concept="Xl_RD" id="4KdAO9vlI_c" role="2MkJ7o">
                   <property role="Xl_RC" value="An index should apply to an array" />
                 </node>
-                <node concept="2OqwBi" id="4KdAO9vlILy" role="2OEOjV">
+                <node concept="2OqwBi" id="4KdAO9vlILy" role="1urrMF">
                   <node concept="1YBJjd" id="4KdAO9vlIBY" role="2Oq$k0">
                     <ref role="1YBMHb" node="4KdAO9vlENq" resolve="index" />
                   </node>

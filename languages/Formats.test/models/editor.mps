@@ -2,7 +2,7 @@
 <model ref="r:f8ef9a37-3055-44f5-9402-565d284a8f00(Formats.test.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
@@ -301,7 +301,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="Veino" id="7vkQey0NbKX" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
           <node concept="1iSF2X" id="7vkQey0NeXy" role="VblUZ">
             <property role="1iTho6" value="eeeeee" />
           </node>
@@ -721,10 +721,10 @@
             </node>
           </node>
           <node concept="Vb9p2" id="3HeUQQNGVi" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
           <node concept="VechU" id="3HeUQQNGWZ" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
           <node concept="VSNWy" id="3HeUQQQg_I" role="3F10Kt">
             <property role="1lJzqX" value="8" />
@@ -749,7 +749,7 @@
     <node concept="1Qtc8_" id="74YVmCpvtEF" role="IW6Ez">
       <node concept="3cWJ9i" id="74YVmCpvtEJ" role="1Qtc8$">
         <node concept="CtIbL" id="74YVmCpvtEL" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="IWgqT" id="74YVmCpvtEP" role="1Qtc8A">
@@ -916,7 +916,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="Veino" id="7N4Y6zztDal" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
           <node concept="1iSF2X" id="7N4Y6zztDam" role="VblUZ">
             <property role="1iTho6" value="eeeeee" />
           </node>
